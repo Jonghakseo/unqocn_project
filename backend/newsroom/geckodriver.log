@@ -1,0 +1,6 @@
+1594545217235	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePSSzex"
+libGL error: No matching fbConfigs or visuals found
+libGL error: failed to load driver: swrast
+1594545223757	Marionette	INFO	Listening on port 40351
+1594545223813	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594545228006	Marionette	INFO	Stopped listening on port 40351
