@@ -661,3 +661,4 @@ NameError: name 'TypeError' is not defined
 [Mon Jul 20 13:28:40.172207 2020] [wsgi:error] [pid 30869] [remote 185.39.11.105:53412] Not Found: /
 [Mon Jul 20 19:26:48.967924 2020] [wsgi:error] [pid 30869] [remote 221.148.25.236:10319] Not Found: /
 [Mon Jul 20 19:26:49.613222 2020] [wsgi:error] [pid 30869] [remote 221.148.25.236:10319] Not Found: /favicon.ico
+[Mon Jul 20 19:48:11.060451 2020] [wsgi:error] [pid 30869] [remote 80.82.70.187:54228] Not Found: /cache/global/img/gs.gif
