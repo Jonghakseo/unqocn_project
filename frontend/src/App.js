@@ -9,7 +9,7 @@ class App extends Component {
 
   async componentDidMount() {
     try {
-      const res = await fetch("http://unqocn.hopto.org:8000/news/today");
+      const res = await fetch("https://unqocn-api.hopto.org/news/today");
       const newses = await res.json();
       var news = [];
       newses.forEach((element) => {
