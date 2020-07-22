@@ -7,3 +7,6 @@ history
 
 7.20
 첫 commit
+
+7.22
+도메인별 서비스 분리, https 
