@@ -20,7 +20,6 @@ django.setup()
 
 from newsroom.models import CrawlingData
 
-
 # 경로를 django 로 바꿨기 때문에 import 경로도 바뀜
 # 에러는 무시해도 됨
 
