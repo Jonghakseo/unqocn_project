@@ -373,3 +373,8 @@ NameError: name 'TypeError' is not defined
 [Wed Jul 22 19:28:06.934752 2020] [wsgi:error] [pid 845] [remote 93.174.93.139:33716] Not Found: /
 [Wed Jul 22 19:56:55.640482 2020] [wsgi:error] [pid 845] [remote 193.118.55.146:57666] Not Found: /
 [Wed Jul 22 20:24:41.476245 2020] [wsgi:error] [pid 855] [remote 80.82.70.187:33497] Not Found: /cache/global/img/gs.gif
+[Wed Jul 22 22:11:23.217478 2020] [wsgi:error] [pid 855] [remote 93.174.95.106:38458] Not Found: /
+[Wed Jul 22 22:11:24.369486 2020] [wsgi:error] [pid 855] [remote 93.174.95.106:39074] Not Found: /favicon.ico
+[Wed Jul 22 22:13:06.058303 2020] [wsgi:error] [pid 855] [remote 34.76.78.209:13245] Not Found: /
+[Wed Jul 22 22:16:01.032078 2020] [wsgi:error] [pid 845] [remote 45.83.67.187:25288] Not Found: /
+[Wed Jul 22 22:42:27.159365 2020] [wsgi:error] [pid 845] [remote 192.168.219.103:1614] Not Found: /favicon.ico
