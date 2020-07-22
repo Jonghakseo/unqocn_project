@@ -31,7 +31,6 @@ def get_naver_news():
 
     options = Options()
     options.headless = True
-    # options.add_argument('--no-sandbox')
     driver = webdriver.Firefox(executable_path=r"/home/django/unqocn_venv/bin/geckodriver", options=options)
 
     driver.implicitly_wait(10)

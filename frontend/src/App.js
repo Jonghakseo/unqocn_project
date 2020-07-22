@@ -3,9 +3,14 @@ import React, { Component } from 'react';
 import TodoListTemplate from './components/TodoListTemplate';
 import TodoItemList from './components/TodoItemList';
 import Form from './components/Form';
+//리액트에서 UI와 기능들의 기본 단위는 컴포넌트
+//자바스크립트의 함수와 개념적으로 유사하다
+//props라는 임의의 입력을 받고, 어떻게 표시될지 기술한다
 
 class App extends Component {
+
   async componentDidMount() {}
+  //
 
   id = 3; // 이미 0,1,2 가 존재하므로 3으로 설정
 
