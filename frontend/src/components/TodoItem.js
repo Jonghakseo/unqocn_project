@@ -17,7 +17,8 @@ class TodoItem extends Component {
             onRemove(id);
           }}
         >
-          &times;
+          &times; 
+          {/* 이게 x 였음. */}
         </div>
         <div className={`todo-text ${checked ? 'checked' : ''}`}>
           {/* 클래스 네임 동적으로 생성할 수 있게 하는 부분입니다. */}
