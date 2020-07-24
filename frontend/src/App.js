@@ -40,7 +40,7 @@ class App extends Component {
       todos: todos.concat({
         id: this.id++,//id 1추가
         text: input,
-        checked: false,//기본값은 체크 안된걸로 생성
+        checked: false,//기본값은 체크 안된걸로 생성ㅎ
       }),
     });
   };
