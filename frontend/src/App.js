@@ -39,7 +39,7 @@ class App extends Component {
       // concat 을 사용하여 배열에 추가
       todos: todos.concat({
         id: this.id++,//id 1추가
-        text: input,
+        text: input, 
         checked: false,//기본값은 체크 안된걸로 생성
       }),
     });
