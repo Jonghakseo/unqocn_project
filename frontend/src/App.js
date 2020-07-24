@@ -43,7 +43,7 @@ class App extends Component {
         checked: false,//기본값은 체크 안된걸로 생성
       }),
     });
-  };
+  }; 
 
   handleKeyPress = (e) => {
     // 눌려진 키가 Enter 면 handleCreate 호출
