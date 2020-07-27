@@ -1,0 +1,11 @@
+#top_title {
+  width: 100%;
+  height: 85vh;
+  padding-top: 15vh;
+  /* padding-left: 10vw; */
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  background-color: #8395a7;
+  font-family: 'Noto Serif KR', Serif;
+}

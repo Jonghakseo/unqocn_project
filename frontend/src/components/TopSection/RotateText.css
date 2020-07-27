@@ -1,0 +1,26 @@
+/* .intro_text {
+  font-weight: bolder;
+  animation-name: slidein;
+  animation-duration: 2.3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* @keyframes slide {
+  from {
+    left: -20%;
+  }
+  to {
+    right: 20%;
+  }
+} */
