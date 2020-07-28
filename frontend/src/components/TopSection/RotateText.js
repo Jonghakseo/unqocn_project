@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './RotateText.css';
+import React, { Component } from 'react'
+import './RotateText.css'
 
 class RotateText extends Component {
   //함수형 컴포넌트는 render 될 때의 값들을 유지한다.
@@ -12,19 +12,9 @@ class RotateText extends Component {
   state = {
     switchStyle: false,
     index: 0,
-    now: '빠르게 배우는',
-    cando: [
-      '빠르게 배우는',
-      '적극적인',
-      '좋은 인상을 남기는',
-      '발전에 관심있는',
-      '배움을 즐기는',
-      '한창 재미붙은',
-      '코딩을 즐기는',
-      '함께하면 즐거운',
-      '풀스택을 지향하는',
-    ],
-  };
+    now: '발전에 관심있는',
+    cando: ['', '적극적인', '배움을 즐기는', '함께하면 즐거운'],
+  }
 
   componentDidMount() {
     //   마운트 되면 실행
@@ -32,32 +22,36 @@ class RotateText extends Component {
     const rotation = () =>
       //타임아웃 걸어놓고 재귀적으로 계속 실행되게 함
       setTimeout(() => {
-        let ind = this.state.index;
+        let ind = this.state.index
         //인덱스는 지금 스테이트에서 가져오고,
-        ind++;
+        ind++
         // 1 추가해주고
-        ind = ind % this.state.cando.length;
+        if (ind === this.state.cando.length) return rotationEnd()
         // %로 out of lange 안 생기게 처리
-        let item = this.state.cando[ind];
+        ind = ind % this.state.cando.length
+        let item = this.state.cando[ind]
         // 아이템 꺼내오고
         this.setState({
           switchStyle: true,
           index: ind,
           now: item,
-        });
+        })
         //스테이트 재정의(아래에서 바꾸기 위해서)
         // console.log(this.state);
         // 재귀 실행
         setTimeout(() => {
           this.setState({
             switchStyle: false,
-          });
-        }, 1500);
+          })
+        }, 1500)
         // console.log(this.state.switchStyle);
-        rotation();
-      }, 2800);
+        rotation()
+      }, 2800)
 
-    rotation();
+    rotation()
+    const rotationEnd = () => {
+      console.log('끝    ')
+    }
   }
 
   render() {
@@ -71,19 +65,19 @@ class RotateText extends Component {
       animationIterationCount: '1',
       animationFillMode: 'both',
       animationTimingFunction: 'ease-in-out',
-    };
+    }
 
     // console.log(this.state.index);
     let ret_div = (
       <div className="intro_text" style={introStyle}>
         {this.state.now}
       </div>
-    );
+    )
     if (!this.state.switchStyle) {
-      ret_div = <div className="intro_text">{this.state.now}</div>;
+      ret_div = <div className="intro_text">{this.state.now}</div>
     }
-    return ret_div;
+    return ret_div
   }
 }
 
-export default RotateText;
+export default RotateText

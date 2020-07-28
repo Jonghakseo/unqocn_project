@@ -1,11 +1,128 @@
 #top_title {
   width: 100%;
-  height: 85vh;
+  height: 105vh;
   padding-top: 15vh;
   /* padding-left: 10vw; */
   text-align: center;
-  font-size: 36px;
+  font-size: 66px;
   font-weight: 800;
-  background-color: #8395a7;
-  font-family: 'Noto Serif KR', Serif;
+  /* font-family: 'Noto Serif KR', Serif; */
+  /* border-radius: 7px; */
+}
+
+/* 배경에 데코하는 부분임 */
+.background_decoration {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  position: relative;
+  height: 65vh;
+  margin-top: 10vh;
+  margin-bottom: 0;
+}
+.background_decoration_row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+.background_decoration_row > img {
+  position: relative;
+  margin: 18px;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  /* transition: opacity 1.5s */
+  transition: opacity 0.5s, transform 0.5s, width 0.5s, height 0.5s;
+}
+
+.rotate {
+  transform: rotate(360deg);
+  opacity: 0.15 !important;
+  width: 90px !important;
+  height: 90px !important;
+}
+/* 배경에 데코하는 부분 끝 */
+
+/* 프로필 사진, 텍스트 부분 */
+.big_profile_wrapper {
+  position: absolute;
+  top: 70vh;
+  height: 50vh;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  /* border-bottom: solid 8px #cfd7da; */
+}
+
+.big_progile_on {
+  opacity: 1;
+}
+
+.big_profile_wrapper > img {
+  /* width: 500px; */
+  position: absolute;
+  right: 5vw;
+  width: auto;
+  height: 20rem;
+  vertical-align: bottom;
+  /* border: solid 10px #2b2b2b; */
+  border-radius: 50%;
+}
+
+.border_div {
+  position: absolute;
+  top: 49vh;
+  right: 0px;
+  border-bottom: solid 10px #525a5a;
+  border-radius: 7px;
+  height: 1px;
+  width: 58vh;
+}
+
+.profile_text_area {
+  width: fit-content;
+  font-family: 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif';
+  font-weight: 600;
+  position: relative;
+  left: 10vw;
+  height: 15vh;
+  font-size: 34px;
+  text-align: start;
+  color: #2b2b2b;
+}
+
+/* 반응형 */
+
+@media screen and (max-width: 768px) {
+  #top_title {
+    font-size: 36px;
+    height: 90vh;
+  }
+  .big_profile_wrapper {
+    flex-direction: column;
+    top: 80vh;
+  }
+  .big_profile_wrapper > img {
+    height: 8rem;
+    /* width: 300px; */
+  }
+  .border_div {
+    top: 34vh;
+    width: 100%;
+  }
+  .profile_text_area {
+    font-size: 16px;
+    font-weight: bolder;
+    position: relative;
+    bottom: -1vh;
+    left: 30px;
+  }
+  .rotate {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }

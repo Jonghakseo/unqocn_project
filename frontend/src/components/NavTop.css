@@ -9,6 +9,7 @@
 
   border-radius: 20px;
   /* width: auto; */
+  z-index: 999;
 }
 
 .nav_profile {

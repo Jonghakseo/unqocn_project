@@ -1,4 +1,16 @@
-body {
-  /* background-color: #8395a7; */
+#main_contents {
+  background-color: #ecf0f1;
+  -webkit-transition: background 1.5s;
+  -moz-transition: background-color 1.5s;
+  -ms-transition: background-color 1.5s;
+  -o-transition: background-color 1.5s;
+  transition: background 2.5s;
   margin: 0 auto;
+
+  /* font-family: 'Noto Serif KR', Serif; */
+  font-family: 'Noto Serif KR', 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif';
+}
+
+.timeline_bg {
+  background-color: #454f5d !important;
 }
