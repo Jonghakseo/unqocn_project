@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { findDOMNode } from 'react-dom'
+// import { findDOMNode } from 'react-dom'
 import './TimeLine.css'
 import Java from './TimeLine/Java'
 import Android from './TimeLine/Android'

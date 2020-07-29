@@ -72,7 +72,7 @@ class RotateText extends Component {
     let endStyle = {
       fontWeight: 'bolder',
       animationName: 'fadeOut',
-      animationDuration: '3s',
+      animationDuration: '1s',
       animationIterationCount: '1',
       animationFillMode: 'both',
       animationTimingFunction: 'ease-in-out',

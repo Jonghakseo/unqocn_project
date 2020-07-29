@@ -50,7 +50,8 @@ class Andorid extends Component {
         )
       } else if (selected_item.type === 'video') {
         return (
-          <video controls autoPlay={true}>
+          <video controls autoPlay={false}>
+            {/* 오토플레이 설정부분 */}
             <source src={selected_item.src} type="video/mp4"></source>
           </video>
         )

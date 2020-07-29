@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import './Java.css'
 import './TimelineItem.css'
 import JavaImage1 from '../../res/pic/java/java1.png'
-import JavaImage2 from '../../res/pic/java/test.png'
+// import JavaImage2 from '../../res/pic/java/test.png'
+import JavaImage2 from '../../res/pic/java/java1.png'
 import JavaImage3 from '../../res/pic/java/java1.png'
+// import JavaImage4 from '../../res/pic/java/java1.png'
 import JavaImage4 from '../../res/pic/java/neb.png'
 import JavaVideo from '../../res/videos/gizmo.mp4'
 
@@ -46,7 +48,7 @@ class Java extends Component {
         )
       } else if (selected_item.type === 'video') {
         return (
-          <video controls autoPlay={true}>
+          <video controls autoPlay={false}>
             <source src={selected_item.src} type="video/mp4"></source>
           </video>
         )
