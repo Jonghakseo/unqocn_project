@@ -1,5 +1,5 @@
 #timeline_section_wrapper {
-  height: 120vh;
+  /* height: 120vh; */
   /* background-color: #576574; */
   font-size: 32px;
   font-weight: 600;
@@ -23,7 +23,9 @@ h2 {
 }
 
 .onToggle {
-  opacity: 1;
+  opacity: 1 !important;
+  /* bottom은 컨텐츠 영역을 위한 속성 */
+  margin-top: 0 !important;
 }
 
 .timeline_date {
@@ -35,7 +37,14 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
 }
-
+.timeline_empty_wrapper {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
 .timeline {
   display: flex;
   flex-direction: row;
@@ -63,6 +72,9 @@ h2 {
   cursor: pointer;
   /* margin: 0, auto; */
 }
+.timeline > ol:hover {
+  opacity: 1;
+}
 
 .timeline_line {
   /* margin-top: 2px; */
@@ -88,6 +100,15 @@ h2 {
   /* opacity: 0; */
 }
 
+.contents_wrapper {
+  opacity: 0;
+  position: relative;
+  margin-top: 150px;
+  transition: opacity 2.5s ease, margin 1.5s;
+}
+
+/* 반응형 */
+
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 24px;
@@ -106,6 +127,13 @@ h2 {
     font-size: 9px;
     font-weight: 200;
     letter-spacing: -0.3px;
+  }
+  .timeline_hover_img {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    filter: invert();
+    /* opacity: 0; */
   }
 
   .active {

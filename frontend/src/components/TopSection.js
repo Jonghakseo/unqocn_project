@@ -34,39 +34,41 @@ class TopSection extends Component {
 
   state = {
     position: this.props.position,
+    windowSize: this.props.windowSize,
     toggle_profile: false,
   }
 
   componentWillReceiveProps(nextProps) {
     if (
-      Math.ceil(this.props.position / 100) !==
-      Math.ceil(nextProps.position / 100)
+      Math.ceil(this.props.position / 50) !== Math.ceil(nextProps.position / 50)
       ///100 단위로 해놓은 이유는 떨림 현상을 방지하기 위해서(원인 파악 아직 못함)
     ) {
-      this.toggle(nextProps.position, nextProps.topHeight)
+      this.toggle(nextProps.position, nextProps.windowSize)
     }
   }
 
   toggle(pos, top) {
-    console.log(top)
+    // console.log(top)
     pos = Math.ceil(pos) / 10
-    let top_end = Math.ceil(top * 0.35)
+    // let top_end = Math.ceil(top * 0.085) //첫 화면의 85% 넘어가면 없어지게
     // 가변값으로 설정해야함
-    console.log(top_end)
-    if (pos > 10 && pos < top_end) {
+    // console.log(top_end)
+    // if (pos > 1 && pos < top_end) {
+    if (pos > 1) {
       this.setState({
         toggle_profile: true,
       })
-    } else if (pos >= top_end) {
-      this.setState({
-        toggle_profile: false,
-      })
     }
-    //  else {
+    // else if (pos >= top_end) {
     //   this.setState({
     //     toggle_profile: false,
     //   })
     // }
+    else {
+      this.setState({
+        toggle_profile: false,
+      })
+    }
   }
 
   render() {

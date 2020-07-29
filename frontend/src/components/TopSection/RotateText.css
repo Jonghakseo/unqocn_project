@@ -16,6 +16,16 @@
   }
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    font-size: 1px;
+    opacity: 0;
+  }
+}
+
 /* @keyframes slide {
   from {
     left: -20%;

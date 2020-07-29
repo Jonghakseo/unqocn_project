@@ -10,10 +10,11 @@ class RotateText extends Component {
   //   }
 
   state = {
-    switchStyle: false,
+    switch_style: false,
+    end_switch: false,
     index: 0,
     now: '발전에 관심있는',
-    cando: ['', '적극적인', '배움을 즐기는', '함께하면 즐거운'],
+    cando: ['.', '적극적인', '배움을 즐기는', '함께하면 즐거운'],
   }
 
   componentDidMount() {
@@ -32,7 +33,7 @@ class RotateText extends Component {
         let item = this.state.cando[ind]
         // 아이템 꺼내오고
         this.setState({
-          switchStyle: true,
+          switch_style: true,
           index: ind,
           now: item,
         })
@@ -41,7 +42,7 @@ class RotateText extends Component {
         // 재귀 실행
         setTimeout(() => {
           this.setState({
-            switchStyle: false,
+            switch_style: false,
           })
         }, 1500)
         // console.log(this.state.switchStyle);
@@ -50,7 +51,8 @@ class RotateText extends Component {
 
     rotation()
     const rotationEnd = () => {
-      console.log('끝    ')
+      this.setState({ end_switch: true })
+      // console.log('끝    ')
     }
   }
 
@@ -67,14 +69,33 @@ class RotateText extends Component {
       animationTimingFunction: 'ease-in-out',
     }
 
+    let endStyle = {
+      fontWeight: 'bolder',
+      animationName: 'fadeOut',
+      animationDuration: '3s',
+      animationIterationCount: '1',
+      animationFillMode: 'both',
+      animationTimingFunction: 'ease-in-out',
+    }
+
     // console.log(this.state.index);
-    let ret_div = (
-      <div className="intro_text" style={introStyle}>
-        {this.state.now}
-      </div>
-    )
-    if (!this.state.switchStyle) {
+    let ret_div
+    if (!this.state.switch_style) {
       ret_div = <div className="intro_text">{this.state.now}</div>
+    } else {
+      ret_div = (
+        <div className="intro_text" style={introStyle}>
+          {this.state.now}
+        </div>
+      )
+    }
+    if (this.state.end_switch) {
+      ret_div = (
+        <div className="intro_text" style={endStyle}>
+          {' '}
+          {this.state.now}
+        </div>
+      )
     }
     return ret_div
   }

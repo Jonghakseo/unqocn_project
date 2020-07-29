@@ -1,31 +1,52 @@
 import React, { Component } from 'react'
-import { findDOMNode } from 'react-dom'
+// import { findDOMNode } from 'react-dom'
 import TopSection from './TopSection'
 import TimeLine from './TimeLine'
 import './MainContents.css'
 class MainContents extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-  state = {
-    windowSize: 1300, //임의의 초기값
-    topHeight: 1300, //임의의 초기값
-    backgroundColor: 'top',
-    position: this.props.position,
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      Math.ceil(this.state.position / 1) !== Math.ceil(nextState.position / 1)
+    )
+  }
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      windowSize: 0, //임의의 초기값
+      backgroundColor: 'top',
+      position: 0,
+    }
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
   }
 
   componentDidMount() {
-    // 스크롤 이벤트 적용
+    this.updateWindowDimensions()
     window.addEventListener('scroll', this.onScroll)
-    // const top = findDOMNode(this).getBoundingClientRect().top
-    const bottom = findDOMNode(this).getBoundingClientRect().bottom
-    // 현재 메인섹션 높이는 105vh, timeline은 120vh인 상태임
-    let winSize = bottom / ((105 + 120) / 100) //한 화면에 보여지는 픽셀 높이 구함
-    let topSectionHeight = winSize * 0.2 //비율로 나눠서 top 끝나는 높이 구함
-    //대충 200 좀 넘었음
-
-    this.setState({ windowSize: winSize, topHeight: topSectionHeight })
+    window.addEventListener('resize', this.updateWindowDimensions)
   }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions)
+  }
+  updateWindowDimensions() {
+    // console.log('resize :', window.innerHeight)
+    this.setState({
+      windowSize: window.innerHeight,
+    })
+  }
+
+  // componentDidMount() {
+  // 스크롤 이벤트 적용
+  // const top = findDOMNode(this).getBoundingClientRect().top
+  // const bottom = findDOMNode(this).getBoundingClientRect().bottom
+  // 현재 메인섹션 높이는 105vh, timeline은 120vh인 상태임
+  // let winSize = bottom / ((105 + 120) / 100) //한 화면에 보여지는 픽셀 높이 구함
+  // let topSectionHeight = winSize * 0.2 //비율로 나눠서 top 끝나는 높이 구함
+  //대충 200 좀 넘었음
+  // console.log('winsize : ', winSize)
+  // console.log('bottom : ', bottom)
+  // this.setState({ windowSize: winSize, topHeight: topSectionHeight })
+  // }
 
   onScroll = (e) => {
     // 스크롤 할때마다 state에 scroll한 만큼 scrollTop 값 증가하므로 이를 업데이트해줌,
@@ -35,7 +56,7 @@ class MainContents extends Component {
     // console.log(this.state)
     //체크
     let bgColor
-    if (pos > this.state.topHeight * 2) {
+    if (pos > this.state.windowSize / 2) {
       //다음 섹션으로 넘어가는 중이라면,
       bgColor = 'timeline'
     } else {
@@ -51,6 +72,7 @@ class MainContents extends Component {
   }
 
   render() {
+    console.log('pos : ', this.state.position)
     // console.log('windowSize : ', this.state.windowSize)
     let bgStyle
     if (this.state.backgroundColor === 'top') {
@@ -62,11 +84,11 @@ class MainContents extends Component {
       <section id="main_contents" className={bgStyle}>
         <TopSection
           position={this.state.position}
-          topHeight={this.state.topHeight}
+          windowSize={this.state.windowSize}
         ></TopSection>
         <TimeLine
           position={this.state.position}
-          topHeight={this.state.topHeight}
+          windowSize={this.state.windowSize}
         ></TimeLine>
         <div></div>
       </section>

@@ -873,3 +873,45 @@ NameError: name 'TypeError' is not defined
 [Wed Jul 29 14:37:48.524271 2020] [wsgi:error] [pid 133429] [remote 193.118.53.210:59640] Not Found: /
 [Wed Jul 29 15:57:07.164784 2020] [wsgi:error] [pid 133431] [remote 223.71.167.163:13345] Not Found: /
 [Wed Jul 29 16:01:01.273260 2020] [wsgi:error] [pid 133429] [remote 41.139.244.66:50679] Not Found: /
+[Wed Jul 29 17:24:08.058987 2020] [wsgi:error] [pid 133431] [remote 80.82.70.187:40931] Not Found: /cache/global/img/gs.gif
+[Wed Jul 29 18:09:14.967430 2020] [wsgi:error] [pid 133431] [remote 196.52.43.115:32970] Not Found: /
+[Wed Jul 29 19:52:31.900306 2020] [wsgi:error] [pid 133429] [remote 129.144.50.168:38198] Not Found: /
+[Wed Jul 29 20:10:20.136911 2020] [wsgi:error] [pid 133429] [remote 101.99.74.6:52790] Not Found: /
+[Wed Jul 29 20:33:42.907131 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:53856] Not Found: /
+[Wed Jul 29 20:36:12.712136 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:40216] Not Found: /
+[Wed Jul 29 21:21:41.667052 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:40100] Not Found: /
+[Wed Jul 29 21:54:12.533094 2020] [wsgi:error] [pid 133429] [remote 141.144.115.107:24630] Not Found: /
+[Wed Jul 29 22:22:59.860088 2020] [wsgi:error] [pid 133429] [remote 161.35.89.11:59972] Not Found: /
+[Wed Jul 29 22:23:07.184683 2020] [wsgi:error] [pid 133431] [remote 161.35.89.11:49448] Not Found: /
+[Wed Jul 29 22:37:36.100696 2020] [wsgi:error] [pid 133429] [remote 93.174.93.139:53040] Not Found: /
+[Wed Jul 29 23:48:51.731224 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:48208] Not Found: /
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f9286425670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f9286ffd700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f9286ffd700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f9286ffd700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f9286ffd700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f92858e73a0>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f92858e73a0>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Jul 30 00:04:43.675814 2020] [wsgi:error] [pid 155683] [remote 193.118.53.194:55088] Not Found: /
+[Thu Jul 30 00:20:01.179973 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:38928] Not Found: /
