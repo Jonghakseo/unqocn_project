@@ -779,3 +779,97 @@ NameError: name 'TypeError' is not defined
 [Tue Jul 28 19:51:26.729176 2020] [wsgi:error] [pid 110792] [remote 103.196.36.41:46090] Not Found: /
 [Tue Jul 28 20:03:14.989216 2020] [wsgi:error] [pid 110792] [remote 212.247.216.66:40345] Not Found: /
 [Tue Jul 28 20:03:15.301077 2020] [wsgi:error] [pid 110792] [remote 212.247.216.66:40345] Not Found: /
+[Tue Jul 28 21:05:41.514304 2020] [wsgi:error] [pid 110794] [remote 115.144.69.4:52520] Not Found: /cityjson
+[Tue Jul 28 21:10:38.709391 2020] [wsgi:error] [pid 110792] [remote 212.83.146.233:51727] Not Found: /
+[Tue Jul 28 21:56:42.833968 2020] [wsgi:error] [pid 110794] [remote 80.82.70.187:42402] Not Found: /cache/global/img/gs.gif
+[Tue Jul 28 22:21:46.339860 2020] [wsgi:error] [pid 110792] [remote 192.35.168.16:16364] Not Found: /
+[Tue Jul 28 23:19:57.863424 2020] [wsgi:error] [pid 110792] [remote 185.39.11.105:46398] Not Found: /
+Exception ignored in: <function Local.__del__ at 0x7f9286ffd700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f9286ffd700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f9286ffd700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f9286ffd700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f92858e7430>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f92858e7430>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f928455d790>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f928455d790>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Wed Jul 29 00:17:21.879827 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64580] Not Found: /
+[Wed Jul 29 00:17:23.080487 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64612] Not Found: /
+[Wed Jul 29 00:17:23.385743 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64612] Not Found: /
+[Wed Jul 29 00:17:24.581500 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64642] Not Found: /Autodiscover/Autodiscover.xml
+[Wed Jul 29 00:17:24.882496 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64642] Not Found: /Autodiscover/Autodiscover.xml
+[Wed Jul 29 00:17:26.082118 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64674] Not Found: /
+[Wed Jul 29 00:17:27.286204 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64711] Not Found: /jmx-console/
+[Wed Jul 29 00:17:28.453385 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64735] Not Found: /jmx-console/
+[Wed Jul 29 00:17:29.625264 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64768] Not Found: /
+[Wed Jul 29 00:17:30.846557 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64812] Not Found: /web-console/ServerInfo.jsp
+[Wed Jul 29 00:17:32.066555 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64833] Not Found: /web-console/ServerInfo.jsp
+[Wed Jul 29 00:17:33.220413 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64866] Not Found: /manager/html
+[Wed Jul 29 00:17:34.409338 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64896] Not Found: /
+[Wed Jul 29 00:17:35.563339 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64930] Not Found: /pma/
+[Wed Jul 29 00:17:36.731639 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:64972] Not Found: /phpmyadmin/
+[Wed Jul 29 00:17:37.920565 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:65012] Not Found: /phpMyAdmin/
+[Wed Jul 29 00:17:38.803554 2020] [wsgi:error] [pid 133429] [remote 128.90.161.85:65041] Not Found: /
+[Wed Jul 29 00:53:01.574532 2020] [wsgi:error] [pid 133429] [remote 129.152.43.76:26452] Not Found: /
+[Wed Jul 29 00:58:52.750967 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:44752] Not Found: /
+[Wed Jul 29 01:52:53.573179 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:45512] Not Found: /
+[Wed Jul 29 02:07:22.477545 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:59028] Not Found: /
+[Wed Jul 29 02:11:35.957678 2020] [wsgi:error] [pid 133431] [remote 89.248.174.166:34094] Not Found: /
+[Wed Jul 29 02:34:34.230736 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:45364] Not Found: /
+[Wed Jul 29 02:34:57.403906 2020] [wsgi:error] [pid 133429] [remote 94.159.38.174:38287] Not Found: /
+[Wed Jul 29 02:59:56.134798 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:38860] Not Found: /
+[Wed Jul 29 03:15:46.197348 2020] [wsgi:error] [pid 133429] [remote 129.145.2.238:42317] Not Found: /
+[Wed Jul 29 03:50:30.110045 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:43748] Not Found: /
+[Wed Jul 29 04:07:08.509651 2020] [wsgi:error] [pid 133429] [remote 223.71.167.163:12320] Not Found: /
+[Wed Jul 29 04:51:50.605090 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:41586] Not Found: /
+[Wed Jul 29 05:08:55.686343 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:40008] Not Found: /
+[Wed Jul 29 05:21:52.309301 2020] [wsgi:error] [pid 133429] [remote 139.162.113.204:52654] Not Found: /
+[Wed Jul 29 05:47:16.425373 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:47628] Not Found: /
+[Wed Jul 29 05:56:45.352281 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:41510] Not Found: /
+[Wed Jul 29 06:04:35.116639 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:57518] Not Found: /
+[Wed Jul 29 06:12:51.088533 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:60582] Not Found: /
+[Wed Jul 29 06:32:54.636005 2020] [wsgi:error] [pid 133429] [remote 128.14.134.134:45552] Not Found: /
+[Wed Jul 29 06:42:32.444263 2020] [wsgi:error] [pid 133429] [remote 192.241.239.43:41720] Not Found: /login
+[Wed Jul 29 06:43:55.158648 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:34574] Not Found: /
+[Wed Jul 29 07:27:59.954733 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:52750] Not Found: /
+[Wed Jul 29 07:38:57.626030 2020] [wsgi:error] [pid 133431] [remote 80.82.70.187:47688] Not Found: /cache/global/img/gs.gif
+[Wed Jul 29 07:50:33.450544 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:44434] Not Found: /
+[Wed Jul 29 07:58:32.605460 2020] [wsgi:error] [pid 133429] [remote 101.0.7.114:43682] Not Found: /
+[Wed Jul 29 08:04:41.300068 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:38100] Not Found: /
+[Wed Jul 29 08:21:39.276510 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:48394] Not Found: /
+[Wed Jul 29 08:26:02.670440 2020] [wsgi:error] [pid 133429] [remote 52.220.106.145:41838] Not Found: /
+[Wed Jul 29 09:24:59.877228 2020] [wsgi:error] [pid 133429] [remote 216.218.206.69:40040] Not Found: /
+[Wed Jul 29 09:25:57.117901 2020] [wsgi:error] [pid 133429] [remote 130.162.69.143:58106] Not Found: /
+[Wed Jul 29 10:09:46.648760 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:33206] Not Found: /
+[Wed Jul 29 10:50:13.783829 2020] [wsgi:error] [pid 133429] [remote 185.39.11.105:37334] Not Found: /
+[Wed Jul 29 11:42:21.986780 2020] [wsgi:error] [pid 133429] [remote 45.148.10.62:58358] Not Found: /
+[Wed Jul 29 12:33:00.349117 2020] [wsgi:error] [pid 133429] [remote 129.150.96.203:50341] Not Found: /
+[Wed Jul 29 12:50:46.853792 2020] [wsgi:error] [pid 133429] [remote 117.102.122.189:57422] Not Found: /
+[Wed Jul 29 13:44:33.665893 2020] [wsgi:error] [pid 133429] [remote 92.118.161.33:50372] Not Found: /
+[Wed Jul 29 13:46:13.559685 2020] [wsgi:error] [pid 133429] [remote 46.101.234.146:55460] Not Found: /
+[Wed Jul 29 14:37:48.524271 2020] [wsgi:error] [pid 133429] [remote 193.118.53.210:59640] Not Found: /
+[Wed Jul 29 15:57:07.164784 2020] [wsgi:error] [pid 133431] [remote 223.71.167.163:13345] Not Found: /
+[Wed Jul 29 16:01:01.273260 2020] [wsgi:error] [pid 133429] [remote 41.139.244.66:50679] Not Found: /

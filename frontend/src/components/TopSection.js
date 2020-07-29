@@ -41,6 +41,7 @@ class TopSection extends Component {
     if (
       Math.ceil(this.props.position / 100) !==
       Math.ceil(nextProps.position / 100)
+      ///100 단위로 해놓은 이유는 떨림 현상을 방지하기 위해서(원인 파악 아직 못함)
     ) {
       this.toggle(nextProps.position, nextProps.topHeight)
     }

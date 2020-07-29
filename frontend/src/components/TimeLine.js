@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { findDOMNode } from 'react-dom'
 import './TimeLine.css'
+import Java from './TimeLine/Java'
 import line from '../res/icon/horizon-line.svg'
-import java from '../res/icon/java.svg'
+import java_icon from '../res/icon/java.svg'
 import android from '../res/icon/android.svg'
-import php from '../res/icon/php.svg'
+import php_icon from '../res/icon/php.svg'
 // import aws from '../res/icon/aws.svg'
 import css from '../res/icon/css3-alt.svg'
 // import git from '../res/icon/git-alt.svg'
@@ -25,7 +26,10 @@ class TimeLine extends Component {
   // }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.position !== nextProps.position) {
+    if (
+      Math.ceil(this.props.position / 100) !==
+      Math.ceil(nextProps.position / 100)
+    ) {
       // if(nextProps.position > 600){
 
       // }
@@ -61,8 +65,8 @@ class TimeLine extends Component {
     let newDate = new Date()
     let date = newDate.getDate()
     let month = newDate.getMonth() + 1
-    let year = newDate.getFullYear()
-    let today = `${year}. ${month}. ${date}`
+    let year = (newDate.getFullYear() + '').substring(2)
+    let today = `\`${year}. ${month}. ${date}`
     let handleClick = this.handleClick
 
     return (
@@ -72,11 +76,11 @@ class TimeLine extends Component {
             ' ',
           )}
         >
-          <h2>포트폴리오 타임라인</h2>
+          <h2>학습 타임라인 & 포트폴리오</h2>
           {/* <br></br> */}
           <div className="timeline_date">
             {' '}
-            <div className="timeline_date_start">2019. 10. 03 ~</div>
+            <div className="timeline_date_start">`19. 10. 03 ~</div>
             <div className="timeline_date_end">~ {today}</div>
           </div>
           {/* 2019. 10. 03 ~ 2020. 07. 28 */}
@@ -86,8 +90,14 @@ class TimeLine extends Component {
               onClick={() => handleClick('java')}
               style={{ flex: '6' }}
             >
-              <img className="timeline_hover_img" src={java} alt="java"></img>
-              자바 5주
+              <img
+                className="timeline_hover_img"
+                src={java_icon}
+                alt="java"
+              ></img>
+              Java
+              <br />
+              5주
               <img className="timeline_line" src={line} alt="java"></img>
             </ol>
             <ol
@@ -100,7 +110,9 @@ class TimeLine extends Component {
                 src={android}
                 alt="android"
               ></img>
-              안드로이드 6주
+              Android
+              <br />
+              6주
               <img className="timeline_line" src={line} alt="android"></img>
             </ol>{' '}
             <ol
@@ -108,8 +120,14 @@ class TimeLine extends Component {
               className={active === 'php' ? 'active' : ''}
               onClick={() => handleClick('php')}
             >
-              <img className="timeline_hover_img" src={php} alt="php"></img>
-              PHP 6주
+              <img
+                className="timeline_hover_img"
+                src={php_icon}
+                alt="php"
+              ></img>
+              PHP
+              <br />
+              6주
               <img className="timeline_line" src={line} alt="php"></img>
             </ol>{' '}
             <ol
@@ -122,7 +140,9 @@ class TimeLine extends Component {
                 src={python}
                 alt="python"
               ></img>
-              대회 7주
+              창업대회
+              <br />
+              7주
               <img className="timeline_line" src={line} alt="comp"></img>
             </ol>{' '}
             <ol
@@ -131,7 +151,9 @@ class TimeLine extends Component {
               onClick={() => handleClick('ue4')}
             >
               <img className="timeline_hover_img" src={ue4} alt="ue4"></img>
-              언리얼4 12주
+              UE4 Game
+              <br />
+              12주
               <img className="timeline_line" src={line} alt="game"></img>
             </ol>{' '}
             <ol
@@ -140,7 +162,9 @@ class TimeLine extends Component {
               onClick={() => handleClick('toy')}
             >
               <img className="timeline_hover_img" src={css} alt="side"></img>
-              토이 2주
+              Toy
+              <br />
+              Project
               <img className="timeline_line" src={line} alt="side"></img>
             </ol>
             <ol
@@ -153,13 +177,15 @@ class TimeLine extends Component {
                 src={react_icon}
                 alt="react_icon"
               ></img>
-              포트폴리오
+              React
+              <br /> HERE
               <img className="timeline_line" src={line} alt="this"></img>
             </ol>
           </div>
         </div>
         <div>
           {/* 작품들 돌려가며 볼 수 있는 wrapper 위치입니다. 돌리지 말고 나열할까? */}
+          <Java position={this.state.position}></Java>
         </div>
       </section>
     )
