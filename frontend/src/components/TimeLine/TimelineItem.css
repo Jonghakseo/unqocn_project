@@ -8,8 +8,8 @@
 }
 
 .portfolio_title {
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-top: 15vh;
+  margin-bottom: 3rem;
   text-align: center;
   font-size: 3rem;
 }
@@ -89,6 +89,8 @@
 .portfolio_text_wrapper {
   display: flex;
   flex-direction: row;
+
+  vertical-align: super;
 }
 
 .portfolio_text_title {
@@ -99,6 +101,13 @@
 .portfolio_text_content {
   font-size: 18px;
   margin: 30px 30px;
+  color: #fffef2e7;
+  font-weight: 400;
+}
+.portfolio_text_content > h2 {
+  margin: unset;
+  padding: unset;
+  line-height: 3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,6 +127,11 @@
     flex-flow: row wrap;
     justify-content: space-between;
   }
+  .portfolio_title {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
   .portfolio_text_section {
     width: 95vw;
   }

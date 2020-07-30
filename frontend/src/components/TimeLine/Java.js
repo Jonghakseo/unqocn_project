@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './Java.css'
 import './TimelineItem.css'
-import JavaImage1 from '../../res/pic/java/java1.png'
+import JavaImage1 from '../../res/pic/java/java1.PNG'
 // import JavaImage2 from '../../res/pic/java/test.png'
-import JavaImage2 from '../../res/pic/java/java1.png'
-import JavaImage3 from '../../res/pic/java/java1.png'
-// import JavaImage4 from '../../res/pic/java/java1.png'
-import JavaImage4 from '../../res/pic/java/neb.png'
-import JavaVideo from '../../res/videos/gizmo.mp4'
+import JavaImage2 from '../../res/pic/java/java2.PNG'
+import JavaImage3 from '../../res/pic/java/java3.PNG'
+import JavaImage4 from '../../res/pic/java/java4.PNG'
+import JavaImage5 from '../../res/pic/java/java5.PNG'
+import JavaVideo from '../../res/videos/java.mp4'
 
 class Java extends Component {
   state = {
@@ -18,7 +18,7 @@ class Java extends Component {
       { active: false, src: JavaImage2, type: 'img' },
       { active: false, src: JavaImage3, type: 'img' },
       { active: false, src: JavaImage4, type: 'img' },
-      { active: false, src: JavaImage1, type: 'img' },
+      { active: false, src: JavaImage5, type: 'img' },
     ], //미디어를 담을 배열
   }
 
@@ -60,10 +60,7 @@ class Java extends Component {
     return (
       <section className="portfolio_section">
         {/* 섹션에 플렉스 적용하고 col 방향으로 진행되게 함 */}
-        <div className="portfolio_title">
-          자바 작품 제목영역
-          {/* 제목 들어갈 영역 */}
-        </div>
+        <div className="portfolio_title">JAVA {/* 제목 들어갈 영역 */}</div>
         <div className="portfolio_media_wrapper">
           <div className="portfolio_media_thumbnail_wrapper">
             {this.state.media_arr.map((item, key) => {
@@ -99,27 +96,74 @@ class Java extends Component {
         </div>
         <article className="portfolio_text_section">
           <div className="portfolio_text_wrapper">
-            <span className="portfolio_text_title">기능 소개</span>{' '}
+            <span className="portfolio_text_title">작품 이름</span>{' '}
             <span className="portfolio_text_content">
-              기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구
+              <h2>건물주 게임</h2>
             </span>
           </div>
           <div className="portfolio_text_wrapper">
-            <span className="portfolio_text_title">기능 소개</span>{' '}
+            <span className="portfolio_text_title">개발 기간</span>{' '}
             <span className="portfolio_text_content">
-              기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구
+              2019. 10. 26 ~ 2019. 11. 18 (3주)
             </span>
           </div>
           <div className="portfolio_text_wrapper">
-            <span className="portfolio_text_title">기능 소개</span>{' '}
+            <span className="portfolio_text_title">작품 소개</span>{' '}
             <span className="portfolio_text_content">
-              기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구
+              건물주 게임은 턴제 카드 사용 보드게임 입니다.
+              <br />
+              <br />
+              초기 땅 분배는 랜덤으로 이루어지며, 주사위를 굴려 이동합니다.
+              <br />
+              <br />
+              시작 시 카드를 들고 시작하여 매 턴 카드를 드로우합니다. 땅 위에
+              건물카드, 건물카드 위에 세입자 카드를 사용하여 돈을 벌 수 있고,
+              스킬카드를 사용해 내 땅과 건물을 보호하거나 상대의 땅과 건물,
+              세입자를 공격 할 수 있습니다.
+              <br />
+              <br />
+              매 5턴 마다 게임 전체에 영향을 주는 이벤트가 발생하며 이를
+              이용해서 전략적인 카드 사용을 노려볼 수 있습니다.
+              <br />
+              <br />
+              1:1 대전으로 두 유저 중 돈이 먼저 떨어지는 플레이어가 패배하게
+              되며, 자동으로 상대 유저가 승리합니다.
+              <br />
+            </span>
+          </div>
+
+          <div className="portfolio_text_wrapper">
+            <span className="portfolio_text_title">주요 기능</span>{' '}
+            <span className="portfolio_text_content">
+              1. 게임 룰과 카드 각각의 효과, 상성 확인을 위한 도움말 창
+              <br />
+              2. 유저의 이름, 룰 변경 가능
+              <br />
+              3. 메인게임 팁, 타이머, 현황 갱신 쓰레드
+              <br />
+              4. 미니게임 로딩, 움직임, 자동공격 쓰레드
+              <br />
+              5. 키보드 리스너를 사용한 미니게임 쓰레드
+              <br />
+              6. 각종 배경음악 및 버튼음, 효과음 쓰레드
+              <br />
             </span>
           </div>
           <div className="portfolio_text_wrapper">
-            <span className="portfolio_text_title">기능 소개</span>{' '}
+            <span className="portfolio_text_title">작품 소감</span>{' '}
             <span className="portfolio_text_content">
-              기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구기능어쩌구
+              개발 공부의 시작을 함께 했던 작품입니다.
+              <br />
+              클래스와 쓰레드 개념을 익히고, 직접 사용하면서 많은 재미를
+              느꼈습니다. <br />
+              스윙을 사용하면서 어려웠지만, 그만큼 완성시에 보람이 더 컸던 것
+              같습니다.
+              <br />
+              쓰레드 간 데이터 동기화, 게임에 사용되는 리소스 수집 역시 어려웠던
+              기억이 납니다.
+              <br />
+              무수한 버그를 마주하면서, '컴퓨터는 잘못이 없고 모든 문제는 내
+              잘못이구나' 라는 진리를 깨달은 시기이기도 합니다.
             </span>
           </div>
         </article>

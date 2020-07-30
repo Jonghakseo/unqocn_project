@@ -4,16 +4,16 @@ import TopSection from './TopSection'
 import TimeLine from './TimeLine'
 import './MainContents.css'
 class MainContents extends Component {
-  shouldComponentUpdate(nextProps, nextState) {
-    return (
-      Math.ceil(this.state.position / 1) !== Math.ceil(nextState.position / 1)
-    )
-  }
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   return (
+  //     Math.ceil(this.state.position / 1) !== Math.ceil(nextState.position / 1)
+  //   )
+  // }
 
   constructor(props) {
     super(props)
     this.state = {
-      windowSize: 0, //임의의 초기값
+      windowSize: window.innerHeight, // 초기값
       backgroundColor: 'top',
       position: 0,
     }
@@ -30,6 +30,7 @@ class MainContents extends Component {
   }
   updateWindowDimensions() {
     // console.log('resize :', window.innerHeight)
+    // 창 크기 조절시에 업데이트됨
     this.setState({
       windowSize: window.innerHeight,
     })
@@ -63,6 +64,12 @@ class MainContents extends Component {
       bgColor = 'top'
       //아니라면
     }
+    console.log(
+      'pos : ',
+      this.state.position,
+      'winsize : ',
+      this.state.windowSize,
+    )
 
     //변화값들 갱신
     this.setState({
@@ -72,7 +79,6 @@ class MainContents extends Component {
   }
 
   render() {
-    console.log('pos : ', this.state.position)
     // console.log('windowSize : ', this.state.windowSize)
     let bgStyle
     if (this.state.backgroundColor === 'top') {

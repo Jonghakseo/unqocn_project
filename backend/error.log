@@ -915,3 +915,27 @@ Traceback (most recent call last):
 NameError: name 'TypeError' is not defined
 [Thu Jul 30 00:04:43.675814 2020] [wsgi:error] [pid 155683] [remote 193.118.53.194:55088] Not Found: /
 [Thu Jul 30 00:20:01.179973 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:38928] Not Found: /
+[Thu Jul 30 02:13:20.447532 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:38124] Not Found: /
+[Thu Jul 30 02:45:53.063505 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:35722] Not Found: /
+[Thu Jul 30 03:03:27.717886 2020] [wsgi:error] [pid 155685] [remote 80.82.70.187:44761] Not Found: /cache/global/img/gs.gif
+[Thu Jul 30 03:52:50.886010 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:49254] Not Found: /
+[Thu Jul 30 03:57:14.085305 2020] [wsgi:error] [pid 155683] [remote 141.145.116.229:50628] Not Found: /
+[Thu Jul 30 04:36:54.166677 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:41638] Not Found: /
+[Thu Jul 30 06:31:06.476411 2020] [wsgi:error] [pid 155683] [remote 128.14.134.170:35840] Not Found: /solr/
+[Thu Jul 30 08:06:49.996344 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:47638] Not Found: /
+[Thu Jul 30 08:55:56.151992 2020] [wsgi:error] [pid 155683] [remote 27.123.0.133:33005] Not Found: /
+[Thu Jul 30 09:12:42.998859 2020] [wsgi:error] [pid 155685] [remote 162.243.129.158:34592] Not Found: /
+[Thu Jul 30 10:01:36.187925 2020] [wsgi:error] [pid 155683] [remote 203.148.85.54:45400] Not Found: /
+[Thu Jul 30 10:25:08.507940 2020] [wsgi:error] [pid 155683] [remote 54.246.82.226:57893] Not Found: /
+[Thu Jul 30 12:15:25.281741 2020] [wsgi:error] [pid 155683] [remote 176.31.53.147:40968] Not Found: /
+[Thu Jul 30 12:51:28.990496 2020] [wsgi:error] [pid 155685] [remote 80.82.70.187:57917] Not Found: /cache/global/img/gs.gif
+[Thu Jul 30 13:59:27.193894 2020] [wsgi:error] [pid 155683] [remote 216.218.206.69:11648] Not Found: /
+[Thu Jul 30 14:19:57.387804 2020] [wsgi:error] [pid 155685] [remote 172.93.99.2:54772] Not Found: /
+[Thu Jul 30 14:31:26.798440 2020] [wsgi:error] [pid 155683] [remote 212.200.234.118:47733] Not Found: /
+[Thu Jul 30 15:08:37.720703 2020] [wsgi:error] [pid 155683] [remote 103.149.192.5:60921] Not Found: /
+[Thu Jul 30 16:20:10.523645 2020] [wsgi:error] [pid 155685] [remote 176.126.175.10:51178] Not Found: /
+[Thu Jul 30 17:11:15.064902 2020] [wsgi:error] [pid 155683] [remote 95.154.192.121:39640] Not Found: /
+[Thu Jul 30 19:14:28.204293 2020] [wsgi:error] [pid 155685] [remote 83.97.20.34:18230] Not Found: /
+[Thu Jul 30 19:42:12.098024 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:51808] Not Found: /
+[Thu Jul 30 20:30:15.164594 2020] [wsgi:error] [pid 155683] [remote 185.39.11.105:35470] Not Found: /
+[Thu Jul 30 21:25:00.746845 2020] [wsgi:error] [pid 155683] [remote 128.14.209.178:44832] Not Found: /
