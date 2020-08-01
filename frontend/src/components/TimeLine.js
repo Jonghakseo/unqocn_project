@@ -42,8 +42,10 @@ class TimeLine extends Component {
       toggle_timeline: false, //아직 타임라인 보일 때 아님
       date: today, //오늘 날짜 자동 갱신
       offsetList: {}, //각 아이템들 offset 저장할 곳
+      scrolling: false,
     }
     // console.log(props)
+    this.timer = null
   }
 
   timeLineHandleRef = React.createRef()
@@ -59,9 +61,7 @@ class TimeLine extends Component {
   //   //didmount때 한 값이 맞지 않아서 클릭시마다 갱신시킴
   // }
   componentWillReceiveProps(nextProps) {
-    if (
-      Math.ceil(this.props.position / 1) !== Math.ceil(nextProps.position / 1)
-    ) {
+    if (Math.ceil(this.props.position / 3) !== Math.ceil(nextProps.position / 3)) {
       let endTop = this.props.windowSize / 1.5
       // console.log('끝나는 지점', endTop)
       // console.log(nextProps.position)
@@ -79,7 +79,8 @@ class TimeLine extends Component {
         comp: this.compTopRef.current.offsetTop,
         ue4: this.ue4TopRef.current.offsetTop,
         toy: this.toyTopRef.current.offsetTop,
-        portfoilo: this.portfolioTopRef.current.offsetTop,
+        // portfolio: this.portfolioTopRef.current.offsetTop,
+        portfolio: 0,
       }
 
       this.setState({
@@ -97,19 +98,38 @@ class TimeLine extends Component {
   }
   //현재 위치 파악해서 active바꿈
   checkPosition = (pos) => {
-    let offsets = this.state.offsetList
-    let key = Object.keys(offsets).find((key) => {
-      if (offsets[key] < pos + 150) {
-        return key
-      }
-    })
-    // console.log(key)
-    this.setState({ active: key })
+    if (!this.state.scrolling) {
+      let offsets = this.state.offsetList
+      let key = Object.keys(offsets).find((key) => {
+        if (offsets[key] < pos + 150) {
+          return key
+        } else {
+          return ''
+        }
+      })
+      // console.log(key)
+      this.setState({ active: key })
+    }
+  }
+
+  scrollEventHandle = () => {
+    // 스크롤 이벤트 핸들러를 만들어서 아이템 클릭시에 호출시킴
+    if (this.timer !== null) {
+      clearTimeout(this.timer)
+    }
+    // 타이머 첫 호출이 아니면, 타이머를 초기화시킴
+    // (이미 생성된 타이머 객체를 초기화 하는 방법으로, 타이머들이 겹치는 문제 발생 방지)
+    this.timer = setTimeout(() => {
+      this.setState({ scrolling: false })
+    }, 800)
+    // 스크롤 이벤트가 끝난 후 0.8초 후에 스테이트에 스크롤이 멈췄다는 정보 전달
+    // 스크롤이 계속된다면, 타이머가 계속 초기화되면서 scrolling은 false가 되지 못함
   }
 
   //타임라인 아이템 클릭시 해당 칸으로 넘어감
   handleClick = (id) => {
-    this.setState({ active: id })
+    this.setState({ active: id, scrolling: true })
+    // 아이템 클릭과 동시에, 하이라이트 된 아이템 정보와 스크롤링이 시작되었다는 정보 저장
     // console.log(id)
     // 올 수 있는 id목록 portfolio, toy, ue4, comp, php, java, android
     // console.log('offset log : ', this.state.offsetList[id])
@@ -120,6 +140,7 @@ class TimeLine extends Component {
       left: 0,
       behavior: 'smooth',
     })
+    this.scrollEventHandle()
     // id.current.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -141,11 +162,7 @@ class TimeLine extends Component {
 
     return (
       <section id="timeline_section_wrapper">
-        <div
-          className={['timeline_wrapper', toggle_timeline && 'onToggle'].join(
-            ' ',
-          )}
-        >
+        <div className={['timeline_wrapper', toggle_timeline && 'onToggle'].join(' ')}>
           <h2>학습 타임라인 & 포트폴리오</h2>
           {/* <br></br> */}
           <div className="timeline_date" ref={this.timeLineHandleRef}>
@@ -156,77 +173,33 @@ class TimeLine extends Component {
           {/* 2019. 10. 03 ~ 2020. 07. 28 */}
           <div className="timeline_empty_wrapper">
             <div className="timeline" style={timeline_top_style}>
-              <ol
-                className={active === 'java' ? 'active' : ''}
-                onClick={() => handleClick('java')}
-                style={{ flex: '6' }}
-              >
-                <img
-                  className="timeline_hover_img"
-                  src={java_icon}
-                  alt="java"
-                ></img>
+              <ol className={active === 'java' ? 'active' : ''} onClick={() => handleClick('java')} style={{ flex: '6' }}>
+                <img className="timeline_hover_img" src={java_icon} alt="java"></img>
                 Java
-                <br />5 주
-                <img className="timeline_line" src={line} alt="java"></img>
+                <br />5 주<img className="timeline_line" src={line} alt="java"></img>
               </ol>
-              <ol
-                className={active === 'android' ? 'active' : ''}
-                onClick={() => handleClick('android')}
-                style={{ flex: '7' }}
-              >
-                <img
-                  className="timeline_hover_img"
-                  src={android_icon}
-                  alt="android"
-                ></img>
+              <ol className={active === 'android' ? 'active' : ''} onClick={() => handleClick('android')} style={{ flex: '7' }}>
+                <img className="timeline_hover_img" src={android_icon} alt="android"></img>
                 Android
-                <br />6 주
-                <img className="timeline_line" src={line} alt="android"></img>
+                <br />6 주<img className="timeline_line" src={line} alt="android"></img>
               </ol>{' '}
-              <ol
-                style={{ flex: '7' }}
-                className={active === 'php' ? 'active' : ''}
-                onClick={() => handleClick('php')}
-              >
-                <img
-                  className="timeline_hover_img"
-                  src={php_icon}
-                  alt="php"
-                ></img>
+              <ol style={{ flex: '7' }} className={active === 'php' ? 'active' : ''} onClick={() => handleClick('php')}>
+                <img className="timeline_hover_img" src={php_icon} alt="php"></img>
                 PHP
-                <br />6 주
-                <img className="timeline_line" src={line} alt="php"></img>
+                <br />6 주<img className="timeline_line" src={line} alt="php"></img>
               </ol>{' '}
-              <ol
-                style={{ flex: '8' }}
-                className={active === 'comp' ? 'active' : ''}
-                onClick={() => handleClick('comp')}
-              >
-                <img
-                  className="timeline_hover_img"
-                  src={python}
-                  alt="python"
-                ></img>
+              <ol style={{ flex: '8' }} className={active === 'comp' ? 'active' : ''} onClick={() => handleClick('comp')}>
+                <img className="timeline_hover_img" src={python} alt="python"></img>
                 창업대회
-                <br />7 주
-                <img className="timeline_line" src={line} alt="comp"></img>
+                <br />7 주<img className="timeline_line" src={line} alt="comp"></img>
               </ol>{' '}
-              <ol
-                style={{ flex: '11' }}
-                className={active === 'ue4' ? 'active' : ''}
-                onClick={() => handleClick('ue4')}
-              >
+              <ol style={{ flex: '11' }} className={active === 'ue4' ? 'active' : ''} onClick={() => handleClick('ue4')}>
                 <img className="timeline_hover_img" src={ue4} alt="ue4"></img>
                 UE4 Game
                 <br />
                 12 주<img className="timeline_line" src={line} alt="game"></img>
               </ol>{' '}
-              <ol
-                style={{ flex: '4' }}
-                className={active === 'toy' ? 'active' : ''}
-                onClick={() => handleClick('toy')}
-              >
+              <ol style={{ flex: '4' }} className={active === 'toy' ? 'active' : ''} onClick={() => handleClick('toy')}>
                 <img className="timeline_hover_img" src={css} alt="side"></img>
                 Toy
                 <br />
@@ -238,11 +211,7 @@ class TimeLine extends Component {
                 className={active === 'portfolio' ? 'active' : ''}
                 onClick={() => handleClick('portfolio')}
               >
-                <img
-                  className="timeline_hover_img"
-                  src={react_icon}
-                  alt="react_icon"
-                ></img>
+                <img className="timeline_hover_img" src={react_icon} alt="react_icon"></img>
                 React
                 <br /> HERE
                 <img className="timeline_line" src={line} alt="this"></img>
@@ -251,19 +220,15 @@ class TimeLine extends Component {
           </div>
         </div>
 
-        <div
-          className={['contents_wrapper', toggle_timeline && 'onToggle'].join(
-            ' ',
-          )}
-        >
+        {/* <div className="anchor" ref={this.portfolioTopRef}></div> */}
+        <div className={['contents_wrapper', toggle_timeline && 'onToggle'].join(' ')}>
           {/* 작품들 돌려가며 볼 수 있는 wrapper 위치입니다. 돌리지 말고 나열할까? */}
 
           <div className="anchor" ref={this.ue4TopRef}></div>
           <div className="anchor" ref={this.toyTopRef}></div>
-          <div className="anchor" ref={this.portfolioTopRef}></div>
 
           <div className="anchor" ref={this.compTopRef}></div>
-          <Competition position={this.state.position}></Competition>
+          {/* <Competition position={this.state.position}></Competition> */}
 
           <div className="anchor" ref={this.phpTopRef}></div>
           <Php position={this.state.position}></Php>

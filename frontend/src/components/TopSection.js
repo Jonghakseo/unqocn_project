@@ -80,9 +80,23 @@ class TopSection extends Component {
     } else {
       rotate = ''
     }
+
+    // transition: opacity 0.5s, transform 0.5s, width 0.5s, height 0.5s;
+    // style={{
+    //   transition:
+    //     'opacity ' + Math.floor(Math.random() * 10) / 10 + 's',
+    // }}
     // let toggle = this.toggle
     // console.log('toggle ', toggle)
-
+    let style_row1 = {
+      transition: 'opacity 0.5s, transform 0.5s, width 0.5s, height 0.5s',
+    }
+    let style_row2 = {
+      transition: 'opacity 1s, transform 1s, width 1s, height 1s',
+    }
+    let style_row3 = {
+      transition: 'opacity 1.5s, transform 1.5s, width 1.5s, height 1.5s',
+    }
     return (
       <div id="top_title">
         저는
@@ -93,31 +107,27 @@ class TopSection extends Component {
         {/* <br /> */}
         <div className="background_decoration">
           <div className="background_decoration_row">
-            <img className={rotate} src={java} alt="java"></img>
-            <img className={rotate} src={android} alt="android"></img>
-            <img className={rotate} src={php} alt="php"></img>
-            <img className={rotate} src={react_icon} alt="react"></img>
+            <img className={rotate} style={style_row1} src={java} alt="java"></img>
+            <img className={rotate} style={style_row1} src={android} alt="android"></img>
+            <img className={rotate} style={style_row1} src={php} alt="php"></img>
+            <img className={rotate} style={style_row1} src={react_icon} alt="react"></img>
           </div>
           <div className="background_decoration_row">
-            <img className={rotate} src={ubuntu} alt="ubuntu"></img>
-            <img className={rotate} src={mysql} alt="mysql"></img>
-            <img className={rotate} src={python} alt="python"></img>
-            <img className={rotate} src={django} alt="django"></img>
+            <img className={rotate} style={style_row2} src={ubuntu} alt="ubuntu"></img>
+            <img className={rotate} style={style_row2} src={mysql} alt="mysql"></img>
+            <img className={rotate} style={style_row2} src={python} alt="python"></img>
+            <img className={rotate} style={style_row2} src={django} alt="django"></img>
           </div>
           <div className="background_decoration_row">
-            <img className={rotate} src={aws} alt="AWS"></img>
-            <img className={rotate} src={git} alt="git"></img>
-            <img className={rotate} src={ue4} alt="UE4"></img>
-            <img className={rotate} src={css} alt="css"></img>
+            <img className={rotate} style={style_row3} src={aws} alt="AWS"></img>
+            <img className={rotate} style={style_row3} src={git} alt="git"></img>
+            <img className={rotate} style={style_row3} src={ue4} alt="UE4"></img>
+            <img className={rotate} style={style_row3} src={css} alt="css"></img>
           </div>
           {/* <div className="background_decoration_row">
           </div> */}
         </div>
-        <div
-          className={['big_profile_wrapper', toggle && 'big_progile_on'].join(
-            ' ',
-          )}
-        >
+        <div className={['big_profile_wrapper', toggle && 'big_progile_on'].join(' ')}>
           <span className="profile_text_area">
             | 서종학 &nbsp;&nbsp;
             <br />

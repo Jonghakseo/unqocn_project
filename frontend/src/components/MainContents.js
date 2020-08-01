@@ -64,17 +64,12 @@ class MainContents extends Component {
       bgColor = 'top'
       //아니라면
     }
-    console.log(
-      'pos : ',
-      this.state.position,
-      'winsize : ',
-      this.state.windowSize,
-    )
+    console.log('pos : ', this.state.position, 'winsize : ', this.state.windowSize)
 
     //변화값들 갱신
     this.setState({
       backgroundColor: bgColor,
-      position: pos,
+      position: Math.ceil(pos),
     })
   }
 
@@ -88,14 +83,8 @@ class MainContents extends Component {
     }
     return (
       <section id="main_contents" className={bgStyle}>
-        <TopSection
-          position={this.state.position}
-          windowSize={this.state.windowSize}
-        ></TopSection>
-        <TimeLine
-          position={this.state.position}
-          windowSize={this.state.windowSize}
-        ></TimeLine>
+        <TopSection position={this.state.position} windowSize={this.state.windowSize}></TopSection>
+        <TimeLine position={this.state.position} windowSize={this.state.windowSize}></TimeLine>
         <div></div>
       </section>
     )

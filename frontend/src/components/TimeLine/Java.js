@@ -13,12 +13,12 @@ class Java extends Component {
   state = {
     select_ind: 0, //슬라이더로 보여줄 인덱스
     media_arr: [
-      { active: true, src: JavaVideo, type: 'video' },
-      { active: false, src: JavaImage1, type: 'img' },
-      { active: false, src: JavaImage2, type: 'img' },
-      { active: false, src: JavaImage3, type: 'img' },
-      { active: false, src: JavaImage4, type: 'img' },
-      { active: false, src: JavaImage5, type: 'img' },
+      { active: true, src: JavaVideo, type: 'video', desc: '작품 영상입니다.' },
+      { active: false, src: JavaImage1, type: 'img', desc: '작품 내 미니게임입니다' },
+      { active: false, src: JavaImage2, type: 'img', desc: '작품 영상입니다.2' },
+      { active: false, src: JavaImage3, type: 'img', desc: '작품 영상입니다.3' },
+      { active: false, src: JavaImage4, type: 'img', desc: '작품 영상입니다.4' },
+      { active: false, src: JavaImage5, type: 'img', desc: '작품 영상입니다.5' },
     ], //미디어를 담을 배열
   }
 
@@ -38,14 +38,10 @@ class Java extends Component {
 
   render() {
     // console.log(this.state)
-    let selected_item = this.state.media_arr.find(
-      (item) => item.active === true,
-    )
+    let selected_item = this.state.media_arr.find((item) => item.active === true)
     let main_media = () => {
       if (selected_item.type === 'img') {
-        return (
-          <img src={selected_item.src} alt="main_img" draggable="false"></img>
-        )
+        return <img src={selected_item.src} alt="main_img" draggable="false"></img>
       } else if (selected_item.type === 'video') {
         return (
           <video controls autoPlay={false}>
@@ -56,44 +52,54 @@ class Java extends Component {
         return 'else'
       }
     }
+    let main_desc = () => {
+      if (selected_item.desc) {
+        return <span dangerouslySetInnerHTML={{ __html: selected_item.desc }}></span>
+      }
+    }
 
     return (
       <section className="portfolio_section">
         {/* 섹션에 플렉스 적용하고 col 방향으로 진행되게 함 */}
         <div className="portfolio_title">JAVA {/* 제목 들어갈 영역 */}</div>
-        <div className="portfolio_media_wrapper">
-          <div className="portfolio_media_thumbnail_wrapper">
-            {this.state.media_arr.map((item, key) => {
-              if (item.type === 'img') {
-                return (
-                  <img
-                    key={key}
-                    src={item.src}
-                    draggable="false"
-                    alt={item.type}
-                    onClick={() => this.onClickThumbnail(key)}
-                    className={item.active === true ? 'active_thumbnail' : ''}
-                  ></img>
-                )
-              } else if (item.type === 'video') {
-                return (
-                  <video
-                    key={key}
-                    draggable="false"
-                    onClick={() => this.onClickThumbnail(key)}
-                    className={item.active === true ? 'active_thumbnail' : ''}
-                  >
-                    {' '}
-                    <source src={item.src} type="video/mp4"></source>
-                  </video>
-                )
-              } else {
-                return ''
-              }
-            })}
+
+        <div className="portfolio_media_section">
+          <div className="portfolio_media_wrapper">
+            <div className="portfolio_media_main">{main_media()}</div>
+            <div className="portfolio_media_thumbnail_wrapper">
+              {this.state.media_arr.map((item, key) => {
+                if (item.type === 'img') {
+                  return (
+                    <img
+                      key={key}
+                      src={item.src}
+                      draggable="false"
+                      alt={item.type}
+                      onClick={() => this.onClickThumbnail(key)}
+                      className={item.active === true ? 'active_thumbnail' : ''}
+                    ></img>
+                  )
+                } else if (item.type === 'video') {
+                  return (
+                    <video
+                      key={key}
+                      draggable="false"
+                      onClick={() => this.onClickThumbnail(key)}
+                      className={item.active === true ? 'active_thumbnail' : ''}
+                    >
+                      {' '}
+                      <source src={item.src} type="video/mp4"></source>
+                    </video>
+                  )
+                } else {
+                  return ''
+                }
+              })}
+            </div>{' '}
           </div>
-          <div className="portfolio_media_main">{main_media()}</div>
+          <div className="portfolio_media_desc">{main_desc()}</div>
         </div>
+
         <article className="portfolio_text_section">
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 이름</span>{' '}
@@ -103,31 +109,25 @@ class Java extends Component {
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">개발 기간</span>{' '}
-            <span className="portfolio_text_content">
-              2019. 10. 26 ~ 2019. 11. 18 (3주)
-            </span>
+            <span className="portfolio_text_content">2019. 10. 26 ~ 2019. 11. 18 (3주)</span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소개</span>{' '}
             <span className="portfolio_text_content">
-              건물주 게임은 턴제 카드 사용 보드게임 입니다.
+              건물주 게임은 턴제로 진행되며 카드를 사용하는 보드게임입니다.
               <br />
               <br />
               초기 땅 분배는 랜덤으로 이루어지며, 주사위를 굴려 이동합니다.
               <br />
               <br />
-              시작 시 카드를 들고 시작하여 매 턴 카드를 드로우합니다. 땅 위에
-              건물카드, 건물카드 위에 세입자 카드를 사용하여 돈을 벌 수 있고,
-              스킬카드를 사용해 내 땅과 건물을 보호하거나 상대의 땅과 건물,
-              세입자를 공격 할 수 있습니다.
+              시작 시 카드를 들고 시작하여 매 턴 카드를 드로우합니다. 땅 위에 건물 카드, 건물 카드 위에 세입자 카드를 사용하여
+              돈을 벌 수 있고, 스킬 카드를 사용해 내 땅과 건물을 보호하거나 상대의 땅과 건물, 세입자를 공격 할 수 있습니다.
               <br />
               <br />
-              매 5턴 마다 게임 전체에 영향을 주는 이벤트가 발생하며 이를
-              이용해서 전략적인 카드 사용을 노려볼 수 있습니다.
+              매 5턴 마다 게임 전체에 영향을 주는 이벤트가 발생하며 이를 이용해서 전략적인 카드 사용을 노려볼 수 있습니다.
               <br />
               <br />
-              1:1 대전으로 두 유저 중 돈이 먼저 떨어지는 플레이어가 패배하게
-              되며, 자동으로 상대 유저가 승리합니다.
+              1:1 대전으로 두 유저 중 돈이 먼저 떨어지는 플레이어가 패배하게 되며, 자동으로 상대 유저가 승리합니다.
               <br />
             </span>
           </div>
@@ -139,31 +139,27 @@ class Java extends Component {
               <br />
               2. 유저의 이름, 룰 변경 가능
               <br />
-              3. 메인게임 팁, 타이머, 현황 갱신 쓰레드
+              3. 메인게임 팁, 타이머, 현황 갱신 스레드
               <br />
-              4. 미니게임 로딩, 움직임, 자동공격 쓰레드
+              4. 미니게임 로딩, 움직임, 자동공격 스레드
               <br />
-              5. 키보드 리스너를 사용한 미니게임 쓰레드
+              5. 키보드 리스너를 사용한 미니게임 스레드
               <br />
-              6. 각종 배경음악 및 버튼음, 효과음 쓰레드
+              6. 각종 배경음악 및 버튼음, 효과음 스레드
               <br />
             </span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소감</span>{' '}
             <span className="portfolio_text_content">
-              개발 공부의 시작을 함께 했던 작품입니다.
+              개발 공부의 시작을 함께했던 작품입니다.
               <br />
-              클래스와 쓰레드 개념을 익히고, 직접 사용하면서 많은 재미를
-              느꼈습니다. <br />
-              스윙을 사용하면서 어려웠지만, 그만큼 완성시에 보람이 더 컸던 것
-              같습니다.
+              클래스와 스레드 개념을 익히고, 직접 사용하면서 많은 재미를 느꼈습니다. <br />
+              스윙을 사용하면서 어려웠지만, 그만큼 완성 시에 보람이 더 컸던 것 같습니다.
               <br />
-              쓰레드 간 데이터 동기화, 게임에 사용되는 리소스 수집 역시 어려웠던
-              기억이 납니다.
+              스레드 간 데이터 동기화, 게임에 사용되는 리소스 수집 역시 어려웠던 기억이 납니다.
               <br />
-              무수한 버그를 마주하면서, '컴퓨터는 잘못이 없고 모든 문제는 내
-              잘못이구나' 라는 진리를 깨달은 시기이기도 합니다.
+              무수한 버그를 마주하면서 '컴퓨터는 잘못이 없고 모든 문제는 내 잘못이구나'라는 진리를 깨달은 시기이기도 합니다.
             </span>
           </div>
         </article>

@@ -9,63 +9,94 @@
 
 .portfolio_title {
   margin-top: 15vh;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 3rem;
 }
 
-.portfolio_media_wrapper {
+/* 미디어를 담는 제일 큰 틀입니다. */
+.portfolio_media_section {
   width: 90vw;
-  display: flex;
-  flex-flow: row-reverse wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-/* 메인이미지 */
-.portfolio_media_main {
-  width: 45vw;
-  height: 35vh;
-  max-height: 1000px;
-  max-width: 800px;
+  /* height: 45vw; */
+  /* max-height: 1000px; */
+  /* max-width: 850px; */
   min-width: 330px;
-  margin: 2px 25px;
+  margin: 10px 25px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   justify-self: center;
   justify-items: center;
+  /* background-color: blueviolet; */
 }
+/* 포트폴리오 미디어 */
+
+.portfolio_media_main {
+  width: 100%;
+  height: 70%;
+  transition: height 0.5s ease;
+  /* border-radius: 6px; */
+  object-fit: scale-down;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio_media_main > video,
 .portfolio_media_main > img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: 100%;
   transition: height 0.5s ease;
-  border-radius: 6px;
+  border-radius: 4px;
   object-fit: scale-down;
 }
+/* .portfolio_media_wrapper > video,
+.portfolio_media_wrapper > img {
+
+} */
+
+.portfolio_media_wrapper {
+  width: 65vw;
+  height: 80vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  /* background-color: black; */
+}
+
+/* 메인이미지를 담는 틀 */
 
 /* 작은 썸네일들 모음 */
 .portfolio_media_thumbnail_wrapper {
-  width: 40%;
-  max-width: 700px;
+  width: 90%;
+  /* height: 10%; */
+  /* max-width: 700px; */
   min-width: 330px;
-  margin: 10px 25px;
+  margin: 10px 0px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: flex-start;
+
+  /* background-color: coral; */
 }
 .portfolio_media_thumbnail_wrapper > video,
 .portfolio_media_thumbnail_wrapper > img {
-  width: 23%;
-  flex: 1;
+  /* max-width: 4vw; */
+  max-height: 4.5vw;
+  /* flex: 1; */
   /* margin: 0 5px; */
   opacity: 0.5;
   transition: opacity 0.5s;
-  margin: 2% 1%;
-  padding: 2% 2%;
-  border: solid 0.5px whitesmoke;
-  border-radius: 4px;
+  margin: 5px;
+  padding: 1px;
+  border: solid 1px rgb(194, 193, 193);
+  border-radius: 8px;
   height: auto;
   object-fit: scale-down;
 }
@@ -78,12 +109,24 @@
   opacity: 1 !important;
 }
 
+/* 포트폴리오 이미지, 비디오에 대한 설명 */
+.portfolio_media_desc {
+  width: 15vw;
+  font-size: 1.5rem;
+  font-weight: 400;
+  /* text-align: center; */
+  padding: 2% 2% 2% 3%;
+  margin: 4% 60px 4% 10px;
+  border-radius: 30px;
+  background-color: rgba(116, 114, 114, 0.432);
+}
+
 .portfolio_text_section {
   display: flex;
   flex-direction: column;
   width: 85vw;
   max-width: 1200px;
-  margin: 30px 10px;
+  margin: 40px 10px;
 }
 
 .portfolio_text_wrapper {
@@ -103,6 +146,8 @@
   margin: 30px 30px;
   color: #fffef2e7;
   font-weight: 400;
+  padding-top: 5px;
+  /* word-break: break-all; */
 }
 .portfolio_text_content > h2 {
   margin: unset;
@@ -110,22 +155,77 @@
   line-height: 3rem;
 }
 
-@media screen and (max-width: 768px) {
-  .portfolio_media_wrapper {
+.portfolio_text_content > h2 > a {
+  text-decoration: none;
+  color: #fffef2e7;
+}
+.portfolio_text_content > span {
+  font-size: 16px;
+  font-weight: 200;
+  display: inline-block;
+  word-break: keep-all !important;
+  margin: unset;
+  padding: unset;
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 769px) {
+  /* .portfolio_media_wrapper {
     width: 85vw;
-    flex-flow: column wrap;
-  }
-  .portfolio_media_main {
-    height: 25vh;
+  } */
+  .portfolio_media_section {
+    /* height: 45vh; */
+    flex-direction: column;
   }
   .portfolio_media_thumbnail_wrapper {
-    width: 50%;
-    max-width: 700px;
-    min-width: 330px;
-    margin: 5px;
+    width: 100%;
+    /* max-width: 700px; */
+    /* min-width: 330px; */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    /* justify-content: flex-start; */
+  }
+
+  .portfolio_media_wrapper {
+    display: unset;
+    width: 100%;
+    height: unset;
+  }
+  .portfolio_media_main > video,
+  .portfolio_media_main > img {
+    height: 35vh;
+  }
+  .portfolio_media_main {
+    height: 90%;
+    max-height: 40vh;
+    width: 100%;
+  }
+
+  .portfolio_media_desc {
+    font-size: 1rem;
+    width: 90%;
+    padding-top: unset;
+    margin: 10px 10px 10px 10px;
+    padding: 2%;
+    font-weight: 400;
+    /* text-align: center; */
+    /* padding: unset; */
+
+    border-radius: 5px;
+  }
+
+  .portfolio_media_thumbnail_wrapper > video,
+  .portfolio_media_thumbnail_wrapper > img {
+    /* width: 23%; */
+    max-height: 8vh;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    /* margin: 2% 1%; */
+    /* padding: 2% 2%; */
+    border: solid 0.5px whitesmoke;
+    border-radius: 4px;
+    height: auto;
+    object-fit: scale-down;
   }
   .portfolio_title {
     margin-bottom: 1rem;
@@ -134,6 +234,7 @@
 
   .portfolio_text_section {
     width: 95vw;
+    margin: 40px 10px;
   }
   .portfolio_text_wrapper {
     flex-direction: column;
@@ -148,5 +249,8 @@
     font-size: 14px;
     font-weight: 400;
     margin: 10px 30px;
+  }
+  .portfolio_text_content > span {
+    font-size: 12px;
   }
 }

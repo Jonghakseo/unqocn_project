@@ -53,18 +53,18 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ORIGIN_WHITELIST = [
-#     'http://localhost:80',
-#     'http://localhost:3000',
-#     'http://unqocn.hopto.org',
-#     'http://unqocn.hopto.org:8000',
-#     'http://unqocn.hopto.org:3000',
-#     'http://192.168.219.123',
-#     'http://192.168.219.123:3000',
-#     'http://192.168.219.123:8000',
-# ]
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:80',
+    'http://localhost:3000',
+    'https://unqocn.hopto.org',
+    'http://unqocn.hopto.org:8000',
+    'http://unqocn.hopto.org:3000',
+    'http://192.168.219.123',
+    'http://192.168.219.123:3000',
+    'http://192.168.219.123:8000',
+]
+# CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ALLOW_CREDENTIALS = True
 
 # 보안엔 안 좋지만 일단 전부 허가
 # script안에서의 리소스 요청을 허용할 도메인 추가

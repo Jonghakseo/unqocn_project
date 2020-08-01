@@ -32,8 +32,7 @@
   width: 0px;
   height: 0px;
   opacity: 0;
-  /* transition: opacity 1.5s */
-  transition: opacity 0.5s, transform 0.5s, width 0.5s, height 0.5s;
+  /* transition: opacity 0.5s, transform 0.5s, width 0.5s, height 0.5s; */
 }
 
 .rotate {
