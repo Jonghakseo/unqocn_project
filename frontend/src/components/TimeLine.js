@@ -228,7 +228,7 @@ class TimeLine extends Component {
           <div className="anchor" ref={this.toyTopRef}></div>
 
           <div className="anchor" ref={this.compTopRef}></div>
-          {/* <Competition position={this.state.position}></Competition> */}
+          <Competition position={this.state.position}></Competition>
 
           <div className="anchor" ref={this.phpTopRef}></div>
           <Php position={this.state.position}></Php>

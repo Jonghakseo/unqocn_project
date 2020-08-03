@@ -13,12 +13,35 @@ class Java extends Component {
   state = {
     select_ind: 0, //슬라이더로 보여줄 인덱스
     media_arr: [
-      { active: true, src: JavaVideo, type: 'video', desc: '작품 영상입니다.' },
-      { active: false, src: JavaImage1, type: 'img', desc: '작품 내 미니게임입니다' },
-      { active: false, src: JavaImage2, type: 'img', desc: '작품 영상입니다.2' },
-      { active: false, src: JavaImage3, type: 'img', desc: '작품 영상입니다.3' },
-      { active: false, src: JavaImage4, type: 'img', desc: '작품 영상입니다.4' },
-      { active: false, src: JavaImage5, type: 'img', desc: '작품 영상입니다.5' },
+      {
+        active: true,
+        src: JavaVideo,
+        type: 'video',
+        desc: '플레이 영상입니다.',
+      },
+      {
+        active: false,
+        src: JavaImage4,
+        type: 'img',
+        desc:
+          '작품의 규칙을 볼 수 있는 창입니다.<br/><br/>게임의 전체적인 규칙을 안내해주는 게임규칙, 카드의 사용 규칙을 안내해주는 사용규칙, 카드 각각의 효과를 안내하는 카드 규칙이 있습니다.<br/><br/>실행창 상단에 위치한 도움말 - 게임규칙 버튼을 통해 열람할 수 있습니다.',
+      },
+      {
+        active: false,
+        src: JavaImage5,
+        type: 'img',
+        desc:
+          '모든 카드의 설명을 볼 수 있는 창입니다.<br/><br/>카드의 이름, 상성, 효과 등을 확인할 수 있습니다.<br/><br/>실행창 상단에 위치한 도움말 - 카드목록 버튼을 통해 열람할 수 있습니다.',
+      },
+      {
+        active: false,
+        src: JavaImage3,
+        type: 'img',
+        desc:
+          '게임 플레이 화면입니다.<br/><br/> 카드 목록, 주사위 상태, 게임판, 게임 로그, 현금 현황 확인이 가능합니다.<br/><br/> 하단 버튼을 통해 게임 조작이 가능합니다.',
+      },
+      // { active: false, src: JavaImage2, type: 'img', desc: "게임 내 미니게임 - '불끄기' 입니다." },
+      { active: false, src: JavaImage1, type: 'img', desc: "게임 내 미니게임 중 하나인 '소송' 입니다." },
     ], //미디어를 담을 배열
   }
 

@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+// import './Android.css'
 import './TimelineItem.css'
-import JavaImage1 from '../../res/pic/java/test.png'
-import JavaImage2 from '../../res/pic/java/test.png'
-import JavaImage3 from '../../res/pic/java/test.png'
-import JavaImage4 from '../../res/pic/java/test.png'
-import JavaVideo from '../../res/videos/gizmo.mp4'
+// import AndroidImage1 from '../../res/pic/android/home_memo.png'
+// import AndroidImage2 from '../../res/pic/android/dday_todo_timeline.png'
+// import AndroidImage3 from '../../res/pic/android/gall_setting.png'
+// import AndroidImage4 from '../../res/pic/android/chatting.png'
+import AndroidImage from '../../res/pic/android/setting_account.PNG'
+import AndroidVideo from '../../res/videos/android.mp4'
+// import AndroidVideo2 from '../../res/videos/android2.mp4'
 
 class Competition extends Component {
   //   constructor(props) {
@@ -14,12 +17,17 @@ class Competition extends Component {
   state = {
     select_ind: 0, //슬라이더로 보여줄 인덱스
     media_arr: [
-      { active: true, src: JavaImage1, type: 'img' },
-      { active: false, src: JavaImage2, type: 'img' },
-      { active: false, src: JavaImage3, type: 'img' },
-      { active: false, src: JavaImage4, type: 'img' },
-      { active: false, src: JavaImage1, type: 'img' },
-      { active: false, src: JavaVideo, type: 'video' },
+      { active: true, src: AndroidVideo, type: 'video', desc: '설명입니다. <br> dd\ndd' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다<br>dd' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
     ], //미디어를 담을 배열
   }
 
@@ -46,7 +54,6 @@ class Competition extends Component {
       } else if (selected_item.type === 'video') {
         return (
           <video controls autoPlay={false}>
-            {/* 오토플레이 설정부분 */}
             <source src={selected_item.src} type="video/mp4"></source>
           </video>
         )
@@ -54,45 +61,54 @@ class Competition extends Component {
         return 'else'
       }
     }
-    // let selected_media = this.state.media_arr[selected_ind]
-    // console.log(selected_media)
+    let main_desc = () => {
+      if (selected_item.desc) {
+        return <span dangerouslySetInnerHTML={{ __html: selected_item.desc }}></span>
+      }
+    }
+
     return (
       <section className="portfolio_section">
         {/* 섹션에 플렉스 적용하고 col 방향으로 진행되게 함 */}
-        <div className="portfolio_title">특허청 창업경진대회 {/* 제목 들어갈 영역 */}</div>
-        <div className="portfolio_media_wrapper">
-          <div className="portfolio_media_thumbnail_wrapper">
-            {this.state.media_arr.map((item, key) => {
-              if (item.type === 'img') {
-                return (
-                  <img
-                    key={key}
-                    src={item.src}
-                    draggable="false"
-                    alt={item.type}
-                    onClick={() => this.onClickThumbnail(key)}
-                    className={item.active === true ? 'active_thumbnail' : ''}
-                  ></img>
-                )
-              } else if (item.type === 'video') {
-                return (
-                  <video
-                    key={key}
-                    draggable="false"
-                    onClick={() => this.onClickThumbnail(key)}
-                    className={item.active === true ? 'active_thumbnail' : ''}
-                  >
-                    {' '}
-                    <source src={item.src} type="video/mp4"></source>
-                  </video>
-                )
-              } else {
-                return ''
-              }
-            })}
+        <div className="portfolio_title">Competition {/* 제목 들어갈 영역 */}</div>
+
+        <div className="portfolio_media_section">
+          <div className="portfolio_media_wrapper">
+            <div className="portfolio_media_main">{main_media()}</div>
+            <div className="portfolio_media_thumbnail_wrapper">
+              {this.state.media_arr.map((item, key) => {
+                if (item.type === 'img') {
+                  return (
+                    <img
+                      key={key}
+                      src={item.src}
+                      draggable="false"
+                      alt={item.type}
+                      onClick={() => this.onClickThumbnail(key)}
+                      className={item.active === true ? 'active_thumbnail' : ''}
+                    ></img>
+                  )
+                } else if (item.type === 'video') {
+                  return (
+                    <video
+                      key={key}
+                      draggable="false"
+                      onClick={() => this.onClickThumbnail(key)}
+                      className={item.active === true ? 'active_thumbnail' : ''}
+                    >
+                      {' '}
+                      <source src={item.src} type="video/mp4"></source>
+                    </video>
+                  )
+                } else {
+                  return ''
+                }
+              })}
+            </div>{' '}
           </div>
-          <div className="portfolio_media_main">{main_media()}</div>
+          <div className="portfolio_media_desc">{main_desc()}</div>
         </div>
+
         <article className="portfolio_text_section">
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 이름</span>{' '}
@@ -120,17 +136,17 @@ class Competition extends Component {
             <span className="portfolio_text_content">
               1. 회원가입과 로그인, 비밀번호 찾기
               <br />
-              2. D-Day , 함께 하는 TODO-List ( Together-Do List )
+              2. D-Day , 함께 하는 TODO-List (Together-Do List)
               <br />
               3. 그림 메모
               <br />
               4. firebase를 통한 채팅, 이미지 전송, notification
               <br />
-              5. WebRTC를 사용한 영상통화 ( RemoteMonster API )
+              5. WebRTC를 사용한 영상통화 (Remote Monster API)
               <br />
-              6. 일정 공유 ( google calander API )
+              6. 일정 공유 (google calander API)
               <br />
-              7. 날씨, 위치 공유 ( weaterMap API , GeoCoder API )
+              7. 날씨, 위치 공유 (weaterMap API , GeoCoder API)
               <br />
               8. 앨범, 연인 추억 타임라인
               <br />
@@ -150,8 +166,7 @@ class Competition extends Component {
               개발 막바지에 API를 처음으로 사용해봤는데, API를 잘 사용한다면 많은 서비스를 쉽게 구현 할 수 있다는 걸 알게
               되었습니다.
               <br />
-              다만 DB나 네트워크에 대한 지식이 부족해서 더 많은 기능을 구현하지 못한 점은 아쉬움이 남습니다.
-              <br />
+              DB나 네트워크에 대한 지식이 부족해서 더 많은 기능을 구현하지 못한 점이 아쉽습니다.
             </span>
           </div>
         </article>
