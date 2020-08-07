@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import './TimelineItem.css'
-import JavaImage1 from '../../res/pic/java/test.png'
-import JavaImage2 from '../../res/pic/java/test.png'
-import JavaImage3 from '../../res/pic/java/test.png'
-import JavaImage4 from '../../res/pic/java/test.png'
-import JavaVideo from '../../res/videos/gizmo.mp4'
+import Modal from '../Modal/Modal'
+import PhpImage1 from '../../res/pic/php/main.png'
+import PhpImage2 from '../../res/pic/php/search_before.png'
+import PhpImage3 from '../../res/pic/php/search_result.png'
+import PhpImage4 from '../../res/pic/php/search_desc.png'
+import PhpImage5 from '../../res/pic/php/review.png'
+import PhpImage6 from '../../res/pic/php/statistics.png'
+import PhpImage7 from '../../res/pic/php/help.png'
+import PhpImage8 from '../../res/pic/php/profile.png'
+import PhpImage9 from '../../res/pic/php/subscribe.png'
 
 class Php extends Component {
   //   constructor(props) {
@@ -12,14 +17,18 @@ class Php extends Component {
   //   }
 
   state = {
+    modalVisible: false, //모달 켜고 끌 변수
     select_ind: 0, //슬라이더로 보여줄 인덱스
     media_arr: [
-      { active: true, src: JavaImage1, type: 'img', desc: '' },
-      { active: false, src: JavaImage2, type: 'img', desc: '' },
-      { active: false, src: JavaImage3, type: 'img', desc: '' },
-      { active: false, src: JavaImage4, type: 'img', desc: '' },
-      { active: false, src: JavaImage1, type: 'img', desc: '' },
-      { active: false, src: JavaVideo, type: 'video', desc: '' },
+      { active: true, src: PhpImage1, type: 'img', desc: '' },
+      // { active: false, src: PhpImage2, type: 'img', desc: '' },
+      // { active: false, src: PhpImage3, type: 'img', desc: '' },
+      { active: false, src: PhpImage4, type: 'img', desc: '' },
+      { active: false, src: PhpImage5, type: 'img', desc: '' },
+      { active: false, src: PhpImage6, type: 'img', desc: '' },
+      // { active: false, src: PhpImage7, type: 'img', desc: '' },
+      { active: false, src: PhpImage8, type: 'img', desc: '' },
+      { active: false, src: PhpImage9, type: 'img', desc: '' },
     ], //미디어를 담을 배열
   }
 
@@ -37,17 +46,43 @@ class Php extends Component {
     })
   }
 
+  openModal = () => {
+    this.setState({ modalVisible: true })
+  }
+
+  closeModal = () => {
+    this.setState({ modalVisible: false })
+  }
+
   render() {
     // console.log(this.state)
+    let { modalVisible } = this.state
+    // 모달창 띄울 변수 선언
     let selected_item = this.state.media_arr.find((item) => item.active === true)
     let main_media = () => {
       if (selected_item.type === 'img') {
-        return <img src={selected_item.src} alt="main_img" draggable="false"></img>
+        return (
+          <div className="portfolio_media_main">
+            <img src={selected_item.src} alt="main_img" draggable="false" onClick={() => this.openModal()}></img>
+            {modalVisible && (
+              <Modal
+                visible={modalVisible}
+                closable={true}
+                maskClosable={true}
+                src={selected_item.src}
+                // 소스도 같이 넘겨줌
+                onClose={() => this.closeModal()}
+              ></Modal>
+            )}
+          </div>
+        )
       } else if (selected_item.type === 'video') {
         return (
-          <video controls autoPlay={false}>
-            <source src={selected_item.src} type="video/mp4"></source>
-          </video>
+          <div className="portfolio_media_main">
+            <video controls autoPlay={false}>
+              <source src={selected_item.src} type="video/mp4"></source>
+            </video>
+          </div>
         )
       } else {
         return 'else'
@@ -66,7 +101,7 @@ class Php extends Component {
 
         <div className="portfolio_media_section">
           <div className="portfolio_media_wrapper">
-            <div className="portfolio_media_main">{main_media()}</div>
+            {main_media()}
             <div className="portfolio_media_thumbnail_wrapper">
               {this.state.media_arr.map((item, key) => {
                 if (item.type === 'img') {

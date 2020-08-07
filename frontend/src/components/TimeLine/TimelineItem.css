@@ -27,7 +27,7 @@
   justify-content: center;
   justify-self: center;
   justify-items: center;
-  align-items: flex-start;
+  align-items: center;
   /* align-content: center; */
   /* background-color: blueviolet; */
 }
@@ -120,7 +120,8 @@
   /* text-align: center; */
   height: auto;
   padding: 3% 3% 3% 3%;
-  margin: 12% 60px 13% 10px;
+  /* margin: 12% 60px 20% 10px; */
+  margin: 30px;
   border-radius: 10px;
   word-break: keep-all;
   background-color: rgba(105, 105, 105, 0.3);

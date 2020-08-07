@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // import './Android.css'
 import './TimelineItem.css'
+import Modal from '../Modal/Modal'
 // import AndroidImage1 from '../../res/pic/android/home_memo.png'
 // import AndroidImage2 from '../../res/pic/android/dday_todo_timeline.png'
 // import AndroidImage3 from '../../res/pic/android/gall_setting.png'
@@ -15,6 +16,7 @@ class Competition extends Component {
   //   }
 
   state = {
+    modalVisible: false, //모달 켜고 끌 변수
     select_ind: 0, //슬라이더로 보여줄 인덱스
     media_arr: [
       { active: true, src: AndroidVideo, type: 'video', desc: '설명입니다. <br> dd\ndd' },
@@ -45,17 +47,43 @@ class Competition extends Component {
     })
   }
 
+  openModal = () => {
+    this.setState({ modalVisible: true })
+  }
+
+  closeModal = () => {
+    this.setState({ modalVisible: false })
+  }
+
   render() {
     // console.log(this.state)
+    let { modalVisible } = this.state
+    // 모달창 띄울 변수 선언
     let selected_item = this.state.media_arr.find((item) => item.active === true)
     let main_media = () => {
       if (selected_item.type === 'img') {
-        return <img src={selected_item.src} alt="main_img" draggable="false"></img>
+        return (
+          <div className="portfolio_media_main">
+            <img src={selected_item.src} alt="main_img" draggable="false" onClick={() => this.openModal()}></img>
+            {modalVisible && (
+              <Modal
+                visible={modalVisible}
+                closable={true}
+                maskClosable={true}
+                src={selected_item.src}
+                // 소스도 같이 넘겨줌
+                onClose={() => this.closeModal()}
+              ></Modal>
+            )}
+          </div>
+        )
       } else if (selected_item.type === 'video') {
         return (
-          <video controls autoPlay={false}>
-            <source src={selected_item.src} type="video/mp4"></source>
-          </video>
+          <div className="portfolio_media_main">
+            <video controls autoPlay={false}>
+              <source src={selected_item.src} type="video/mp4"></source>
+            </video>
+          </div>
         )
       } else {
         return 'else'
@@ -74,7 +102,7 @@ class Competition extends Component {
 
         <div className="portfolio_media_section">
           <div className="portfolio_media_wrapper">
-            <div className="portfolio_media_main">{main_media()}</div>
+            {main_media()}
             <div className="portfolio_media_thumbnail_wrapper">
               {this.state.media_arr.map((item, key) => {
                 if (item.type === 'img') {
