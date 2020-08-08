@@ -7,10 +7,30 @@
   transition: background 2.5s;
   margin: 0 auto;
 
-  /* font-family: 'Noto Serif KR', Serif; */
   font-family: 'Noto Serif KR', 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif';
 }
 
 .timeline_bg {
   background-color: #454f5d !important;
+  /* background-color: black !important; */
+}
+
+/*스크롤바 디자인  */
+::-webkit-scrollbar {
+  position: fixed;
+  max-height: 30px;
+  width: 8px;
+  background-color: #ecf0f1;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #454f5d;
+  border-radius: 6px;
+  border: 2px solid #ecf0f1;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
 }

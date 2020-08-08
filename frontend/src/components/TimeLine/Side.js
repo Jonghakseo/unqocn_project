@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-// import './Android.css'
 import './TimelineItem.css'
 import Modal from '../Modal/Modal'
 import AndroidImage from '../../res/pic/android/setting_account.PNG'
 import AndroidVideo from '../../res/videos/android.mp4'
 
-class Competition extends Component {
+class Side extends Component {
   //   constructor(props) {
   //     super(props)
   //   }
@@ -16,6 +15,13 @@ class Competition extends Component {
     media_arr: [
       { active: true, src: AndroidVideo, type: 'video', desc: '설명입니다. <br> dd\ndd' },
       { active: false, src: AndroidImage, type: 'img', desc: '설명입니다<br>dd' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
+      { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
       { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
       { active: false, src: AndroidImage, type: 'img', desc: '설명입니다' },
     ], //미디어를 담을 배열
@@ -91,7 +97,7 @@ class Competition extends Component {
     return (
       <section className="portfolio_section">
         {/* 섹션에 플렉스 적용하고 col 방향으로 진행되게 함 */}
-        <div className="portfolio_title">공공데이터 활용 창업경진대회 {/* 제목 들어갈 영역 */}</div>
+        <div className="portfolio_title">UE4 Game {/* 제목 들어갈 영역 */}</div>
 
         <div className="portfolio_media_section">
           <div className="portfolio_media_wrapper">
@@ -197,4 +203,4 @@ class Competition extends Component {
   }
 }
 
-export default Competition
+export default Side

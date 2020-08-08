@@ -55,13 +55,13 @@ h2 {
   /* margin: 0px 30px; */
   padding: 1% 1.5%;
   /* background-color: gray; */
-  opacity: 0.95;
+  opacity: 0.96;
 }
 
 .timeline > ol {
   padding: 3px;
   margin: 5px 3px;
-  opacity: 0.5;
+  opacity: 0.4;
   flex: 1;
   align-self: center;
   align-items: center;

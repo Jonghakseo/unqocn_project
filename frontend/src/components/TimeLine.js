@@ -5,17 +5,19 @@ import Java from './TimeLine/Java'
 import Android from './TimeLine/Android'
 import Php from './TimeLine/Php'
 import Competition from './TimeLine/Competition'
+import Game from './TimeLine/Game'
+import Toy from './TimeLine/Toy'
 //여기까지 작품별 컴포넌트
 import line from '../res/icon/horizon-line.svg'
 import java_icon from '../res/icon/java.svg'
 import android_icon from '../res/icon/android.svg'
 import php_icon from '../res/icon/php.svg'
-// import aws from '../res/icon/aws.svg'
+import aws from '../res/icon/aws.svg'
 import css from '../res/icon/css3-alt.svg'
 // import git from '../res/icon/git-alt.svg'
 import python from '../res/icon/python.svg'
 import react_icon from '../res/icon/react.svg'
-// import ubuntu from '../res/icon/ubuntu.svg'
+import ubuntu from '../res/icon/ubuntu.svg'
 // import django from '../res/icon/django.svg'
 import ue4 from '../res/icon/Unreal_Engine_Logo.svg'
 // import mysql from '../res/icon/mysql-2.svg'
@@ -157,6 +159,7 @@ class TimeLine extends Component {
         top: '0',
         zIndex: '100',
         backgroundColor: '#454f5d',
+        // backgroundColor: 'black',
       }
     }
 
@@ -173,39 +176,63 @@ class TimeLine extends Component {
           {/* 2019. 10. 03 ~ 2020. 07. 28 */}
           <div className="timeline_empty_wrapper">
             <div className="timeline" style={timeline_top_style}>
-              <ol className={active === 'java' ? 'active' : ''} onClick={() => handleClick('java')} style={{ flex: '6' }}>
+              <ol
+                className={active === 'java' ? 'active' : ''}
+                onClick={() => handleClick('java')}
+                style={{ flex: '6' }}
+              >
                 <img className="timeline_hover_img" src={java_icon} alt="java"></img>
                 Java
                 <br />5 주<img className="timeline_line" src={line} alt="java"></img>
               </ol>
-              <ol className={active === 'android' ? 'active' : ''} onClick={() => handleClick('android')} style={{ flex: '7' }}>
+              <ol
+                className={active === 'android' ? 'active' : ''}
+                onClick={() => handleClick('android')}
+                style={{ flex: '7' }}
+              >
                 <img className="timeline_hover_img" src={android_icon} alt="android"></img>
                 Android
                 <br />6 주<img className="timeline_line" src={line} alt="android"></img>
               </ol>{' '}
-              <ol style={{ flex: '7' }} className={active === 'php' ? 'active' : ''} onClick={() => handleClick('php')}>
+              <ol
+                style={{ flex: '7' }}
+                className={active === 'php' ? 'active' : ''}
+                onClick={() => handleClick('php')}
+              >
                 <img className="timeline_hover_img" src={php_icon} alt="php"></img>
                 PHP
                 <br />6 주<img className="timeline_line" src={line} alt="php"></img>
               </ol>{' '}
-              <ol style={{ flex: '8' }} className={active === 'comp' ? 'active' : ''} onClick={() => handleClick('comp')}>
+              <ol
+                style={{ flex: '8' }}
+                className={active === 'comp' ? 'active' : ''}
+                onClick={() => handleClick('comp')}
+              >
                 <img className="timeline_hover_img" src={python} alt="python"></img>
                 창업대회
                 <br />7 주<img className="timeline_line" src={line} alt="comp"></img>
               </ol>{' '}
-              <ol style={{ flex: '11' }} className={active === 'ue4' ? 'active' : ''} onClick={() => handleClick('ue4')}>
+              <ol
+                style={{ flex: '4' }}
+                className={active === 'toy' ? 'active' : ''}
+                onClick={() => handleClick('toy')}
+              >
+                <img className="timeline_hover_img" src={ubuntu} alt="side"></img>
+                Toy Proj
+                <br />
+                2주
+                <img className="timeline_line" src={line} alt="side"></img>
+              </ol>
+              <ol
+                style={{ flex: '11' }}
+                className={active === 'ue4' ? 'active' : ''}
+                onClick={() => handleClick('ue4')}
+              >
                 <img className="timeline_hover_img" src={ue4} alt="ue4"></img>
                 UE4 Game
                 <br />
                 12 주<img className="timeline_line" src={line} alt="game"></img>
               </ol>{' '}
-              <ol style={{ flex: '4' }} className={active === 'toy' ? 'active' : ''} onClick={() => handleClick('toy')}>
-                <img className="timeline_hover_img" src={css} alt="side"></img>
-                Toy
-                <br />
-                Project
-                <img className="timeline_line" src={line} alt="side"></img>
-              </ol>
               <ol
                 style={{ flex: '5' }}
                 className={active === 'portfolio' ? 'active' : ''}
@@ -225,7 +252,10 @@ class TimeLine extends Component {
           {/* 작품들 돌려가며 볼 수 있는 wrapper 위치입니다. 돌리지 말고 나열할까? */}
 
           <div className="anchor" ref={this.ue4TopRef}></div>
+          <Game position={this.state.position}></Game>
+
           <div className="anchor" ref={this.toyTopRef}></div>
+          <Toy position={this.state.position}></Toy>
 
           <div className="anchor" ref={this.compTopRef}></div>
           <Competition position={this.state.position}></Competition>

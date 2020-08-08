@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './TimelineItem.css'
 import Modal from '../Modal/Modal'
-import PhpImage1 from '../../res/pic/php/main.png'
+import PhpImage1 from '../../res/pic/php/main_new.png'
 import PhpImage2 from '../../res/pic/php/search_before.png'
 import PhpImage3 from '../../res/pic/php/search_result.png'
 import PhpImage4 from '../../res/pic/php/search_desc.png'
@@ -20,15 +20,69 @@ class Php extends Component {
     modalVisible: false, //모달 켜고 끌 변수
     select_ind: 0, //슬라이더로 보여줄 인덱스
     media_arr: [
-      { active: true, src: PhpImage1, type: 'img', desc: '' },
+      {
+        active: true,
+        // src: "/res/pic/php/main_new.png'",
+        src: PhpImage1,
+        type: 'img',
+        desc:
+          '사이트 접속시 맨 처음 보이는 화면입니다.</br></br>' +
+          '첫 화면에서는 검색량 상위 맛집, 나만의 맛집 게시판 추천 상위 게시글, 맛점 서비스 이용 가이드가 노출됩니다.' +
+          '</br></br>좌측 NAV를 통해 다양한 서비스로의 접근이 가능하며, 상단 검색창으로 바로 검색이 가능합니다.</br></br>' +
+          '우측 상단에서는 로그인, 회원가입이 가능합니다.',
+      },
       // { active: false, src: PhpImage2, type: 'img', desc: '' },
-      // { active: false, src: PhpImage3, type: 'img', desc: '' },
-      { active: false, src: PhpImage4, type: 'img', desc: '' },
-      { active: false, src: PhpImage5, type: 'img', desc: '' },
-      { active: false, src: PhpImage6, type: 'img', desc: '' },
+      {
+        active: false,
+        src: PhpImage3,
+        type: 'img',
+        desc:
+          '검색을 하고 난 결과창입니다.</br></br>' +
+          '상단에서는 업체에 대한 기본적인 정보(영업 상태, 전화번호, 주 메뉴와 가격, 사진)들을 제공합니다.</br></br>' +
+          '좌측에서는 구글맵을 통해 해당 업체의 주소와 위치를 파악 할 수 있으며, 우측 카드뷰를 통해 각 리뷰 사이트의 평균 별점 및 대표 리뷰들을 볼 수 있습니다.</br>' +
+          '각 사이트의 로고를 클릭해서, 사이트별 업체 리뷰 페이지로 이동이 가능합니다.',
+      },
+      // { active: false, src: PhpImage4, type: 'img', desc: '' },
+      {
+        active: false,
+        src: PhpImage5,
+        type: 'img',
+        desc:
+          '유저가 간단한 리뷰를 올리는 페이지입니다.</br></br>' +
+          '유저는 카드 뷰 형태로 별점과 리뷰를 남기고, 방문객들을 위한 추천 태그를 남깁니다.' +
+          '</br>입력한 정보들은 통계탭에서도 사용됩니다.',
+      },
+      {
+        active: false,
+        src: PhpImage6,
+        type: 'img',
+        desc:
+          '맛집 통계입니다.<br/><br/>' +
+          '통계탭은 베이직 단계 구독자 이상에게 제공되는 서비스로, 비 회원이나 서비스 비 구독자에게는 제공되지 않습니다.<br/><br/>' +
+          '검색량 상위 업체, (사용자가 입력한 주소지를 기반으로 한) 지역 별점 상위 업체, 월간 리뷰량 상위 업체를 기본으로 제공합니다.<br/><br/>' +
+          '상세검색에서는 해당 업체의 리뷰 데이터를 종합하여, 추천 대상과 앞으로의 전망, 요일별 검색 추세, 별점 통계를 제공합니다.',
+      },
       // { active: false, src: PhpImage7, type: 'img', desc: '' },
-      { active: false, src: PhpImage8, type: 'img', desc: '' },
-      { active: false, src: PhpImage9, type: 'img', desc: '' },
+      {
+        active: false,
+        src: PhpImage8,
+        type: 'img',
+        desc:
+          '프로필 설정 화면입니다.<br/><br/>' +
+          '사용자의 개인 정보를 변경하는 곳입니다. <br/>' +
+          '이름과 메일주소는 변경 할 수 없으며, 프로필사진, 주소지, 비밀번호 등의 변경이 가능합니다.<br>' +
+          '입력받은 주소지를 기반으로 맛집 통계에서 지역 맛집 추천 서비스가 제공됩니다. <br/><br/>' +
+          '주소지 미 입력시 상단 알림탭에서 주소 입력 권유 알림이 노출됩니다.',
+      },
+      {
+        active: false,
+        src: PhpImage9,
+        type: 'img',
+        desc:
+          '구독 화면입니다.<br/><br/>' +
+          '카카오 페이 결제 API를 활용하였으며, 테스트 결제 가능합니다.(실 결제는 사업자 등록이 필요)<br/><br>' +
+          '프리미엄 기능인 맛집 컬럼 기능은 구현되지 않았습니다.',
+      },
     ], //미디어를 담을 배열
   }
 
@@ -63,7 +117,12 @@ class Php extends Component {
       if (selected_item.type === 'img') {
         return (
           <div className="portfolio_media_main">
-            <img src={selected_item.src} alt="main_img" draggable="false" onClick={() => this.openModal()}></img>
+            <img
+              src={selected_item.src}
+              alt="main_img"
+              draggable="false"
+              onClick={() => this.openModal()}
+            ></img>
             {modalVisible && (
               <Modal
                 visible={modalVisible}
@@ -141,8 +200,12 @@ class Php extends Component {
             <span className="portfolio_text_title">작품 이름</span>{' '}
             <span className="portfolio_text_content">
               <h2>
-                <a target="_blank" href="https://unqocn.hopto.org/matjeom/" rel="noopener noreferrer">
-                  맛점 ( 맛집 점수 )
+                <a
+                  target="_blank"
+                  href="https://unqocn.hopto.org/matjeom/"
+                  rel="noopener noreferrer"
+                >
+                  맛점
                 </a>
               </h2>
 
@@ -171,14 +234,15 @@ class Php extends Component {
               1. 메인페이지
               <br />
               <span>
-                php-mailer를 사용한 회원가입, 비밀번호 찾기 | 로그인 | 검색량 상위 맛집 | 추천 게시물 | 사이트 이용 안내
+                php-mailer를 사용한 회원가입, 비밀번호 찾기 | 로그인 | 검색량 상위 맛집 | 추천
+                게시물 | 사이트 이용 안내
               </span>
               <br />
               2. 맛집 검색
               <br />
               <span>
-                맛집 사진, 가격 등 정보 확인 | Google Map API를 통한 위치 확인 | 각 리뷰 사이트의 리뷰, 별점 확인 | 각 리뷰
-                사이트로 이동
+                맛집 사진, 가격 등 정보 확인 | Google Map API를 통한 위치 확인 | 각 리뷰 사이트의
+                리뷰, 별점 확인 | 각 리뷰 사이트로 이동
               </span>
               <br />
               3. 유저 리뷰 페이지
@@ -203,19 +267,24 @@ class Php extends Component {
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소감</span>{' '}
             <span className="portfolio_text_content">
-              개발 첫 시작부터 Android 작품 개발까지 Java와 함께 하다가 처음으로 PHP, JS, CSS 를 만나게 되었습니다.
+              개발 첫 시작부터 Android 작품 개발까지 Java와 함께 하다가 처음으로 PHP, JS, CSS 를
+              만나게 되었습니다.
               <br />
-              Data type을 선언하지 않고 사용하는 PHP와 JS에 편함을 느꼈지만, 디버깅을 하면서 '문제가 터졌을 땐 오히려 독이 될 수도
-              있구나'라고 느꼈습니다.
+              Data type을 선언하지 않고 사용하는 PHP와 JS에 편함을 느꼈지만, 디버깅을 하면서 '문제가
+              터졌을 땐 오히려 독이 될 수도 있구나'라고 느꼈습니다.
               <br />
-              새로운 언어를 다룬다는 두려움이 있었지만, 생각보다 각 언어의 차이가 크지 않다는 생각이 들었습니다. <br />
-              제어문, 반복문 뿐만 아니라 문자열을 다루거나 배열을 다루는 메소드 역시 사용하는 형태만 다를 뿐 같은 개념이었습니다.
+              새로운 언어를 다룬다는 두려움이 있었지만, 생각보다 각 언어의 차이가 크지 않다는 생각이
+              들었습니다. <br />
+              제어문, 반복문 뿐만 아니라 문자열을 다루거나 배열을 다루는 메소드 역시 사용하는 형태만
+              다를 뿐 같은 개념이었습니다.
               <br />
-              또한 직접 Linux, Apache, PHP, MySQL 등을 설치하면서 리눅스에 익숙해지려 노력했던 시기입니다. <br />
-              작품 개발 기간 HTTP 통신의 개념과 GET, POST, 쿠키, 세션, DB, Server 등 네트워크 쪽으로 폭넓은 공부와 이해를 하는
-              계기가 되었습니다.
+              또한 직접 Linux, Apache, PHP, MySQL 등을 설치하면서 리눅스에 익숙해지려 노력했던
+              시기입니다. <br />
+              작품 개발 기간 HTTP 통신의 개념과 GET, POST, 쿠키, 세션, DB, Server 등 네트워크 쪽으로
+              폭넓은 공부와 이해를 하는 계기가 되었습니다.
               <br />
-              CSS에 대한 전반적인 이해가 부족해 flex로 이뤄진 bootstrap을 사용하면서도 UI, UX 수정에 애를 먹었던 기억이 납니다.
+              CSS에 대한 전반적인 이해가 부족해 flex로 이뤄진 bootstrap을 사용하면서도 UI, UX 수정에
+              애를 먹었던 기억이 납니다.
               <br />
             </span>
           </div>

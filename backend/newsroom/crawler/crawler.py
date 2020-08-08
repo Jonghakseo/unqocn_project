@@ -20,6 +20,7 @@ django.setup()
 
 from newsroom.models import CrawlingData
 
+
 # 경로를 django 로 바꿨기 때문에 import 경로도 바뀜
 # 에러는 무시해도 됨
 
@@ -31,6 +32,7 @@ def get_naver_news():
 
     options = Options()
     options.headless = True
+    # options.add_argument('--no-sandbox')
     driver = webdriver.Firefox(executable_path=r"/home/django/unqocn_venv/bin/geckodriver", options=options)
 
     driver.implicitly_wait(10)
@@ -283,7 +285,7 @@ def get_tech_news():
             # print(trans_result)
             trans_title = trans_result.text
             # print(trans_title)
-            news_data['titles'].append(title + "[" + trans_title + "]")
+            news_data['titles'].append(title + "\n" + "[" + trans_title + "]")
 
     driver.close()
     # return news_data

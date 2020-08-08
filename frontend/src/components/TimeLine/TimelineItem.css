@@ -4,7 +4,6 @@
   align-items: center;
   align-content: center;
   align-self: center;
-  /* width: 90vw; */
 }
 
 .portfolio_title {
@@ -17,9 +16,6 @@
 /* 미디어를 담는 제일 큰 틀입니다. */
 .portfolio_media_section {
   width: 90vw;
-  /* height: 45vw; */
-  /* max-height: 1000px; */
-  /* max-width: 850px; */
   min-width: 330px;
   margin: 10px 25px;
   display: flex;
@@ -28,8 +24,6 @@
   justify-self: center;
   justify-items: center;
   align-items: center;
-  /* align-content: center; */
-  /* background-color: blueviolet; */
 }
 /* 포트폴리오 미디어 */
 
@@ -53,10 +47,6 @@
   border-radius: 4px;
   object-fit: scale-down;
 }
-/* .portfolio_media_wrapper > video,
-.portfolio_media_wrapper > img {
-
-} */
 
 .portfolio_media_wrapper {
   width: 65vw;
@@ -68,7 +58,6 @@
   justify-content: center;
   justify-items: center;
   align-content: center;
-  /* background-color: black; */
 }
 
 /* 메인이미지를 담는 틀 */
@@ -98,7 +87,7 @@
   margin: 5px;
   padding: 1px;
   border: solid 1px rgb(194, 193, 193);
-  border-radius: 8px;
+  border-radius: 4px;
   height: auto;
   object-fit: scale-down;
 }
@@ -128,22 +117,25 @@
 }
 
 .portfolio_text_section {
+  background-color: rgba(7, 7, 20, 0.671);
+
   display: flex;
   flex-direction: column;
-  width: 85vw;
-  max-width: 1200px;
-  margin: 40px 10px;
+  /* width: 100vw; */
+  padding: 5vw 15vw;
+  /* max-width: 1200px; */
+  margin: 0px 0px;
 }
 
 .portfolio_text_wrapper {
   display: flex;
   flex-direction: row;
-
   vertical-align: super;
 }
 
 .portfolio_text_title {
   white-space: nowrap;
+  font-weight: 400;
   margin: 30px 30px;
   color: #fffef2e7;
 }
@@ -152,7 +144,7 @@
   font-size: 18px;
   margin: 30px 30px;
 
-  font-weight: 400;
+  font-weight: 300;
   padding-top: 5px;
   /* word-break: break-all; */
 }
@@ -177,20 +169,14 @@
 }
 
 @media screen and (max-width: 769px) {
-  /* .portfolio_media_wrapper {
-    width: 85vw;
-  } */
   .portfolio_media_section {
     /* height: 45vh; */
     flex-direction: column;
   }
   .portfolio_media_thumbnail_wrapper {
     width: 100%;
-    /* max-width: 700px; */
-    /* min-width: 330px; */
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: flex-start; */
   }
 
   .portfolio_media_wrapper {
@@ -215,8 +201,6 @@
     margin: 10px 10px 10px 10px;
     padding: 2%;
     font-weight: 400;
-    /* text-align: center; */
-    /* padding: unset; */
 
     border-radius: 5px;
   }
@@ -227,8 +211,6 @@
     max-height: 8vh;
     opacity: 0.5;
     transition: opacity 0.5s;
-    /* margin: 2% 1%; */
-    /* padding: 2% 2%; */
     border: solid 0.5px whitesmoke;
     border-radius: 4px;
     height: auto;
@@ -240,8 +222,9 @@
   }
 
   .portfolio_text_section {
-    width: 95vw;
-    margin: 40px 10px;
+    /* width: 95vw; */
+    margin: 40px 0px;
+    padding: 0 0;
   }
   .portfolio_text_wrapper {
     flex-direction: column;
@@ -254,7 +237,7 @@
 
   .portfolio_text_content {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 200;
     margin: 10px 30px;
   }
   .portfolio_text_content > span {

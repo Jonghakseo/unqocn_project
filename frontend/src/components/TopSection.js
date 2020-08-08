@@ -102,7 +102,7 @@ class TopSection extends Component {
         저는
         <br />
         <RotateText />
-        개발자 입니다
+        개발자입니다
         {/* <br /> */}
         {/* <br /> */}
         <div className="background_decoration">
