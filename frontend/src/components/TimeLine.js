@@ -5,8 +5,7 @@ import Java from './TimeLine/Java'
 import Android from './TimeLine/Android'
 import Php from './TimeLine/Php'
 import Competition from './TimeLine/Competition'
-import Game from './TimeLine/Game'
-import Toy from './TimeLine/Toy'
+import Item from './TimeLine/Item'
 //여기까지 작품별 컴포넌트
 import line from '../res/icon/horizon-line.svg'
 import java_icon from '../res/icon/java.svg'
@@ -79,8 +78,9 @@ class TimeLine extends Component {
         android: this.androidTopRef.current.offsetTop,
         php: this.phpTopRef.current.offsetTop,
         comp: this.compTopRef.current.offsetTop,
-        ue4: this.ue4TopRef.current.offsetTop,
         toy: this.toyTopRef.current.offsetTop,
+        ue4: this.ue4TopRef.current.offsetTop,
+
         // portfolio: this.portfolioTopRef.current.offsetTop,
         portfolio: 0,
       }
@@ -158,8 +158,8 @@ class TimeLine extends Component {
         position: 'fixed',
         top: '0',
         zIndex: '100',
-        backgroundColor: '#454f5d',
-        // backgroundColor: 'black',
+        // backgroundColor: '#454f5d',
+        backgroundColor: 'var(--var-bg-color)',
       }
     }
 
@@ -204,13 +204,13 @@ class TimeLine extends Component {
                 <br />6 주<img className="timeline_line" src={line} alt="php"></img>
               </ol>{' '}
               <ol
-                style={{ flex: '8' }}
+                style={{ flex: '6' }}
                 className={active === 'comp' ? 'active' : ''}
                 onClick={() => handleClick('comp')}
               >
                 <img className="timeline_hover_img" src={python} alt="python"></img>
                 창업대회
-                <br />7 주<img className="timeline_line" src={line} alt="comp"></img>
+                <br />5 주<img className="timeline_line" src={line} alt="comp"></img>
               </ol>{' '}
               <ol
                 style={{ flex: '4' }}
@@ -219,9 +219,7 @@ class TimeLine extends Component {
               >
                 <img className="timeline_hover_img" src={ubuntu} alt="side"></img>
                 Toy Proj
-                <br />
-                2주
-                <img className="timeline_line" src={line} alt="side"></img>
+                <br />2 주<img className="timeline_line" src={line} alt="side"></img>
               </ol>
               <ol
                 style={{ flex: '11' }}
@@ -252,10 +250,10 @@ class TimeLine extends Component {
           {/* 작품들 돌려가며 볼 수 있는 wrapper 위치입니다. 돌리지 말고 나열할까? */}
 
           <div className="anchor" ref={this.ue4TopRef}></div>
-          <Game position={this.state.position}></Game>
+          <Item position={this.state.position} item_index={0}></Item>
 
           <div className="anchor" ref={this.toyTopRef}></div>
-          <Toy position={this.state.position}></Toy>
+          {/* <Toy position={this.state.position}></Toy> */}
 
           <div className="anchor" ref={this.compTopRef}></div>
           <Competition position={this.state.position}></Competition>
@@ -267,7 +265,7 @@ class TimeLine extends Component {
           <Android position={this.state.position}></Android>
 
           <div className="anchor" ref={this.javaTopRef}></div>
-          <Java position={this.state.position}></Java>
+          <Item position={this.state.position} item_index={1}></Item>
         </div>
       </section>
     )

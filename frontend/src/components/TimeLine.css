@@ -3,13 +3,13 @@
   /* background-color: #576574; */
   font-size: 32px;
   font-weight: 600;
-  color: aliceblue;
+  /* color: aliceblue; */
+  color: black;
   font-family: 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif';
 }
 
 h2 {
   font-size: 46px;
-  /* color: #333333; */
 }
 .timeline_wrapper {
   display: flex;
@@ -55,7 +55,7 @@ h2 {
   /* margin: 0px 30px; */
   padding: 1% 1.5%;
   /* background-color: gray; */
-  opacity: 0.96;
+  opacity: 0.92;
 }
 
 .timeline > ol {
@@ -83,10 +83,8 @@ h2 {
   height: 10px;
   width: 100%;
   object-fit: none;
-  /* opacity: 0.7; */
-  /* border-radius: 5px; */
   transition: opacity 0.7s;
-  filter: invert(100%);
+  /* filter: invert(100%); */
 }
 
 /* 활성화 된 타임라인 아이템 */
@@ -98,7 +96,7 @@ h2 {
 .timeline_hover_img {
   height: 30px;
   width: 30px;
-  filter: invert();
+  /* filter: invert(); */
   /* opacity: 0; */
 }
 
@@ -139,13 +137,14 @@ h2 {
     font-size: 9px;
     font-weight: 200;
     letter-spacing: -0.3px;
+    opacity: 0.6;
   }
   .timeline_hover_img {
     height: 20px;
     width: 20px;
     margin-top: 5px;
-    filter: invert();
-    /* opacity: 0; */
+    /* filter: invert(); */
+    opacity: 1;
   }
 
   .active {

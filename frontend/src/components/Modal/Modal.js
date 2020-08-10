@@ -6,18 +6,25 @@ import Portal from './Portal'
 
 function Modal({ className, onClose, maskClosable, closable, visible, children, src }) {
   //클래스 이름, 닫는 버튼, 닫을 수 있는지, 보이는지, 자식, 소스 받아옴
+  const img_src = src
+
   const onMaskClick = (e) => {
     if (e.target === e.currentTarget) {
-      document.body.style.cssText = `overflow: unset !important; height: unset !important; touch-action: unset !important;`
+      document.body.style.cssText = `overflow-x: hidden !important; overflow-y: unset !important; height: unset !important; touch-action: unset !important;`
       onClose(e)
     }
   }
 
   const close = (e) => {
     if (onClose) {
-      document.body.style.cssText = `overflow: unset !important; height: unset !important; touch-action: unset !important;`
+      document.body.style.cssText = `overflow-x: hidden !important; overflow-y: unset !important; height: unset !important; touch-action: unset !important;`
       onClose(e)
     }
+  }
+
+  const inflate = (e) => {
+    let win = window.open(img_src, '_blank')
+    win.focus()
   }
 
   useEffect(() => {
@@ -43,13 +50,16 @@ function Modal({ className, onClose, maskClosable, closable, visible, children, 
         <ModalInner tabIndex={0} className="modal-inner">
           {closable && (
             <CloseButton className="modal-close" onClick={close}>
-              &#x2715;
+              &#10007;
             </CloseButton>
           )}
           <ModalImage src={src} alt="full_size_image" draggable="false"></ModalImage>
           {/* {closable && <CloseButton className="modal-close" onClick={close} />} */}
 
           {children}
+          <InflateButton className="inflate-button" onClick={inflate}>
+            &nbsp;원본 이미지 보기&nbsp;
+          </InflateButton>
         </ModalInner>
       </ModalWrapper>
     </Portal>
@@ -72,19 +82,47 @@ const CloseButton = styled.button`
   top: 4px;
   font-weight: 900;
   font-size: 1.5rem;
+  /* height: 2rem; */
+  /* width: 1.8rem; */
+  text-align: center;
   border: solid 1px rgba(0, 0, 0, 0);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #555555;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
   transition: color 0.5s, background-color 0.5s;
   &:focus {
     outline: none;
   }
   &:hover {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
   }
   /* padding: 2px 2px; */
+`
+
+const InflateButton = styled.div`
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  /* width: 8rem; */
+  /* font-weight: 500; */
+  margin: 2px 3px;
+  border: solid 1px rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: color 0.5s, background-color 0.5s;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+  }
 `
 
 const ModalWrapper = styled.div`
@@ -144,7 +182,7 @@ const ModalInner = styled.div`
 const ModalImage = styled.img`
   height: auto;
   min-height: 70vh;
-  max-height: 90vh;
+  max-height: 95vh;
   object-fit: contain;
   width: auto;
   max-width: 90vw;

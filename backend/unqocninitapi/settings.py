@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',  # django_rest_framework 추가
     'corsheaders',  # cors header 추가로 script 요청 가능하게
     'newsroom',  # 뉴스룸 기능 app 추가
+    'portfolio',  # 포폴데이터를 rest api로 보내줄 app추가
 ]
 
 MIDDLEWARE = [

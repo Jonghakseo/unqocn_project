@@ -17,7 +17,7 @@ class Java extends Component {
     media_arr: [
       {
         active: true,
-        src: JavaVideo,
+        src: 'https://unqocn.hopto.org/res/videos/java.mp4',
         type: 'video',
         desc: '플레이 영상입니다.',
       },
@@ -175,11 +175,16 @@ class Java extends Component {
             <span className="portfolio_text_title">작품 이름</span>{' '}
             <span className="portfolio_text_content">
               <h2>건물주 게임</h2>
+              <br />
             </span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">개발 기간</span>{' '}
-            <span className="portfolio_text_content">2019. 10. 26 ~ 2019. 11. 18 (3주)</span>
+            <span className="portfolio_text_content">
+              2019. 10. 26 ~ 2019. 11. 18 (3주)
+              <br />
+              <br />
+            </span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소개</span>{' '}
@@ -202,6 +207,7 @@ class Java extends Component {
               1:1 대전으로 두 유저 중 돈이 먼저 떨어지는 플레이어가 패배하게 되며, 자동으로 상대
               유저가 승리합니다.
               <br />
+              <br />
             </span>
           </div>
 
@@ -220,6 +226,7 @@ class Java extends Component {
               <br />
               6. 각종 배경음악 및 버튼음, 효과음 스레드
               <br />
+              <br />
             </span>
           </div>
           <div className="portfolio_text_wrapper">
@@ -234,6 +241,7 @@ class Java extends Component {
               <br />
               무수한 버그를 마주하면서 '컴퓨터는 잘못이 없고 모든 문제는 내 잘못이구나'라는 진리를
               깨달은 시기이기도 합니다.
+              <br /> <br />
             </span>
           </div>
         </article>

@@ -1,56 +1,72 @@
 import React, { Component } from 'react'
 import './TimelineItem.css'
 import Modal from '../Modal/Modal'
-import AndroidImage from '../../res/pic/android/setting_account.PNG'
-import AndroidVideo from '../../res/videos/android.mp4'
+import BasicImage from '../../res/pic/android/setting_account.PNG'
 
-class Game extends Component {
-  //   constructor(props) {
-  //     super(props)
-  //   }
-  async componentDidMount() {
-    try {
-      const res = await fetch('https://unqocn-api.hopto.org/portfolio/1')
-      //news 크롤링 전체 목록 반환
-      const java = await res.json()
-      console.log(java)
-      console.log(java['item_media_array'])
-      let item_media_arr = JSON.parse(java['item_media_array'])
-
-      console.log(item_media_arr)
-
-      let new_media_arr = []
-
-      item_media_arr.forEach((element) => {
-        try {
-          let item_active = element['active']
-          let item_src = element['src']
-          let item_type = element['type']
-          let item_desc = element['desc']
-          new_media_arr.push({
-            active: item_active,
-            src: item_src,
-            type: item_type,
-            desc: item_desc,
-          })
-        } catch (error) {
-          console.log(error)
-        }
-      })
-      this.setState({ media_arr: new_media_arr })
-    } catch (e) {
-      console.log(e)
+class Item extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      index: props.item_index, //가져올 아이템 인덱스
+      modalVisible: false, //모달 켜고 끌 변수
+      select_ind: 0, //슬라이더로 보여줄 인덱스
+      media_arr: [
+        { active: true, src: BasicImage, type: 'img', desc: '로딩 전 기본이미지입니다.' },
+      ], //미디어를 담을 배열
+      item_title: '작품 카테고리',
+      item_name: '작품 제목',
+      dev_term: '개발 기간',
+      dev_intro: '작품 소개',
+      dev_feature: '주요 기능',
+      dev_review: '작품 소감',
     }
   }
 
-  state = {
-    modalVisible: false, //모달 켜고 끌 변수
-    select_ind: 0, //슬라이더로 보여줄 인덱스
-    media_arr: [
-      { active: true, src: AndroidVideo, type: 'video', desc: '설명입니다. <br> dd\ndd' },
-    ], //미디어를 담을 배열
-    item_title: '',
-    item_name: '',
+  async componentDidMount() {
+    if (this.props.item_index > 0) {
+      // this.setState({ index: this.props.item_index })
+
+      try {
+        const res = await fetch('https://unqocn-api.hopto.org/portfolio/' + this.state.index)
+        //news 크롤링 전체 목록 반환
+        const java = await res.json()
+        // console.log(java)
+        // console.log(java['item_media_array'])
+        let item_media_arr = JSON.parse(java['item_media_array'])
+
+        // console.log(item_media_arr)
+
+        let new_media_arr = []
+
+        item_media_arr.forEach((element) => {
+          try {
+            let item_active = element['active']
+            let item_src = element['src']
+            let item_type = element['type']
+            let item_desc = element['desc']
+            new_media_arr.push({
+              active: item_active,
+              src: item_src,
+              type: item_type,
+              desc: item_desc,
+            })
+          } catch (error) {
+            console.log(error)
+          }
+        })
+        this.setState({
+          media_arr: new_media_arr,
+          item_title: java['item_title'],
+          item_name: java['item_name'],
+          dev_term: java['dev_term'],
+          dev_intro: java['dev_intro'],
+          dev_feature: java['dev_feature'],
+          dev_review: java['dev_review'],
+        })
+      } catch (e) {
+        console.log(e)
+      }
+    }
   }
 
   onClickThumbnail = (selected_key) => {
@@ -77,7 +93,15 @@ class Game extends Component {
 
   render() {
     // console.log(this.state)
-    let { modalVisible } = this.state
+    let {
+      modalVisible,
+      item_title,
+      item_name,
+      dev_term,
+      dev_intro,
+      dev_feature,
+      dev_review,
+    } = this.state
     // 모달창 띄울 변수 선언
     let selected_item = this.state.media_arr.find((item) => item.active === true)
     let main_media = () => {
@@ -123,7 +147,10 @@ class Game extends Component {
     return (
       <section className="portfolio_section">
         {/* 섹션에 플렉스 적용하고 col 방향으로 진행되게 함 */}
-        <div className="portfolio_title">UE4 3D게임 {/* 제목 들어갈 영역 */}</div>
+        <div className="portfolio_title">
+          {item_title}
+          {/* 제목 들어갈 영역 */}
+        </div>
 
         <div className="portfolio_media_section">
           <div className="portfolio_media_wrapper">
@@ -166,62 +193,37 @@ class Game extends Component {
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 이름</span>{' '}
             <span className="portfolio_text_content">
-              <h2>학수고대</h2>
+              <h2> {item_name}</h2>
             </span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">개발 기간</span>{' '}
-            <span className="portfolio_text_content">2019. 11. 25 ~ 2019. 12. 31 (4주)</span>
+            <span
+              className="portfolio_text_content"
+              dangerouslySetInnerHTML={{ __html: dev_term }}
+            ></span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소개</span>{' '}
-            <span className="portfolio_text_content">
-              비트윈 같은 커플 전용 앱입니다.
-              <br />
-              장거리 연애(롱디)를 했던 경험을 살려, 대륙 간 초장거리 커플에게 특화된 기능들을
-              넣었습니다.
-              <br />
-              <br />
-            </span>
+            <span
+              className="portfolio_text_content"
+              dangerouslySetInnerHTML={{ __html: dev_intro }}
+            ></span>
           </div>
 
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">주요 기능</span>{' '}
-            <span className="portfolio_text_content">
-              1. 회원가입과 로그인, 비밀번호 찾기
-              <br />
-              2. D-Day , 함께 하는 TODO-List (Together-Do List)
-              <br />
-              3. 그림 메모
-              <br />
-              4. firebase를 통한 채팅, 이미지 전송, notification
-              <br />
-              5. WebRTC를 사용한 영상통화 (Remote Monster API)
-              <br />
-              6. 일정 공유 (google calander API)
-              <br />
-              7. 날씨, 위치 공유 (weaterMap API , GeoCoder API)
-              <br />
-              8. 앨범, 연인 추억 타임라인
-              <br />
-              9. 계정 관리
-              <br />
-              10. 상기 내역 전부 firebase를 통한 백업 및 동기화
-            </span>
+            <span
+              className="portfolio_text_content"
+              dangerouslySetInnerHTML={{ __html: dev_feature }}
+            ></span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소감</span>{' '}
-            <span className="portfolio_text_content">
-              약 2주간 Manifest 문서와 생명주기, Intent 등을 이해하고 바로 개발을 시작했습니다.
-              <br />
-              하나둘 기능을 추가하는 재미에 더욱 욕심이 났던 작품입니다. <br />
-              sharedpreferences 안에 원하는 데이터를 저장하기 위해 고민하다가 결국 직렬화라는 방법을
-              찾아 사용했던 기억이 납니다. <br />
-              개발 막바지에 API를 처음으로 사용해봤는데, API를 잘 사용한다면 많은 서비스를 쉽게 구현
-              할 수 있다는 걸 알게 되었습니다.
-              <br />
-              DB나 네트워크에 대한 지식이 부족해서 더 많은 기능을 구현하지 못한 점이 아쉽습니다.
-            </span>
+            <span
+              className="portfolio_text_content"
+              dangerouslySetInnerHTML={{ __html: dev_review }}
+            ></span>
           </div>
         </article>
       </section>
@@ -229,4 +231,4 @@ class Game extends Component {
   }
 }
 
-export default Game
+export default Item

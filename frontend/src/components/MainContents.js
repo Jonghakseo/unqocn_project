@@ -64,7 +64,7 @@ class MainContents extends Component {
       bgColor = 'top'
       //아니라면
     }
-    console.log('pos : ', this.state.position, 'winsize : ', this.state.windowSize)
+    // console.log('pos : ', this.state.position, 'winsize : ', this.state.windowSize)
 
     //변화값들 갱신
     this.setState({

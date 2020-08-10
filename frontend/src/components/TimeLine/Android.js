@@ -257,7 +257,11 @@ class Andorid extends Component {
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">개발 기간</span>{' '}
-            <span className="portfolio_text_content">2019. 11. 25 ~ 2019. 12. 31 (5주)</span>
+            <span className="portfolio_text_content">
+              2019. 11. 25 ~ 2019. 12. 31 (5주)
+              <br />
+              <br />
+            </span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소개</span>{' '}
@@ -295,6 +299,8 @@ class Andorid extends Component {
               10. 상기 내역 전부 firebase를 통한 백업 및 동기화
               <br />
               11. Google Palette API를 사용한 홈 탭 테마 컬러 적용
+              <br />
+              <br />
             </span>
           </div>
           <div className="portfolio_text_wrapper">
@@ -303,12 +309,14 @@ class Andorid extends Component {
               약 2주간 Manifest 문서와 생명주기, Intent 등을 이해하고 바로 개발을 시작했습니다.
               <br />
               하나둘 기능을 추가하는 재미에 더욱 욕심이 났던 작품입니다. <br />
-              sharedpreferences 안에 원하는 데이터를 저장하기 위해 고민하다가 결국 직렬화라는 방법을
-              찾아 사용했던 기억이 납니다. <br />
-              개발 막바지에 API를 처음으로 사용해봤는데, API를 잘 사용한다면 많은 서비스를 쉽게 구현
-              할 수 있다는 걸 알게 되었습니다.
+              key와 value로 이루어진 sharedpreferences 안에 제가 원하는 형태로 데이터를 저장하려고
+              고민하다가 결국 직렬화라는 방법을 찾아 사용했던 기억이 납니다. <br />
               <br />
-              DB나 네트워크에 대한 지식이 부족해서 더 많은 기능을 구현하지 못한 점이 아쉽습니다.
+              개발 막바지에 API를 처음으로 사용해봤는데, API를 잘 사용한다면 많은 서비스를 쉽게 구현
+              할 수 있다는 걸 알게 되었습니다. 다만, 이 당시 DB나 네트워크에 대한 지식이 부족해 더
+              많은 기능을 구현하지 못한 점은 아쉬움으로 남습니다.
+              <br />
+              <br />
             </span>
           </div>
         </article>

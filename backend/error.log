@@ -1509,3 +1509,869 @@ NameError: name 'TypeError' is not defined
 [Sat Aug 08 13:15:03.010089 2020] [wsgi:error] [pid 10214] [remote 128.14.134.134:54014] Not Found: /
 [Sat Aug 08 16:10:13.259060 2020] [wsgi:error] [pid 10214] [remote 45.9.148.82:48220] Not Found: /
 [Sat Aug 08 17:50:18.611649 2020] [wsgi:error] [pid 10214] [remote 128.14.134.170:47426] Not Found: /
+[Sat Aug 08 18:23:04.446219 2020] [wsgi:error] [pid 10214] [remote 139.162.113.204:54738] Not Found: /
+[Sat Aug 08 18:44:44.472387 2020] [wsgi:error] [pid 10214] [remote 91.121.99.153:51079] Not Found: /
+[Sat Aug 08 18:55:53.402408 2020] [wsgi:error] [pid 10216] [remote 185.39.11.105:34308] Not Found: /
+[Sat Aug 08 19:30:26.445991 2020] [wsgi:error] [pid 10216] [remote 80.82.70.187:48058] Not Found: /cache/global/img/gs.gif
+[Sat Aug 08 19:50:47.644617 2020] [wsgi:error] [pid 10214] [remote 47.99.131.175:4122] Not Found: /
+[Sat Aug 08 21:01:19.421157 2020] [wsgi:error] [pid 10214] [remote 112.198.194.11:36116] Not Found: /
+[Sat Aug 08 21:09:00.328088 2020] [wsgi:error] [pid 10216] [remote 89.248.174.166:58562] Not Found: /
+[Sat Aug 08 22:13:54.536465 2020] [wsgi:error] [pid 10214] [remote 193.118.53.210:55366] Not Found: /
+[Sat Aug 08 22:53:59.568103 2020] [wsgi:error] [pid 10216] [remote 45.148.10.114:33802] Not Found: /
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d4a10430>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d4a10430>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Sun Aug 09 00:28:17.691813 2020] [wsgi:error] [pid 35516] [remote 185.39.11.105:57964] Not Found: /
+[Sun Aug 09 01:55:06.939399 2020] [wsgi:error] [pid 35516] [remote 35.232.198.40:35149] Not Found: /
+[Sun Aug 09 02:39:29.766791 2020] [wsgi:error] [pid 35516] [remote 223.223.200.14:45817] Not Found: /
+[Sun Aug 09 03:16:00.130937 2020] [wsgi:error] [pid 35516] [remote 151.80.145.175:45438] Not Found: /
+[Sun Aug 09 04:19:27.164296 2020] [wsgi:error] [pid 35516] [remote 128.14.134.134:37780] Not Found: /
+[Sun Aug 09 04:29:50.370259 2020] [wsgi:error] [pid 35516] [remote 185.39.11.105:52020] Not Found: /
+[Sun Aug 09 05:09:30.083419 2020] [wsgi:error] [pid 35518] [remote 80.82.70.187:48831] Not Found: /cache/global/img/gs.gif
+[Sun Aug 09 05:59:57.947529 2020] [wsgi:error] [pid 35516] [remote 192.241.237.51:56652] Not Found: /
+[Sun Aug 09 06:23:15.840811 2020] [wsgi:error] [pid 35516] [remote 129.150.222.204:17307] Not Found: /
+[Sun Aug 09 06:53:08.707052 2020] [wsgi:error] [pid 35518] [remote 183.136.225.44:26403] Not Found: /
+[Sun Aug 09 07:06:18.337362 2020] [wsgi:error] [pid 35516] [remote 47.244.190.211:54084] Not Found: /
+[Sun Aug 09 07:10:14.100219 2020] [wsgi:error] [pid 35518] [remote 89.248.174.166:37696] Not Found: /
+[Sun Aug 09 08:04:31.731975 2020] [wsgi:error] [pid 35518] [remote 62.171.189.221:38014] Not Found: /
+[Sun Aug 09 08:49:23.633921 2020] [wsgi:error] [pid 35516] [remote 185.39.11.105:41552] Not Found: /
+[Sun Aug 09 09:54:52.245035 2020] [wsgi:error] [pid 35516] [remote 129.144.3.79:38183] Not Found: /
+[Sun Aug 09 09:58:55.058947 2020] [wsgi:error] [pid 35516] [remote 185.39.11.105:44686] Not Found: /
+[Sun Aug 09 12:31:51.422733 2020] [wsgi:error] [pid 35518] [remote 139.162.79.87:46990] Not Found: /
+[Sun Aug 09 12:52:07.219770 2020] [wsgi:error] [pid 35518] [remote 54.184.192.218:52070] Not Found: /
+[Sun Aug 09 13:07:53.576771 2020] [wsgi:error] [pid 35516] [remote 74.82.47.2:30338] Not Found: /
+[Sun Aug 09 13:56:04.903431 2020] [wsgi:error] [pid 35518] [remote 172.93.99.2:34538] Not Found: /config/getuser
+[Sun Aug 09 14:09:55.451996 2020] [wsgi:error] [pid 35516] [remote 52.186.140.175:64926] Not Found: /
+[Sun Aug 09 14:09:56.341192 2020] [wsgi:error] [pid 35516] [remote 52.186.140.175:49350] Not Found: /HNAP1/
+[Sun Aug 09 14:48:17.419538 2020] [wsgi:error] [pid 35518] [remote 80.82.70.187:41672] Not Found: /cache/global/img/gs.gif
+[Sun Aug 09 14:50:31.441340 2020] [wsgi:error] [pid 35516] [remote 200.106.60.7:60438] Not Found: /
+[Sun Aug 09 17:12:42.199498 2020] [wsgi:error] [pid 35518] [remote 89.248.174.166:37158] Not Found: /
+[Sun Aug 09 17:36:40.033292 2020] [wsgi:error] [pid 35518] [remote 223.71.167.163:39711] Not Found: /
+[Sun Aug 09 17:42:32.214000 2020] [wsgi:error] [pid 35516] [remote 103.252.50.15:36609] Not Found: /
+[Sun Aug 09 19:55:35.842725 2020] [wsgi:error] [pid 35518] [remote 172.93.99.2:45328] Not Found: /boaform/admin/formLogin
+[Sun Aug 09 20:04:35.305972 2020] [wsgi:error] [pid 35518] [remote 51.15.118.183:50670] Not Found: /config/getuser
+[Sun Aug 09 20:31:09.961693 2020] [wsgi:error] [pid 35516] [remote 113.56.35.3:33190] Not Found: /
+[Sun Aug 09 21:31:49.762630 2020] [wsgi:error] [pid 35516] [remote 193.118.53.210:45938] Not Found: /
+[Sun Aug 09 23:06:52.931311 2020] [wsgi:error] [pid 35516] [remote 37.26.236.12:58471] Not Found: /
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d4a0f3a0>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d4a0f3a0>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Aug 10 00:26:38.018872 2020] [wsgi:error] [pid 55849] [remote 80.82.70.187:48369] Not Found: /cache/global/img/gs.gif
+[Mon Aug 10 00:29:49.720115 2020] [wsgi:error] [pid 55847] [remote 185.39.11.105:57988] Not Found: /
+[Mon Aug 10 02:29:28.254443 2020] [wsgi:error] [pid 55849] [remote 51.158.72.189:45740] Not Found: /config/getuser
+[Mon Aug 10 02:31:51.986068 2020] [wsgi:error] [pid 55847] [remote 185.39.11.105:54372] Not Found: /
+[Mon Aug 10 02:55:05.863064 2020] [wsgi:error] [pid 55849] [remote 89.248.174.166:38132] Not Found: /
+[Mon Aug 10 03:05:56.732848 2020] [wsgi:error] [pid 55847] [remote 129.144.3.135:34750] Not Found: /
+[Mon Aug 10 07:06:36.783573 2020] [wsgi:error] [pid 55847] [remote 138.68.67.178:41286] Not Found: /
+[Mon Aug 10 07:06:42.889563 2020] [wsgi:error] [pid 55849] [remote 138.68.67.178:46694] Not Found: /
+[Mon Aug 10 07:29:41.758036 2020] [wsgi:error] [pid 55847] [remote 128.14.133.58:43202] Not Found: /
+[Mon Aug 10 07:48:46.581194 2020] [wsgi:error] [pid 55847] [remote 140.238.42.16:49058] Not Found: /
+[Mon Aug 10 09:04:37.714266 2020] [wsgi:error] [pid 55849] [remote 51.15.245.74:44684] Not Found: /boaform/admin/formLogin
+[Mon Aug 10 10:07:18.989199 2020] [wsgi:error] [pid 55849] [remote 80.82.70.187:41648] Not Found: /cache/global/img/gs.gif
+[Mon Aug 10 10:37:26.364510 2020] [wsgi:error] [pid 55847] [remote 61.132.225.100:60705] Not Found: /
+[Mon Aug 10 10:59:05.520807 2020] [wsgi:error] [pid 55847] [remote 163.47.33.20:44604] Not Found: /
+[Mon Aug 10 11:34:27.238763 2020] [wsgi:error] [pid 55847] [remote 54.215.135.41:39452] Not Found: /
+[Mon Aug 10 12:02:43.656805 2020] [wsgi:error] [pid 55847] [remote 216.218.206.69:19438] Not Found: /
+[Mon Aug 10 13:05:54.678120 2020] [wsgi:error] [pid 55849] [remote 89.248.174.166:34300] Not Found: /
+[Mon Aug 10 13:21:08.855901 2020] [wsgi:error] [pid 55849] [remote 106.75.2.200:53006] Not Found: /
+[Mon Aug 10 13:21:09.180974 2020] [wsgi:error] [pid 55849] [remote 106.75.2.200:53084] Not Found: /
+[Mon Aug 10 13:21:09.762933 2020] [wsgi:error] [pid 55849] [remote 120.52.152.20:30837] Not Found: /
+[Mon Aug 10 13:44:22.422676 2020] [wsgi:error] [pid 55847] [remote 130.61.9.207:59082] Not Found: /
+[Mon Aug 10 14:41:01.282281 2020] [wsgi:error] [pid 55847] [remote 129.144.224.27:48845] Not Found: /
+[Mon Aug 10 16:25:30.184630 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:4619] Not Found: /
+[Mon Aug 10 16:25:54.282142 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:12150] Not Found: /HNAP1/
+[Mon Aug 10 16:25:55.928327 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:12722] Not Found: /hudson/script
+[Mon Aug 10 16:25:56.381335 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:12947] Not Found: /script
+[Mon Aug 10 16:25:57.425460 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:13288] Not Found: /sqlite/main.php
+[Mon Aug 10 16:25:57.864233 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:13462] Not Found: /sqlitemanager/main.php
+[Mon Aug 10 16:25:58.327354 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:13574] Not Found: /SQLiteManager/main.php
+[Mon Aug 10 16:25:58.783351 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:13694] Not Found: /SQLite/main.php
+[Mon Aug 10 16:25:59.224218 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:13802] Not Found: /SQlite/main.php
+[Mon Aug 10 16:25:59.665369 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:13916] Not Found: /main.php
+[Mon Aug 10 16:26:00.105377 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:14028] Not Found: /test/sqlite/SQLiteManager-1.2.0/SQLiteManager-1.2.0/main.php
+[Mon Aug 10 16:26:00.551280 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:14166] Not Found: /SQLiteManager-1.2.4/main.php
+[Mon Aug 10 16:26:00.997347 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:14354] Not Found: /agSearch/SQlite/main.php
+[Mon Aug 10 16:26:02.223194 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:14783] Not Found: /phpmyadmin/
+[Mon Aug 10 16:26:02.677150 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:14904] Not Found: /phpMyAdmin/
+[Mon Aug 10 16:26:03.116231 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:15046] Not Found: /PMA/
+[Mon Aug 10 16:26:03.568346 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:15161] Not Found: /pma/
+[Mon Aug 10 16:26:04.976514 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:15661] Not Found: /dbadmin/
+[Mon Aug 10 16:26:05.417314 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:15867] Not Found: /mysql/
+[Mon Aug 10 16:26:05.875358 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:16026] Not Found: /myadmin/
+[Mon Aug 10 16:26:06.322273 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:16182] Not Found: /openserver/phpmyadmin/
+[Mon Aug 10 16:26:06.767145 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:16381] Not Found: /phpmyadmin2/
+[Mon Aug 10 16:26:07.239164 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:16565] Not Found: /phpMyAdmin2/
+[Mon Aug 10 16:26:07.677287 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:16704] Not Found: /phpMyAdmin-2/
+[Mon Aug 10 16:26:08.121207 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:16852] Not Found: /php-my-admin/
+[Mon Aug 10 16:26:08.562357 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:17081] Not Found: /phpMyAdmin-2.2.3/
+[Mon Aug 10 16:26:09.011282 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:17242] Not Found: /phpMyAdmin-2.2.6/
+[Mon Aug 10 16:26:09.452232 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:17397] Not Found: /phpMyAdmin-2.5.1/
+[Mon Aug 10 16:26:09.894444 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:17553] Not Found: /phpMyAdmin-2.5.4/
+[Mon Aug 10 16:26:10.343476 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:17702] Not Found: /phpMyAdmin-2.5.5-rc1/
+[Mon Aug 10 16:26:10.782207 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:17876] Not Found: /phpMyAdmin-2.5.5-rc2/
+[Mon Aug 10 16:26:11.224424 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:18044] Not Found: /phpMyAdmin-2.5.5/
+[Mon Aug 10 16:26:11.666378 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:18177] Not Found: /phpMyAdmin-2.5.5-pl1/
+[Mon Aug 10 16:26:12.113283 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:18314] Not Found: /phpMyAdmin-2.5.6-rc1/
+[Mon Aug 10 16:26:12.563585 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:18488] Not Found: /phpMyAdmin-2.5.6-rc2/
+[Mon Aug 10 16:26:13.010523 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:18655] Not Found: /phpMyAdmin-2.5.6/
+[Mon Aug 10 16:26:13.455371 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:18784] Not Found: /phpMyAdmin-2.5.7/
+[Mon Aug 10 16:26:13.899250 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:18929] Not Found: /phpMyAdmin-2.5.7-pl1/
+[Mon Aug 10 16:26:14.401319 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:19090] Not Found: /phpMyAdmin-2.6.0-alpha/
+[Mon Aug 10 16:26:14.847258 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:19276] Not Found: /phpMyAdmin-2.6.0-alpha2/
+[Mon Aug 10 16:26:15.298300 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:19414] Not Found: /phpMyAdmin-2.6.0-beta1/
+[Mon Aug 10 16:26:15.768413 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:19546] Not Found: /phpMyAdmin-2.6.0-beta2/
+[Mon Aug 10 16:26:16.209301 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:19691] Not Found: /phpMyAdmin-2.6.0-rc1/
+[Mon Aug 10 16:26:16.659380 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:19829] Not Found: /phpMyAdmin-2.6.0-rc2/
+[Mon Aug 10 16:26:17.102466 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:19990] Not Found: /phpMyAdmin-2.6.0-rc3/
+[Mon Aug 10 16:26:17.555466 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:20136] Not Found: /phpMyAdmin-2.6.0/
+[Mon Aug 10 16:26:18.008443 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:20305] Not Found: /phpMyAdmin-2.6.0-pl1/
+[Mon Aug 10 16:26:18.448424 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:20437] Not Found: /phpMyAdmin-2.6.0-pl2/
+[Mon Aug 10 16:26:18.893331 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:20556] Not Found: /phpMyAdmin-2.6.0-pl3/
+[Mon Aug 10 16:26:19.337357 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:20729] Not Found: /phpMyAdmin-2.6.1-rc1/
+[Mon Aug 10 16:26:19.783476 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:20841] Not Found: /phpMyAdmin-2.6.1-rc2/
+[Mon Aug 10 16:26:20.225450 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:20968] Not Found: /phpMyAdmin-2.6.1/
+[Mon Aug 10 16:26:20.669548 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:21103] Not Found: /phpMyAdmin-2.6.1-pl1/
+[Mon Aug 10 16:26:21.117455 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:21277] Not Found: /phpMyAdmin-2.6.1-pl2/
+[Mon Aug 10 16:26:21.578562 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:21424] Not Found: /phpMyAdmin-2.6.1-pl3/
+[Mon Aug 10 16:26:22.025422 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:21603] Not Found: /phpMyAdmin-2.6.2-rc1/
+[Mon Aug 10 16:26:22.470380 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:21770] Not Found: /phpMyAdmin-2.6.2-beta1/
+[Mon Aug 10 16:26:22.913324 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:21900] Not Found: /phpMyAdmin-2.6.2-rc1/
+[Mon Aug 10 16:26:23.370563 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:22042] Not Found: /phpMyAdmin-2.6.2/
+[Mon Aug 10 16:26:23.810699 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:22183] Not Found: /phpMyAdmin-2.6.2-pl1/
+[Mon Aug 10 16:26:24.256578 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:22331] Not Found: /phpMyAdmin-2.6.3/
+[Mon Aug 10 16:26:24.695600 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:22452] Not Found: /phpMyAdmin-2.6.3-rc1/
+[Mon Aug 10 16:26:25.136529 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:22617] Not Found: /phpMyAdmin-2.6.3/
+[Mon Aug 10 16:26:25.575478 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:22758] Not Found: /phpMyAdmin-2.6.3-pl1/
+[Mon Aug 10 16:26:26.017422 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:22880] Not Found: /phpMyAdmin-2.6.4-rc1/
+[Mon Aug 10 16:26:26.458663 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:23091] Not Found: /phpMyAdmin-2.6.4-pl1/
+[Mon Aug 10 16:26:26.901507 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:23281] Not Found: /phpMyAdmin-2.6.4-pl2/
+[Mon Aug 10 16:26:27.343478 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:23486] Not Found: /phpMyAdmin-2.6.4-pl3/
+[Mon Aug 10 16:26:27.784749 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:23645] Not Found: /phpMyAdmin-2.6.4-pl4/
+[Mon Aug 10 16:26:28.229506 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:23812] Not Found: /phpMyAdmin-2.6.4/
+[Mon Aug 10 16:26:28.705610 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:23961] Not Found: /phpMyAdmin-2.7.0-beta1/
+[Mon Aug 10 16:26:29.153682 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:24124] Not Found: /phpMyAdmin-2.7.0-rc1/
+[Mon Aug 10 16:26:29.604593 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:24321] Not Found: /phpMyAdmin-2.7.0-pl1/
+[Mon Aug 10 16:26:30.083551 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:24420] Not Found: /phpMyAdmin-2.7.0-pl2/
+[Mon Aug 10 16:26:30.541619 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:24564] Not Found: /phpMyAdmin-2.7.0/
+[Mon Aug 10 16:26:30.989710 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:24739] Not Found: /phpMyAdmin-2.8.0-beta1/
+[Mon Aug 10 16:26:31.447525 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:24877] Not Found: /phpMyAdmin-2.8.0-rc1/
+[Mon Aug 10 16:26:31.913695 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:25031] Not Found: /phpMyAdmin-2.8.0-rc2/
+[Mon Aug 10 16:26:32.376533 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:25219] Not Found: /phpMyAdmin-2.8.0/
+[Mon Aug 10 16:26:32.841571 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:25456] Not Found: /phpMyAdmin-2.8.0.1/
+[Mon Aug 10 16:26:33.321654 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:25617] Not Found: /phpMyAdmin-2.8.0.2/
+[Mon Aug 10 16:26:33.775699 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:25775] Not Found: /phpMyAdmin-2.8.0.3/
+[Mon Aug 10 16:26:34.223583 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:25933] Not Found: /phpMyAdmin-2.8.0.4/
+[Mon Aug 10 16:26:34.688678 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:26060] Not Found: /phpMyAdmin-2.8.1-rc1/
+[Mon Aug 10 16:26:35.132678 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:26223] Not Found: /phpMyAdmin-2.8.1/
+[Mon Aug 10 16:26:35.571600 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:26373] Not Found: /phpMyAdmin-2.8.2/
+[Mon Aug 10 16:26:36.009952 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:26567] Not Found: /sqlmanager/
+[Mon Aug 10 16:26:36.456587 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:26746] Not Found: /mysqlmanager/
+[Mon Aug 10 16:26:36.894702 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:26874] Not Found: /p/m/a/
+[Mon Aug 10 16:26:37.332683 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:26982] Not Found: /PMA2005/
+[Mon Aug 10 16:26:37.797851 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:27142] Not Found: /pma2005/
+[Mon Aug 10 16:26:38.237782 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:27294] Not Found: /phpmanager/
+[Mon Aug 10 16:26:38.690724 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:27417] Not Found: /php-myadmin/
+[Mon Aug 10 16:26:39.158695 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:27545] Not Found: /phpmy-admin/
+[Mon Aug 10 16:26:39.626820 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:27772] Not Found: /webadmin/
+[Mon Aug 10 16:26:40.068814 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:27924] Not Found: /sqlweb/
+[Mon Aug 10 16:26:40.512812 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:28075] Not Found: /websql/
+[Mon Aug 10 16:26:40.957690 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:28230] Not Found: /webdb/
+[Mon Aug 10 16:26:41.402843 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:28350] Not Found: /mysqladmin/
+[Mon Aug 10 16:26:41.863806 2020] [wsgi:error] [pid 55847] [remote 60.172.0.145:28470] Not Found: /mysql-admin/
+[Mon Aug 10 16:27:14.578303 2020] [wsgi:error] [pid 55847] [remote 213.218.204.46:57827] Not Found: /
+[Mon Aug 10 16:27:14.867412 2020] [wsgi:error] [pid 55847] [remote 213.218.204.46:57827] Not Found: /
+[Mon Aug 10 18:03:45.148367 2020] [wsgi:error] [pid 55847] [remote 121.31.5.183:50041] Not Found: /
+[Mon Aug 10 18:30:34.144437 2020] [wsgi:error] [pid 55847] [remote 175.193.7.189:1078] Not Found: /
+[Mon Aug 10 18:30:34.367675 2020] [wsgi:error] [pid 55847] [remote 175.193.7.189:1078] Not Found: /favicon.ico
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f74d554f670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d6122700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d4a0f3a0>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f74d4a0f3a0>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Aug 10 18:32:41.879112 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084] Internal Server Error: /admin/portfolio/portfolioitemdata/
+[Mon Aug 10 18:32:41.879144 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084] Traceback (most recent call last):
+[Mon Aug 10 18:32:41.879147 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+[Mon Aug 10 18:32:41.879149 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return self.cursor.execute(sql, params)
+[Mon Aug 10 18:32:41.879152 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 396, in execute
+[Mon Aug 10 18:32:41.879154 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return Database.Cursor.execute(self, query, params)
+[Mon Aug 10 18:32:41.879157 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084] sqlite3.OperationalError: no such table: portfolio_portfolioitemdata
+[Mon Aug 10 18:32:41.879159 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084] 
+[Mon Aug 10 18:32:41.879161 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084] The above exception was the direct cause of the following exception:
+[Mon Aug 10 18:32:41.879163 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084] 
+[Mon Aug 10 18:32:41.879166 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084] Traceback (most recent call last):
+[Mon Aug 10 18:32:41.879168 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:32:41.879170 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     response = get_response(request)
+[Mon Aug 10 18:32:41.879173 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:32:41.879175 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:32:41.879178 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:32:41.879180 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:32:41.879183 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 607, in wrapper
+[Mon Aug 10 18:32:41.879185 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return self.admin_site.admin_view(view)(*args, **kwargs)
+[Mon Aug 10 18:32:41.879187 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+[Mon Aug 10 18:32:41.879190 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     response = view_func(request, *args, **kwargs)
+[Mon Aug 10 18:32:41.879192 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+[Mon Aug 10 18:32:41.879195 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     response = view_func(request, *args, **kwargs)
+[Mon Aug 10 18:32:41.879197 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 231, in inner
+[Mon Aug 10 18:32:41.879210 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return view(request, *args, **kwargs)
+[Mon Aug 10 18:32:41.879213 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+[Mon Aug 10 18:32:41.879215 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return bound_method(*args, **kwargs)
+[Mon Aug 10 18:32:41.879217 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+[Mon Aug 10 18:32:41.879220 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     response = view_func(request, *args, **kwargs)
+[Mon Aug 10 18:32:41.879222 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1678, in changelist_view
+[Mon Aug 10 18:32:41.879225 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     cl = self.get_changelist_instance(request)
+[Mon Aug 10 18:32:41.879227 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 728, in get_changelist_instance
+[Mon Aug 10 18:32:41.879229 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return ChangeList(
+[Mon Aug 10 18:32:41.879232 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 98, in __init__
+[Mon Aug 10 18:32:41.879234 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     self.get_results(request)
+[Mon Aug 10 18:32:41.879237 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 226, in get_results
+[Mon Aug 10 18:32:41.879239 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     result_count = paginator.count
+[Mon Aug 10 18:32:41.879241 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+[Mon Aug 10 18:32:41.879244 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     res = instance.__dict__[self.name] = self.func(instance)
+[Mon Aug 10 18:32:41.879246 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/paginator.py", line 91, in count
+[Mon Aug 10 18:32:41.879248 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return c()
+[Mon Aug 10 18:32:41.879251 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/query.py", line 397, in count
+[Mon Aug 10 18:32:41.879253 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return self.query.get_count(using=self.db)
+[Mon Aug 10 18:32:41.879255 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 518, in get_count
+[Mon Aug 10 18:32:41.879258 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     number = obj.get_aggregation(using, ['__count'])['__count']
+[Mon Aug 10 18:32:41.879260 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 503, in get_aggregation
+[Mon Aug 10 18:32:41.879263 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     result = compiler.execute_sql(SINGLE)
+[Mon Aug 10 18:32:41.879265 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1152, in execute_sql
+[Mon Aug 10 18:32:41.879269 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     cursor.execute(sql, params)
+[Mon Aug 10 18:32:41.879272 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 100, in execute
+[Mon Aug 10 18:32:41.879274 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return super().execute(sql, params)
+[Mon Aug 10 18:32:41.879277 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 68, in execute
+[Mon Aug 10 18:32:41.879279 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+[Mon Aug 10 18:32:41.879282 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+[Mon Aug 10 18:32:41.879284 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return executor(sql, params, many, context)
+[Mon Aug 10 18:32:41.879286 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+[Mon Aug 10 18:32:41.879289 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return self.cursor.execute(sql, params)
+[Mon Aug 10 18:32:41.879291 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+[Mon Aug 10 18:32:41.879294 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     raise dj_exc_value.with_traceback(traceback) from exc_value
+[Mon Aug 10 18:32:41.879296 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 86, in _execute
+[Mon Aug 10 18:32:41.879298 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return self.cursor.execute(sql, params)
+[Mon Aug 10 18:32:41.879301 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 396, in execute
+[Mon Aug 10 18:32:41.879303 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084]     return Database.Cursor.execute(self, query, params)
+[Mon Aug 10 18:32:41.879306 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1084] django.db.utils.OperationalError: no such table: portfolio_portfolioitemdata
+[Mon Aug 10 18:35:50.636089 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1111] Not Found: /portfolio
+[Mon Aug 10 18:35:56.473125 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115] Internal Server Error: /portfolio/java
+[Mon Aug 10 18:35:56.473149 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115] Traceback (most recent call last):
+[Mon Aug 10 18:35:56.473152 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:35:56.473156 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     response = get_response(request)
+[Mon Aug 10 18:35:56.473158 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:35:56.473161 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:35:56.473164 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:35:56.473167 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:35:56.473177 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:35:56.473180 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:35:56.473182 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:35:56.473185 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:35:56.473187 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:35:56.473190 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     response = self.handle_exception(exc)
+[Mon Aug 10 18:35:56.473192 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:35:56.473194 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:35:56.473197 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:35:56.473199 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     raise exc
+[Mon Aug 10 18:35:56.473202 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:35:56.473204 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:35:56.473206 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 282, in get
+[Mon Aug 10 18:35:56.473209 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     return self.retrieve(request, *args, **kwargs)
+[Mon Aug 10 18:35:56.473211 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 54, in retrieve
+[Mon Aug 10 18:35:56.473214 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     instance = self.get_object()
+[Mon Aug 10 18:35:56.473216 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 88, in get_object
+[Mon Aug 10 18:35:56.473218 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115]     assert lookup_url_kwarg in self.kwargs, (
+[Mon Aug 10 18:35:56.473221 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1115] AssertionError: Expected view JavaItem to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+[Mon Aug 10 18:36:15.719461 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114] Internal Server Error: /portfolio/java
+[Mon Aug 10 18:36:15.719487 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114] Traceback (most recent call last):
+[Mon Aug 10 18:36:15.719490 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:36:15.719493 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     response = get_response(request)
+[Mon Aug 10 18:36:15.719495 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:36:15.719498 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:36:15.719509 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:36:15.719512 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:36:15.719514 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:36:15.719517 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:36:15.719519 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:36:15.719522 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:36:15.719524 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:36:15.719527 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     response = self.handle_exception(exc)
+[Mon Aug 10 18:36:15.719529 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:36:15.719531 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:36:15.719534 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:36:15.719536 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     raise exc
+[Mon Aug 10 18:36:15.719539 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:36:15.719541 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:36:15.719543 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 282, in get
+[Mon Aug 10 18:36:15.719546 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     return self.retrieve(request, *args, **kwargs)
+[Mon Aug 10 18:36:15.719548 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 54, in retrieve
+[Mon Aug 10 18:36:15.719551 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     instance = self.get_object()
+[Mon Aug 10 18:36:15.719553 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 88, in get_object
+[Mon Aug 10 18:36:15.719555 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114]     assert lookup_url_kwarg in self.kwargs, (
+[Mon Aug 10 18:36:15.719558 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1114] AssertionError: Expected view JavaItem to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+[Mon Aug 10 18:36:44.530938 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120] Internal Server Error: /portfolio/java
+[Mon Aug 10 18:36:44.530965 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120] Traceback (most recent call last):
+[Mon Aug 10 18:36:44.530968 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:36:44.530979 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     response = get_response(request)
+[Mon Aug 10 18:36:44.530982 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:36:44.530984 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:36:44.530987 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:36:44.530989 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:36:44.530992 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:36:44.530994 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:36:44.530996 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:36:44.530999 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:36:44.531001 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:36:44.531004 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     response = self.handle_exception(exc)
+[Mon Aug 10 18:36:44.531006 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:36:44.531009 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:36:44.531011 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:36:44.531013 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     raise exc
+[Mon Aug 10 18:36:44.531016 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:36:44.531018 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:36:44.531021 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 282, in get
+[Mon Aug 10 18:36:44.531023 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     return self.retrieve(request, *args, **kwargs)
+[Mon Aug 10 18:36:44.531025 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 54, in retrieve
+[Mon Aug 10 18:36:44.531028 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     instance = self.get_object()
+[Mon Aug 10 18:36:44.531030 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 88, in get_object
+[Mon Aug 10 18:36:44.531032 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120]     assert lookup_url_kwarg in self.kwargs, (
+[Mon Aug 10 18:36:44.531035 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1120] AssertionError: Expected view JavaItem to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+[Mon Aug 10 18:37:50.390650 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121] Internal Server Error: /portfolio/java
+[Mon Aug 10 18:37:50.390693 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121] Traceback (most recent call last):
+[Mon Aug 10 18:37:50.390696 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:37:50.390699 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     response = get_response(request)
+[Mon Aug 10 18:37:50.390701 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:37:50.390704 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:37:50.390706 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:37:50.390709 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:37:50.390711 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:37:50.390713 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:37:50.390716 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:37:50.390718 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:37:50.390721 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:37:50.390723 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     response = self.handle_exception(exc)
+[Mon Aug 10 18:37:50.390725 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:37:50.390728 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:37:50.390730 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:37:50.390733 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     raise exc
+[Mon Aug 10 18:37:50.390735 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:37:50.390737 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:37:50.390740 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 282, in get
+[Mon Aug 10 18:37:50.390742 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     return self.retrieve(request, *args, **kwargs)
+[Mon Aug 10 18:37:50.390745 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 54, in retrieve
+[Mon Aug 10 18:37:50.390747 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     instance = self.get_object()
+[Mon Aug 10 18:37:50.390749 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 88, in get_object
+[Mon Aug 10 18:37:50.390754 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121]     assert lookup_url_kwarg in self.kwargs, (
+[Mon Aug 10 18:37:50.390757 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1121] AssertionError: Expected view JavaItem to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+[Mon Aug 10 18:39:02.951350 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126] Internal Server Error: /portfolio/java
+[Mon Aug 10 18:39:02.951379 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126] Traceback (most recent call last):
+[Mon Aug 10 18:39:02.951382 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:39:02.951385 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     response = get_response(request)
+[Mon Aug 10 18:39:02.951388 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:39:02.951391 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:39:02.951394 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:39:02.951397 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:39:02.951399 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:39:02.951402 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:39:02.951405 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:39:02.951408 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:39:02.951410 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:39:02.951413 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     response = self.handle_exception(exc)
+[Mon Aug 10 18:39:02.951416 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:39:02.951419 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:39:02.951421 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:39:02.951424 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     raise exc
+[Mon Aug 10 18:39:02.951427 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:39:02.951429 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:39:02.951432 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 282, in get
+[Mon Aug 10 18:39:02.951435 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     return self.retrieve(request, *args, **kwargs)
+[Mon Aug 10 18:39:02.951437 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 54, in retrieve
+[Mon Aug 10 18:39:02.951450 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     instance = self.get_object()
+[Mon Aug 10 18:39:02.951453 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 88, in get_object
+[Mon Aug 10 18:39:02.951455 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126]     assert lookup_url_kwarg in self.kwargs, (
+[Mon Aug 10 18:39:02.951458 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1126] AssertionError: Expected view JavaItem to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+[Mon Aug 10 18:39:05.241896 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125] Internal Server Error: /portfolio/java
+[Mon Aug 10 18:39:05.241921 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125] Traceback (most recent call last):
+[Mon Aug 10 18:39:05.241924 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:39:05.241927 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     response = get_response(request)
+[Mon Aug 10 18:39:05.241929 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:39:05.241932 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:39:05.241934 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:39:05.241937 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:39:05.241939 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:39:05.241942 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:39:05.241944 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:39:05.241947 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:39:05.241949 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:39:05.241952 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     response = self.handle_exception(exc)
+[Mon Aug 10 18:39:05.241954 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:39:05.241956 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:39:05.241959 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:39:05.241961 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     raise exc
+[Mon Aug 10 18:39:05.241964 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:39:05.241966 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:39:05.241968 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 282, in get
+[Mon Aug 10 18:39:05.241979 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     return self.retrieve(request, *args, **kwargs)
+[Mon Aug 10 18:39:05.241981 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 54, in retrieve
+[Mon Aug 10 18:39:05.241984 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     instance = self.get_object()
+[Mon Aug 10 18:39:05.241986 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 88, in get_object
+[Mon Aug 10 18:39:05.241989 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125]     assert lookup_url_kwarg in self.kwargs, (
+[Mon Aug 10 18:39:05.241991 2020] [wsgi:error] [pid 76807] [remote 175.193.7.189:1125] AssertionError: Expected view JavaItem to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fb039d4a670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fb03a973700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fb03a973700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fb03a973700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab20ea7700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fab20ea7700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f1e5fc86670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f1e648d7700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f1e648d7700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Aug 10 18:45:20.512199 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211] Internal Server Error: /portfolio/1/
+[Mon Aug 10 18:45:20.512229 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211] Traceback (most recent call last):
+[Mon Aug 10 18:45:20.512232 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:45:20.512235 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     response = get_response(request)
+[Mon Aug 10 18:45:20.512238 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:45:20.512248 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:45:20.512251 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:45:20.512253 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:45:20.512256 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:45:20.512258 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:45:20.512260 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:45:20.512263 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:45:20.512265 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:45:20.512267 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     response = self.handle_exception(exc)
+[Mon Aug 10 18:45:20.512270 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:45:20.512272 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:45:20.512275 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:45:20.512277 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     raise exc
+[Mon Aug 10 18:45:20.512279 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:45:20.512282 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:45:20.512284 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 282, in get
+[Mon Aug 10 18:45:20.512287 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     return self.retrieve(request, *args, **kwargs)
+[Mon Aug 10 18:45:20.512289 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 55, in retrieve
+[Mon Aug 10 18:45:20.512291 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     serializer = self.get_serializer(instance)
+[Mon Aug 10 18:45:20.512294 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 110, in get_serializer
+[Mon Aug 10 18:45:20.512296 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     return serializer_class(*args, **kwargs)
+[Mon Aug 10 18:45:20.512298 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/base.py", line 500, in __init__
+[Mon Aug 10 18:45:20.512301 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211]     raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+[Mon Aug 10 18:45:20.512303 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1211] TypeError: PortfolioItemData() got an unexpected keyword argument 'context'
+[Mon Aug 10 18:45:23.164051 2020] [wsgi:error] [pid 77838] [remote 175.193.7.189:1210] Not Found: /portfolio/0/
+Exception ignored in: <function Local.__del__ at 0x7f457a668700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f457a668700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f457a668700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Aug 10 18:46:23.004635 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231] Internal Server Error: /portfolio/
+[Mon Aug 10 18:46:23.004669 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231] Traceback (most recent call last):
+[Mon Aug 10 18:46:23.004672 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:46:23.004675 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     response = get_response(request)
+[Mon Aug 10 18:46:23.004678 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:46:23.004681 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:46:23.004684 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:46:23.004687 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:46:23.004689 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:46:23.004692 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:46:23.004695 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:46:23.004698 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:46:23.004700 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:46:23.004703 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     response = self.handle_exception(exc)
+[Mon Aug 10 18:46:23.004706 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:46:23.004709 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:46:23.004711 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:46:23.004714 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     raise exc
+[Mon Aug 10 18:46:23.004717 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:46:23.004719 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:46:23.004722 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 239, in get
+[Mon Aug 10 18:46:23.004732 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     return self.list(request, *args, **kwargs)
+[Mon Aug 10 18:46:23.004734 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 45, in list
+[Mon Aug 10 18:46:23.004737 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     serializer = self.get_serializer(queryset, many=True)
+[Mon Aug 10 18:46:23.004739 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 110, in get_serializer
+[Mon Aug 10 18:46:23.004742 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     return serializer_class(*args, **kwargs)
+[Mon Aug 10 18:46:23.004744 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/base.py", line 500, in __init__
+[Mon Aug 10 18:46:23.004747 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231]     raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+[Mon Aug 10 18:46:23.004749 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1231] TypeError: PortfolioItemData() got an unexpected keyword argument 'many'
+[Mon Aug 10 18:46:24.848488 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230] Internal Server Error: /portfolio/
+[Mon Aug 10 18:46:24.848513 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230] Traceback (most recent call last):
+[Mon Aug 10 18:46:24.848516 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:46:24.848519 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     response = get_response(request)
+[Mon Aug 10 18:46:24.848521 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:46:24.848524 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:46:24.848526 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:46:24.848529 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:46:24.848531 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:46:24.848534 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:46:24.848536 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:46:24.848539 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:46:24.848541 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:46:24.848543 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     response = self.handle_exception(exc)
+[Mon Aug 10 18:46:24.848546 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:46:24.848548 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:46:24.848564 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:46:24.848567 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     raise exc
+[Mon Aug 10 18:46:24.848569 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:46:24.848571 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:46:24.848574 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 239, in get
+[Mon Aug 10 18:46:24.848576 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     return self.list(request, *args, **kwargs)
+[Mon Aug 10 18:46:24.848579 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 45, in list
+[Mon Aug 10 18:46:24.848581 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     serializer = self.get_serializer(queryset, many=True)
+[Mon Aug 10 18:46:24.848583 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 110, in get_serializer
+[Mon Aug 10 18:46:24.848586 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     return serializer_class(*args, **kwargs)
+[Mon Aug 10 18:46:24.848588 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/base.py", line 500, in __init__
+[Mon Aug 10 18:46:24.848591 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230]     raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+[Mon Aug 10 18:46:24.848593 2020] [wsgi:error] [pid 77980] [remote 175.193.7.189:1230] TypeError: PortfolioItemData() got an unexpected keyword argument 'many'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fc8610e9670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fc861d2e700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fc861d2e700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fc861d2e700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Aug 10 18:47:54.758583 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236] Internal Server Error: /portfolio/
+[Mon Aug 10 18:47:54.758614 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236] Traceback (most recent call last):
+[Mon Aug 10 18:47:54.758618 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:47:54.758621 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     response = get_response(request)
+[Mon Aug 10 18:47:54.758624 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:47:54.758627 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:47:54.758641 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:47:54.758644 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:47:54.758646 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:47:54.758649 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:47:54.758651 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:47:54.758654 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:47:54.758656 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:47:54.758658 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     response = self.handle_exception(exc)
+[Mon Aug 10 18:47:54.758661 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:47:54.758663 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:47:54.758666 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:47:54.758668 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     raise exc
+[Mon Aug 10 18:47:54.758671 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:47:54.758673 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:47:54.758676 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 239, in get
+[Mon Aug 10 18:47:54.758678 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     return self.list(request, *args, **kwargs)
+[Mon Aug 10 18:47:54.758680 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 45, in list
+[Mon Aug 10 18:47:54.758683 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     serializer = self.get_serializer(queryset, many=True)
+[Mon Aug 10 18:47:54.758685 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 110, in get_serializer
+[Mon Aug 10 18:47:54.758688 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     return serializer_class(*args, **kwargs)
+[Mon Aug 10 18:47:54.758690 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/base.py", line 500, in __init__
+[Mon Aug 10 18:47:54.758693 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236]     raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+[Mon Aug 10 18:47:54.758695 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1236] TypeError: PortfolioItemData() got an unexpected keyword argument 'many'
+[Mon Aug 10 18:48:32.455894 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241] Not Found: /portfolio/0/
+[Mon Aug 10 18:48:34.713106 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241] Internal Server Error: /portfolio/
+[Mon Aug 10 18:48:34.713145 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241] Traceback (most recent call last):
+[Mon Aug 10 18:48:34.713148 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:48:34.713151 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     response = get_response(request)
+[Mon Aug 10 18:48:34.713153 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:48:34.713156 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:48:34.713158 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:48:34.713161 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:48:34.713163 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:48:34.713166 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:48:34.713168 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:48:34.713170 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:48:34.713173 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:48:34.713175 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     response = self.handle_exception(exc)
+[Mon Aug 10 18:48:34.713178 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:48:34.713180 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:48:34.713183 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:48:34.713185 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     raise exc
+[Mon Aug 10 18:48:34.713187 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:48:34.713190 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:48:34.713192 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 239, in get
+[Mon Aug 10 18:48:34.713195 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     return self.list(request, *args, **kwargs)
+[Mon Aug 10 18:48:34.713197 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 45, in list
+[Mon Aug 10 18:48:34.713200 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     serializer = self.get_serializer(queryset, many=True)
+[Mon Aug 10 18:48:34.713202 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 110, in get_serializer
+[Mon Aug 10 18:48:34.713204 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     return serializer_class(*args, **kwargs)
+[Mon Aug 10 18:48:34.713209 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/base.py", line 500, in __init__
+[Mon Aug 10 18:48:34.713212 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241]     raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+[Mon Aug 10 18:48:34.713214 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1241] TypeError: PortfolioItemData() got an unexpected keyword argument 'many'
+[Mon Aug 10 18:48:37.377001 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242] Internal Server Error: /portfolio/
+[Mon Aug 10 18:48:37.377026 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242] Traceback (most recent call last):
+[Mon Aug 10 18:48:37.377029 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:48:37.377032 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     response = get_response(request)
+[Mon Aug 10 18:48:37.377034 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:48:37.377037 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:48:37.377039 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:48:37.377042 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:48:37.377045 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:48:37.377047 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:48:37.377050 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:48:37.377052 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:48:37.377054 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:48:37.377057 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     response = self.handle_exception(exc)
+[Mon Aug 10 18:48:37.377059 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:48:37.377062 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:48:37.377064 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:48:37.377067 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     raise exc
+[Mon Aug 10 18:48:37.377069 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:48:37.377071 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:48:37.377074 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 239, in get
+[Mon Aug 10 18:48:37.377076 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     return self.list(request, *args, **kwargs)
+[Mon Aug 10 18:48:37.377093 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 45, in list
+[Mon Aug 10 18:48:37.377096 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     serializer = self.get_serializer(queryset, many=True)
+[Mon Aug 10 18:48:37.377098 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 110, in get_serializer
+[Mon Aug 10 18:48:37.377100 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     return serializer_class(*args, **kwargs)
+[Mon Aug 10 18:48:37.377103 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/base.py", line 500, in __init__
+[Mon Aug 10 18:48:37.377105 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242]     raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+[Mon Aug 10 18:48:37.377108 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1242] TypeError: PortfolioItemData() got an unexpected keyword argument 'many'
+[Mon Aug 10 18:48:40.006408 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243] Not Found: /portfolio/0/
+[Mon Aug 10 18:48:42.489679 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243] Internal Server Error: /portfolio/1/
+[Mon Aug 10 18:48:42.489705 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243] Traceback (most recent call last):
+[Mon Aug 10 18:48:42.489708 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:48:42.489711 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     response = get_response(request)
+[Mon Aug 10 18:48:42.489713 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:48:42.489716 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:48:42.489718 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:48:42.489721 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:48:42.489723 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:48:42.489726 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:48:42.489728 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:48:42.489731 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:48:42.489733 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:48:42.489736 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     response = self.handle_exception(exc)
+[Mon Aug 10 18:48:42.489738 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:48:42.489740 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:48:42.489743 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:48:42.489753 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     raise exc
+[Mon Aug 10 18:48:42.489755 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:48:42.489758 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:48:42.489760 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 282, in get
+[Mon Aug 10 18:48:42.489763 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     return self.retrieve(request, *args, **kwargs)
+[Mon Aug 10 18:48:42.489765 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 55, in retrieve
+[Mon Aug 10 18:48:42.489768 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     serializer = self.get_serializer(instance)
+[Mon Aug 10 18:48:42.489770 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 110, in get_serializer
+[Mon Aug 10 18:48:42.489772 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     return serializer_class(*args, **kwargs)
+[Mon Aug 10 18:48:42.489775 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/base.py", line 500, in __init__
+[Mon Aug 10 18:48:42.489777 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243]     raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+[Mon Aug 10 18:48:42.489780 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1243] TypeError: PortfolioItemData() got an unexpected keyword argument 'context'
+[Mon Aug 10 18:49:30.413219 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1250] Not Found: /portfolio/0/
+[Mon Aug 10 18:49:41.364612 2020] [wsgi:error] [pid 78121] [remote 175.193.7.189:1251] Not Found: /portfolio/0/
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7fa8be829670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fa8bf46e700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fa8bf46e700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7fa8bf46e700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Aug 10 18:49:46.923770 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1253] Not Found: /portfolio/0/
+[Mon Aug 10 18:49:48.034726 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1253] Not Found: /portfolio/0/
+[Mon Aug 10 18:50:01.199956 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254] Not Found: /portfolio/0/
+[Mon Aug 10 18:50:02.281943 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254] Internal Server Error: /portfolio/java/
+[Mon Aug 10 18:50:02.281967 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254] Traceback (most recent call last):
+[Mon Aug 10 18:50:02.281970 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 18:50:02.281993 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     response = get_response(request)
+[Mon Aug 10 18:50:02.281996 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon Aug 10 18:50:02.281999 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     response = self.process_exception_by_middleware(e, request)
+[Mon Aug 10 18:50:02.282001 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon Aug 10 18:50:02.282004 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon Aug 10 18:50:02.282006 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+[Mon Aug 10 18:50:02.282008 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     return view_func(*args, **kwargs)
+[Mon Aug 10 18:50:02.282011 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+[Mon Aug 10 18:50:02.282013 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     return self.dispatch(request, *args, **kwargs)
+[Mon Aug 10 18:50:02.282016 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 505, in dispatch
+[Mon Aug 10 18:50:02.282018 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     response = self.handle_exception(exc)
+[Mon Aug 10 18:50:02.282020 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 465, in handle_exception
+[Mon Aug 10 18:50:02.282023 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     self.raise_uncaught_exception(exc)
+[Mon Aug 10 18:50:02.282025 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+[Mon Aug 10 18:50:02.282028 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     raise exc
+[Mon Aug 10 18:50:02.282030 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/views.py", line 502, in dispatch
+[Mon Aug 10 18:50:02.282033 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     response = handler(request, *args, **kwargs)
+[Mon Aug 10 18:50:02.282035 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 239, in get
+[Mon Aug 10 18:50:02.282037 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     return self.list(request, *args, **kwargs)
+[Mon Aug 10 18:50:02.282040 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/mixins.py", line 45, in list
+[Mon Aug 10 18:50:02.282042 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     serializer = self.get_serializer(queryset, many=True)
+[Mon Aug 10 18:50:02.282044 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/rest_framework/generics.py", line 110, in get_serializer
+[Mon Aug 10 18:50:02.282047 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     return serializer_class(*args, **kwargs)
+[Mon Aug 10 18:50:02.282049 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/db/models/base.py", line 500, in __init__
+[Mon Aug 10 18:50:02.282052 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254]     raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+[Mon Aug 10 18:50:02.282057 2020] [wsgi:error] [pid 78259] [remote 175.193.7.189:1254] TypeError: PortfolioItemData() got an unexpected keyword argument 'many'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f0d62f8f670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f0d63bd4700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f0d63bd4700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f0d63bd4700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Mon Aug 10 18:50:29.871735 2020] [wsgi:error] [pid 78394] [remote 175.193.7.189:1257] Not Found: /portfolio/3/
+[Mon Aug 10 19:14:09.942084 2020] [wsgi:error] [pid 78394] [remote 175.193.7.189:2105] Not Found: /newsroom/
+[Mon Aug 10 19:45:48.087784 2020] [wsgi:error] [pid 78394] [remote 185.220.101.136:2934] Not Found: /
+[Mon Aug 10 19:55:06.963879 2020] [wsgi:error] [pid 78394] [remote 2.57.122.187:45848] Not Found: /
+[Mon Aug 10 19:55:15.384543 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370] Internal Server Error: /cache/global/img/gs.gif
+[Mon Aug 10 19:55:15.384577 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370] Traceback (most recent call last):
+[Mon Aug 10 19:55:15.384580 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon Aug 10 19:55:15.384583 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     response = get_response(request)
+[Mon Aug 10 19:55:15.384586 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 93, in __call__
+[Mon Aug 10 19:55:15.384589 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     response = self.process_request(request)
+[Mon Aug 10 19:55:15.384592 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+[Mon Aug 10 19:55:15.384595 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     if self.should_redirect_with_slash(request):
+[Mon Aug 10 19:55:15.384597 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/middleware/common.py", line 71, in should_redirect_with_slash
+[Mon Aug 10 19:55:15.384600 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     not is_valid_path(request.path_info, urlconf) and
+[Mon Aug 10 19:55:15.384603 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/urls/base.py", line 154, in is_valid_path
+[Mon Aug 10 19:55:15.384606 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     resolve(path, urlconf)
+[Mon Aug 10 19:55:15.384609 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/urls/base.py", line 25, in resolve
+[Mon Aug 10 19:55:15.384611 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     return get_resolver(urlconf).resolve(path)
+[Mon Aug 10 19:55:15.384614 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 544, in resolve
+[Mon Aug 10 19:55:15.384617 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     for pattern in self.url_patterns:
+[Mon Aug 10 19:55:15.384627 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+[Mon Aug 10 19:55:15.384630 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     res = instance.__dict__[self.name] = self.func(instance)
+[Mon Aug 10 19:55:15.384633 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 588, in url_patterns
+[Mon Aug 10 19:55:15.384635 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+[Mon Aug 10 19:55:15.384638 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+[Mon Aug 10 19:55:15.384640 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     res = instance.__dict__[self.name] = self.func(instance)
+[Mon Aug 10 19:55:15.384642 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/urls/resolvers.py", line 581, in urlconf_module
+[Mon Aug 10 19:55:15.384645 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     return import_module(self.urlconf_name)
+[Mon Aug 10 19:55:15.384647 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Mon Aug 10 19:55:15.384650 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     return _bootstrap._gcd_import(name[level:], package, level)
+[Mon Aug 10 19:55:15.384652 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Mon Aug 10 19:55:15.384654 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Mon Aug 10 19:55:15.384657 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Mon Aug 10 19:55:15.384659 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Mon Aug 10 19:55:15.384661 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+[Mon Aug 10 19:55:15.384664 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Mon Aug 10 19:55:15.384666 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/backend/unqocninitapi/urls.py", line 23, in <module>
+[Mon Aug 10 19:55:15.384668 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     path('portfolio/', include('portfolio.urls'))
+[Mon Aug 10 19:55:15.384671 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/unqocn_venv/lib/python3.8/site-packages/django/urls/conf.py", line 34, in include
+[Mon Aug 10 19:55:15.384673 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     urlconf_module = import_module(urlconf_module)
+[Mon Aug 10 19:55:15.384676 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+[Mon Aug 10 19:55:15.384678 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     return _bootstrap._gcd_import(name[level:], package, level)
+[Mon Aug 10 19:55:15.384680 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+[Mon Aug 10 19:55:15.384683 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+[Mon Aug 10 19:55:15.384685 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+[Mon Aug 10 19:55:15.384689 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+[Mon Aug 10 19:55:15.384692 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+[Mon Aug 10 19:55:15.384694 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+[Mon Aug 10 19:55:15.384697 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]   File "/home/django/backend/portfolio/urls.py", line 7, in <module>
+[Mon Aug 10 19:55:15.384699 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370]     path('java/', views.JavaItem.as_view()),
+[Mon Aug 10 19:55:15.384701 2020] [wsgi:error] [pid 78396] [remote 80.82.70.187:56370] AttributeError: module 'portfolio.views' has no attribute 'JavaItem'
+[Mon Aug 10 20:34:29.700979 2020] [wsgi:error] [pid 78394] [remote 175.193.7.189:4829] Not Found: /portfolio/0/
+[Mon Aug 10 20:35:01.857847 2020] [wsgi:error] [pid 78394] [remote 175.193.7.189:4850] Not Found: /portfolio/0/
+[Mon Aug 10 20:35:16.593142 2020] [wsgi:error] [pid 78394] [remote 175.193.7.189:4864] Not Found: /portfolio/0/
+[Mon Aug 10 20:35:16.603251 2020] [wsgi:error] [pid 78394] [remote 175.193.7.189:4864] Not Found: /portfolio/0/
