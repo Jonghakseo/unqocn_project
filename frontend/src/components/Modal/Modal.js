@@ -105,8 +105,9 @@ const InflateButton = styled.div`
   position: absolute;
   bottom: 4px;
   right: 4px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1rem;
+  font-family: 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif';
   /* width: 8rem; */
   /* font-weight: 500; */
   margin: 2px 3px;

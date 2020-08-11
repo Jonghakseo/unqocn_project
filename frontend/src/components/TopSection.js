@@ -136,9 +136,12 @@ class TopSection extends Component {
             <br /> <br />
             | DEV
             <br />
-            &nbsp;&nbsp;&nbsp; 2019. 10. 03 &nbsp;~&nbsp; 현재
+            &nbsp;&nbsp;&nbsp; 2019. 10. 03. &nbsp;~&nbsp; 현재
           </span>
-          <img src="https://unqocn.hopto.org/res/pic/profile_front.jpg" alt="big_profile"></img>
+          <div className="profile_big_image">
+            <div className="blur"></div>
+          </div>
+          {/* <img src="https://unqocn.hopto.org/res/pic/profile_big.jpg" alt="big_profile"></img> */}
           {/* <div className="border_div"></div> */}
         </div>
       </div>

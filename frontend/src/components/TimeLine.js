@@ -32,7 +32,7 @@ class TimeLine extends Component {
     let date = newDate.getDate()
     let month = newDate.getMonth() + 1
     let year = (newDate.getFullYear() + '').substring(2)
-    let today = `\`${year}. ${month}. ${date}`
+    let today = `\`${year}. ${month}. ${date}.`
 
     this.state = {
       active: '', //활성화된 포트폴리오 아이템 아이디
@@ -169,7 +169,7 @@ class TimeLine extends Component {
           {/* <br></br> */}
           <div className="timeline_date" ref={this.timeLineHandleRef}>
             {' '}
-            <div className="timeline_date_start">`19. 10. 03 ~</div>
+            <div className="timeline_date_start">`19. 10. 03. ~</div>
             <div className="timeline_date_end">~ {date}</div>
           </div>
           {/* 2019. 10. 03 ~ 2020. 07. 28 */}
@@ -217,8 +217,8 @@ class TimeLine extends Component {
                 onClick={() => handleClick('toy')}
               >
                 <img className="timeline_hover_img" src={ubuntu} alt="side"></img>
-                Toy Proj
-                <br />2 주<img className="timeline_line" src={line} alt="side"></img>
+                Toy
+                <br /> Project<img className="timeline_line" src={line} alt="side"></img>
               </ol>
               <ol
                 style={{ flex: '11' }}
@@ -228,7 +228,7 @@ class TimeLine extends Component {
                 <img className="timeline_hover_img" src={ue4} alt="ue4"></img>
                 UE4 Game
                 <br />
-                12 주<img className="timeline_line" src={line} alt="game"></img>
+                11 주<img className="timeline_line" src={line} alt="game"></img>
               </ol>{' '}
               <ol
                 style={{ flex: '5' }}

@@ -61,16 +61,30 @@
   opacity: 1;
 }
 
-.big_profile_wrapper > img {
-  /* width: 500px; */
+.profile_big_image {
   position: absolute;
+  background-image: url('https://unqocn.hopto.org/res/pic/profile_big.jpg');
+  background-size: contain;
   right: 5vw;
-  width: auto;
+  width: 20rem;
   height: 20rem;
   vertical-align: bottom;
+  box-shadow: 0 5px 5px 0px #00000044;
   /* border: solid 10px #2b2b2b; */
   border-radius: 50%;
 }
+.blur {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: radial-gradient(transparent 20%, #ffffff55 80%);
+  /* filter: blur(50px); */
+  /* Set radial-gradient to faded edges */
+}
+/* .big_profile_wrapper > img {
+
+   */
+/* } */
 
 .border_div {
   position: absolute;

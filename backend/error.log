@@ -3790,3 +3790,32 @@ Exception ignored in: <function Local.__del__ at 0x7f47b68d2700>
 Traceback (most recent call last):
   File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
 NameError: name 'TypeError' is not defined
+[Tue Aug 11 15:49:04.005881 2020] [wsgi:error] [pid 101030] [remote 103.149.192.111:55391] Not Found: /
+[Tue Aug 11 16:18:26.206034 2020] [wsgi:error] [pid 101030] [remote 83.97.20.29:3135] Not Found: /
+[Tue Aug 11 16:57:36.445393 2020] [wsgi:error] [pid 101030] [remote 193.118.53.202:52312] Not Found: /cgi-bin/config.exp
+[Tue Aug 11 17:19:55.747492 2020] [wsgi:error] [pid 101030] [remote 175.193.7.139:7577] Not Found: /favicon.ico
+[Tue Aug 11 18:35:46.225970 2020] [wsgi:error] [pid 101032] [remote 196.52.43.128:55165] Not Found: /
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7f681510a670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f6815d55700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f6815d55700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f6815d55700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f6815d55700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7f6815d55700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined

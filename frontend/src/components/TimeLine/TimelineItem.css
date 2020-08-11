@@ -118,7 +118,7 @@
 }
 
 .portfolio_text_section {
-  background-color: rgba(32, 148, 250, 0.83);
+  background-color: var(--var-point-color);
   display: flex;
   flex-direction: column;
   /* width: calc(60vw - 3px); */
@@ -152,6 +152,7 @@
   color: black;
   font-weight: 400;
   padding-top: 5px;
+  /* white-space: pre; */
   /* word-break: break-all; */
 }
 .portfolio_text_content > h2 {

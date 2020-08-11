@@ -1,6 +1,7 @@
 :root {
   --var-bg-color: #ffffff;
-  --var-first-bg-color: #c0d5f1;
+  --var-first-bg-color: #00b7ff3d;
+  --var-point-color: #289aff;
 }
 
 #main_contents {
@@ -33,7 +34,8 @@
   display: none;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(32, 148, 250, 0.83);
+  /* background-color: rgba(32, 148, 250, 0.83); */
+  background-color: var(--var-point-color);
   border-radius: 6px;
   border: 2px solid var(--var-bg-color);
 }

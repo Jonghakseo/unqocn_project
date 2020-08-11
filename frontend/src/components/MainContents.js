@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 // import { findDOMNode } from 'react-dom'
+import Footer from './Footer'
 import TopSection from './TopSection'
 import TimeLine from './TimeLine'
 import './MainContents.css'
@@ -85,7 +86,7 @@ class MainContents extends Component {
       <section id="main_contents" className={bgStyle}>
         <TopSection position={this.state.position} windowSize={this.state.windowSize}></TopSection>
         <TimeLine position={this.state.position} windowSize={this.state.windowSize}></TimeLine>
-        <div></div>
+        <Footer />
       </section>
     )
   }
