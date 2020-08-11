@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './TimelineItem.css'
-import Modal from '../Modal/Modal'
+import Modal from '../../Modal/Modal'
 import PhpImage1 from '../../res/pic/php/main_new.png'
 import PhpImage2 from '../../res/pic/php/search_before.png'
 import PhpImage3 from '../../res/pic/php/search_result.png'

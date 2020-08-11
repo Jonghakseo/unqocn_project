@@ -165,6 +165,13 @@
   text-decoration: none;
   color: black;
 }
+.portfolio_text_content > h2 > div {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: -40px;
+  padding: 0 0;
+  color: black;
+}
 .portfolio_text_content > span {
   font-size: 16px;
   font-weight: 300;

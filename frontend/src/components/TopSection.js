@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import './TopSection.css'
 import RotateText from './TopSection/RotateText'
 // import BigProfile from '../res/pic/profile_big_resize.png'
-import BigProfile from '../res/pic/profile_front_3 - 원본.jpg'
+// import BigProfile from '../res/pic/profile_front_3 - 원본.jpg'
 import java from '../res/icon/java.svg'
 import android from '../res/icon/android.svg'
 import php from '../res/icon/php.svg'
@@ -138,7 +138,7 @@ class TopSection extends Component {
             <br />
             &nbsp;&nbsp;&nbsp; 2019. 10. 03 &nbsp;~&nbsp; 현재
           </span>
-          <img src={BigProfile} alt="big_profile"></img>
+          <img src="https://unqocn.hopto.org/res/pic/profile_front.jpg" alt="big_profile"></img>
           {/* <div className="border_div"></div> */}
         </div>
       </div>

@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-// import { findDOMNode } from 'react-dom'
 import './TimeLine.css'
-import Java from './TimeLine/Java'
-import Android from './TimeLine/Android'
-import Php from './TimeLine/Php'
-import Competition from './TimeLine/Competition'
+// import Java from './TimeLine/Java'
+// import Android from './TimeLine/Android'
+// import Php from './TimeLine/Php'
+// import Competition from './TimeLine/Competition'
 import Item from './TimeLine/Item'
 //여기까지 작품별 컴포넌트
 import line from '../res/icon/horizon-line.svg'
@@ -247,22 +246,22 @@ class TimeLine extends Component {
 
         {/* <div className="anchor" ref={this.portfolioTopRef}></div> */}
         <div className={['contents_wrapper', toggle_timeline && 'onToggle'].join(' ')}>
-          {/* 작품들 돌려가며 볼 수 있는 wrapper 위치입니다. 돌리지 말고 나열할까? */}
+          {/* 작품들 돌려가며 볼 수 있는 wrapper 위치입니다. 돌리지 말고 나열로 변경 */}
 
           <div className="anchor" ref={this.ue4TopRef}></div>
-          <Item position={this.state.position} item_index={0}></Item>
+          <Item position={this.state.position} item_index={6}></Item>
 
           <div className="anchor" ref={this.toyTopRef}></div>
-          {/* <Toy position={this.state.position}></Toy> */}
+          <Item position={this.state.position} item_index={5}></Item>
 
           <div className="anchor" ref={this.compTopRef}></div>
-          <Competition position={this.state.position}></Competition>
+          <Item position={this.state.position} item_index={4}></Item>
 
           <div className="anchor" ref={this.phpTopRef}></div>
-          <Php position={this.state.position}></Php>
+          <Item position={this.state.position} item_index={3}></Item>
 
           <div className="anchor" ref={this.androidTopRef}></div>
-          <Android position={this.state.position}></Android>
+          <Item position={this.state.position} item_index={2}></Item>
 
           <div className="anchor" ref={this.javaTopRef}></div>
           <Item position={this.state.position} item_index={1}></Item>

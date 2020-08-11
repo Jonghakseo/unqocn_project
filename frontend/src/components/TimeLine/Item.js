@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './TimelineItem.css'
 import Modal from '../Modal/Modal'
-import BasicImage from '../../res/pic/android/setting_account.PNG'
+import BasicImage from '../../res/icon/react.svg'
 
 class Item extends Component {
   constructor(props) {
@@ -25,43 +25,45 @@ class Item extends Component {
   async componentDidMount() {
     if (this.props.item_index > 0) {
       // this.setState({ index: this.props.item_index })
-
+      let new_media_arr = []
       try {
         const res = await fetch('https://unqocn-api.hopto.org/portfolio/' + this.state.index)
-        //news 크롤링 전체 목록 반환
-        const java = await res.json()
+        //가져올 포트폴리오 아이템 index를 붙여서 요청
+        const itemInfo = await res.json()
         // console.log(java)
         // console.log(java['item_media_array'])
-        let item_media_arr = JSON.parse(java['item_media_array'])
+        try {
+          let item_media_arr = JSON.parse(itemInfo['item_media_array'])
+          item_media_arr.forEach((element) => {
+            try {
+              let item_active = element['active']
+              let item_src = element['src']
+              let item_type = element['type']
+              let item_desc = element['desc']
+              new_media_arr.push({
+                active: item_active,
+                src: item_src,
+                type: item_type,
+                desc: item_desc,
+              })
+            } catch (error) {
+              console.log(error)
+            }
+          })
+          this.setState({
+            media_arr: new_media_arr,
+          })
+        } catch (error) {}
 
         // console.log(item_media_arr)
 
-        let new_media_arr = []
-
-        item_media_arr.forEach((element) => {
-          try {
-            let item_active = element['active']
-            let item_src = element['src']
-            let item_type = element['type']
-            let item_desc = element['desc']
-            new_media_arr.push({
-              active: item_active,
-              src: item_src,
-              type: item_type,
-              desc: item_desc,
-            })
-          } catch (error) {
-            console.log(error)
-          }
-        })
         this.setState({
-          media_arr: new_media_arr,
-          item_title: java['item_title'],
-          item_name: java['item_name'],
-          dev_term: java['dev_term'],
-          dev_intro: java['dev_intro'],
-          dev_feature: java['dev_feature'],
-          dev_review: java['dev_review'],
+          item_title: itemInfo['item_title'],
+          item_name: itemInfo['item_name'],
+          dev_term: itemInfo['dev_term'],
+          dev_intro: itemInfo['dev_intro'],
+          dev_feature: itemInfo['dev_feature'],
+          dev_review: itemInfo['dev_review'],
         })
       } catch (e) {
         console.log(e)
@@ -193,7 +195,7 @@ class Item extends Component {
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 이름</span>{' '}
             <span className="portfolio_text_content">
-              <h2> {item_name}</h2>
+              <h2 dangerouslySetInnerHTML={{ __html: item_name }}></h2>
             </span>
           </div>
           <div className="portfolio_text_wrapper">

@@ -8,7 +8,7 @@ from .serializers import ItemSerializer
 
 
 class ItemList(generics.ListCreateAPIView):
-    # 리스트로 포스트들 보여줄 때 사용하는 클래스
+    # 리스트로 작품들 전부 보여줄 때 사용하는 클래스
     queryset = PortfolioItemData.objects.all()
     # 쿼리셋(보여줄 데이터들을 정의하는 부분)
     serializer_class = ItemSerializer
