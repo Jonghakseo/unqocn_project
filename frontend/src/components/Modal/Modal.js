@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-// import CloseButton from './CloseButton'
 import Portal from './Portal'
 
 function Modal({ className, onClose, maskClosable, closable, visible, children, src }) {
@@ -10,10 +9,10 @@ function Modal({ className, onClose, maskClosable, closable, visible, children, 
 
   const onMaskClick = (e) => {
     if (e.target === e.currentTarget) {
-      document.body.style.cssText = `overflow-x: hidden !important; overflow-y: unset !important; height: unset !important; touch-action: unset !important;`
-      onClose(e)
+      close(e)
     }
   }
+  //비어있는 영역 클릭시
 
   const close = (e) => {
     if (onClose) {
@@ -21,17 +20,20 @@ function Modal({ className, onClose, maskClosable, closable, visible, children, 
       onClose(e)
     }
   }
+  //닫기버튼 클릭시
 
-  const inflate = (e) => {
+  const viewOrigin = () => {
     let win = window.open(img_src, '_blank')
     win.focus()
   }
+  //원본 보기
 
   useEffect(() => {
     // document.body.style.cssText = `position: fixed; top: -${window.scrollY}px`
     document.body.style.cssText = `overflow: hidden; height: 100%; touch-action: none;`
     //하단 방식은 포지션을 0으로 고정시키는 문제때문에 (배경색상 변경됨) css옵션 변경으로 문제 해결함.
     return () => {
+      //  기존방식
       //   const scrollY = document.body.style.top
       //   document.body.style.cssText = `position: ""; top: "";`
       //   window.scrollTo(1, parseInt(scrollY || '0') * -1)
@@ -41,25 +43,19 @@ function Modal({ className, onClose, maskClosable, closable, visible, children, 
   return (
     <Portal elementId="modal-root">
       <ModalOverlay visible={visible} />
-      <ModalWrapper
-        className={className}
-        onClick={maskClosable ? onMaskClick : null}
-        tabIndex={-1}
-        visible={visible}
-      >
+      <ModalWrapper className={className} onClick={maskClosable ? onMaskClick : null} tabIndex={-1} visible={visible}>
         <ModalInner tabIndex={0} className="modal-inner">
           {closable && (
-            <CloseButton className="modal-close" onClick={close}>
+            <CloseButton className="modal-close" onClick={() => close()}>
               &#10007;
             </CloseButton>
           )}
           <ModalImage src={src} alt="full_size_image" draggable="false"></ModalImage>
-          {/* {closable && <CloseButton className="modal-close" onClick={close} />} */}
 
           {children}
-          <InflateButton className="inflate-button" onClick={inflate}>
+          <ViewOriginButton className="inflate-button" onClick={() => viewOrigin()}>
             &nbsp;원본 이미지 보기&nbsp;
-          </InflateButton>
+          </ViewOriginButton>
         </ModalInner>
       </ModalWrapper>
     </Portal>
@@ -82,8 +78,6 @@ const CloseButton = styled.button`
   top: 4px;
   font-weight: 900;
   font-size: 1.5rem;
-  /* height: 2rem; */
-  /* width: 1.8rem; */
   text-align: center;
   border: solid 1px rgba(0, 0, 0, 0);
   border-radius: 5px;
@@ -98,18 +92,15 @@ const CloseButton = styled.button`
     background-color: rgba(0, 0, 0, 0.9);
     color: #ffffff;
   }
-  /* padding: 2px 2px; */
 `
 
-const InflateButton = styled.div`
+const ViewOriginButton = styled.div`
   position: absolute;
   bottom: 4px;
   right: 4px;
   font-weight: 400;
   font-size: 1rem;
   font-family: 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif';
-  /* width: 8rem; */
-  /* font-weight: 500; */
   margin: 2px 3px;
   border: solid 1px rgba(0, 0, 0, 0);
   border-radius: 5px;
@@ -160,7 +151,6 @@ const ModalOverlay = styled.div`
 const ModalInner = styled.div`
   display: flex;
   justify-content: flex-end;
-  /* align-content: flex-end; */
   box-sizing: border-box;
   position: fixed;
   left: 50%;

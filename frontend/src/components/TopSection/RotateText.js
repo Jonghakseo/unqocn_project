@@ -2,13 +2,6 @@ import React, { Component } from 'react'
 import './RotateText.css'
 
 class RotateText extends Component {
-  //함수형 컴포넌트는 render 될 때의 값들을 유지한다.
-
-  //   constructor(props) {
-  //     super(props);
-  //     console.log(props);
-  //   }
-
   state = {
     switch_style: false,
     end_switch: false,
@@ -18,7 +11,7 @@ class RotateText extends Component {
   }
 
   componentDidMount() {
-    //   마운트 되면 실행
+    // 마운트 되면 실행
     // 일단 로테이션 함수 정의
     const rotation = () =>
       //타임아웃 걸어놓고 재귀적으로 계속 실행되게 함
@@ -28,7 +21,7 @@ class RotateText extends Component {
         ind++
         // 1 추가해주고
         if (ind === this.state.cando.length) return rotationEnd()
-        // %로 out of lange 안 생기게 처리
+        // %로 out of lange 안 생기게 처리(무한반복에 필요한데 무한반복 해제되면서 일단 필요없어짐)
         ind = ind % this.state.cando.length
         let item = this.state.cando[ind]
         // 아이템 꺼내오고
@@ -39,17 +32,19 @@ class RotateText extends Component {
         })
         //스테이트 재정의(아래에서 바꾸기 위해서)
         // console.log(this.state);
-        // 재귀 실행
+
         setTimeout(() => {
           this.setState({
             switch_style: false,
           })
         }, 1500)
         // console.log(this.state.switchStyle);
+        // 재귀 실행
         rotation()
       }, 2800)
 
     rotation()
+    //첫 실행
     const rotationEnd = () => {
       this.setState({ end_switch: true })
       // console.log('끝    ')
@@ -61,9 +56,7 @@ class RotateText extends Component {
     let introStyle = {
       fontWeight: 'bolder',
       animationName: 'fadeIn',
-      //   animationName: 'slide',
       animationDuration: '2s',
-      //   animationIterationCount: 'infinite',
       animationIterationCount: '1',
       animationFillMode: 'both',
       animationTimingFunction: 'ease-in-out',

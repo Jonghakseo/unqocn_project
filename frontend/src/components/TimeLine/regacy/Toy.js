@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import './TimelineItem.css'
-import Modal from '../Modal/Modal'
+import Modal from '../../Modal/Modal'
 import AndroidImage from '../../res/pic/android/setting_account.PNG'
 import AndroidVideo from '../../res/videos/android.mp4'
 
-class Side extends Component {
+class Toy extends Component {
   //   constructor(props) {
   //     super(props)
   //   }
@@ -58,12 +58,7 @@ class Side extends Component {
       if (selected_item.type === 'img') {
         return (
           <div className="portfolio_media_main">
-            <img
-              src={selected_item.src}
-              alt="main_img"
-              draggable="false"
-              onClick={() => this.openModal()}
-            ></img>
+            <img src={selected_item.src} alt="main_img" draggable="false" onClick={() => this.openModal()}></img>
             {modalVisible && (
               <Modal
                 visible={modalVisible}
@@ -97,7 +92,7 @@ class Side extends Component {
     return (
       <section className="portfolio_section">
         {/* 섹션에 플렉스 적용하고 col 방향으로 진행되게 함 */}
-        <div className="portfolio_title">UE4 Game {/* 제목 들어갈 영역 */}</div>
+        <div className="portfolio_title">녹취록 작성기 / 뉴스룸 단톡방 {/* 제목 들어갈 영역 */}</div>
 
         <div className="portfolio_media_section">
           <div className="portfolio_media_wrapper">
@@ -152,8 +147,7 @@ class Side extends Component {
             <span className="portfolio_text_content">
               비트윈 같은 커플 전용 앱입니다.
               <br />
-              장거리 연애(롱디)를 했던 경험을 살려, 대륙 간 초장거리 커플에게 특화된 기능들을
-              넣었습니다.
+              장거리 연애(롱디)를 했던 경험을 살려, 대륙 간 초장거리 커플에게 특화된 기능들을 넣었습니다.
               <br />
               <br />
             </span>
@@ -189,10 +183,10 @@ class Side extends Component {
               약 2주간 Manifest 문서와 생명주기, Intent 등을 이해하고 바로 개발을 시작했습니다.
               <br />
               하나둘 기능을 추가하는 재미에 더욱 욕심이 났던 작품입니다. <br />
-              sharedpreferences 안에 원하는 데이터를 저장하기 위해 고민하다가 결국 직렬화라는 방법을
-              찾아 사용했던 기억이 납니다. <br />
-              개발 막바지에 API를 처음으로 사용해봤는데, API를 잘 사용한다면 많은 서비스를 쉽게 구현
-              할 수 있다는 걸 알게 되었습니다.
+              sharedpreferences 안에 원하는 데이터를 저장하기 위해 고민하다가 결국 직렬화라는 방법을 찾아 사용했던
+              기억이 납니다. <br />
+              개발 막바지에 API를 처음으로 사용해봤는데, API를 잘 사용한다면 많은 서비스를 쉽게 구현 할 수 있다는 걸
+              알게 되었습니다.
               <br />
               DB나 네트워크에 대한 지식이 부족해서 더 많은 기능을 구현하지 못한 점이 아쉽습니다.
             </span>
@@ -203,4 +197,4 @@ class Side extends Component {
   }
 }
 
-export default Side
+export default Toy

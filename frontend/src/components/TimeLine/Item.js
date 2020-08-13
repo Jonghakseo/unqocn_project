@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './TimelineItem.css'
 import Modal from '../Modal/Modal'
-import BasicImage from '../../res/icon/react.svg'
 
 class Item extends Component {
   constructor(props) {
@@ -11,7 +10,12 @@ class Item extends Component {
       modalVisible: false, //모달 켜고 끌 변수
       select_ind: 0, //슬라이더로 보여줄 인덱스
       media_arr: [
-        { active: true, src: BasicImage, type: 'img', desc: '로딩 전 기본이미지입니다.' },
+        {
+          active: true,
+          src: 'https://unqocn.hopto.org/res/pic/empty.png',
+          type: 'img',
+          desc: '로딩 전 기본이미지입니다.',
+        },
       ], //미디어를 담을 배열
       item_title: '작품 카테고리',
       item_name: '작품 제목',
@@ -53,7 +57,10 @@ class Item extends Component {
           this.setState({
             media_arr: new_media_arr,
           })
-        } catch (error) {}
+        } catch (error) {
+          console.log(error)
+          console.log(itemInfo['item_media_array'].substring(280, 320))
+        }
 
         // console.log(item_media_arr)
 
@@ -72,17 +79,27 @@ class Item extends Component {
   }
 
   onClickThumbnail = (selected_key) => {
-    console.log(selected_key)
-
-    const { media_arr } = this.state
-    this.setState({
-      media_arr: media_arr.map(
-        (item, key) =>
-          key === selected_key
-            ? { ...item, active: true } // 새 객체를 만들어서 기존의 값 + active만 true로 덮어씌움
-            : { ...item, active: false }, // 다른 애들은 false 처리
-      ),
-    })
+    if (this.state.select_ind !== selected_key) {
+      //기존 선택 아이템이 아닌 다른 아이템이 클릭되었을 경우
+      const { media_arr } = this.state
+      this.setState({
+        select_ind: selected_key,
+        // 인덱스를 바꿔주고
+        media_arr: media_arr.map(
+          // active한 아이템이 뭔지 바꿔줌
+          (item, key) =>
+            key === selected_key
+              ? { ...item, active: true } // 새 객체를 만들어서 기존의 값 + active만 true로 덮어씌움
+              : { ...item, active: false }, // 다른 애들은 false 처리
+        ),
+      })
+      try {
+        document.querySelector('#videoPlayer').load()
+      } catch (error) {
+        // console.log(error)
+      }
+    }
+    // console.log(this.state)
   }
 
   openModal = () => {
@@ -95,27 +112,16 @@ class Item extends Component {
 
   render() {
     // console.log(this.state)
-    let {
-      modalVisible,
-      item_title,
-      item_name,
-      dev_term,
-      dev_intro,
-      dev_feature,
-      dev_review,
-    } = this.state
-    // 모달창 띄울 변수 선언
+    let { modalVisible, item_title, item_name, dev_term, dev_intro, dev_feature, dev_review } = this.state
+    // 모달창 띄울 변수 및 각종 아이템 정보 가져옴
     let selected_item = this.state.media_arr.find((item) => item.active === true)
+    // 선택 아이템 찾는 과정. index로도 접근이 가능하긴 한데 일단은 두 가지 방식으로 사용중
+    //메인 미디어창엔 소스 타입에 따라 다른 형태로 return해줘야함
     let main_media = () => {
       if (selected_item.type === 'img') {
         return (
           <div className="portfolio_media_main">
-            <img
-              src={selected_item.src}
-              alt="main_img"
-              draggable="false"
-              onClick={() => this.openModal()}
-            ></img>
+            <img src={selected_item.src} alt="main_img" draggable="false" onClick={() => this.openModal()} />
             {modalVisible && (
               <Modal
                 visible={modalVisible}
@@ -124,25 +130,27 @@ class Item extends Component {
                 src={selected_item.src}
                 // 소스도 같이 넘겨줌
                 onClose={() => this.closeModal()}
-              ></Modal>
+              />
             )}
           </div>
         )
       } else if (selected_item.type === 'video') {
         return (
           <div className="portfolio_media_main">
-            <video controls autoPlay={false}>
-              <source src={selected_item.src} type="video/mp4"></source>
+            <video controls autoPlay={false} id="videoPlayer" draggable="false">
+              <source src={selected_item.src} type="video/mp4" />
             </video>
           </div>
         )
       } else {
-        return 'else'
+        console.log('Main Media Type Error. type :', selected_item.type)
+        return 'Main Media Type Error'
       }
     }
+    //메인 미디어에 있는 설명 추출
     let main_desc = () => {
       if (selected_item.desc) {
-        return <span dangerouslySetInnerHTML={{ __html: selected_item.desc }}></span>
+        return <span dangerouslySetInnerHTML={{ __html: selected_item.desc }} />
       }
     }
 
@@ -157,6 +165,7 @@ class Item extends Component {
         <div className="portfolio_media_section">
           <div className="portfolio_media_wrapper">
             {main_media()}
+            {/* 메인 미디어 영역 */}
             <div className="portfolio_media_thumbnail_wrapper">
               {this.state.media_arr.map((item, key) => {
                 if (item.type === 'img') {
@@ -179,7 +188,7 @@ class Item extends Component {
                       className={item.active === true ? 'active_thumbnail' : ''}
                     >
                       {' '}
-                      <source src={item.src} type="video/mp4"></source>
+                      <source src={item.src} type="video/mp4" />
                     </video>
                   )
                 } else {
@@ -188,44 +197,35 @@ class Item extends Component {
               })}
             </div>{' '}
           </div>
-          <div className="portfolio_media_desc">{main_desc()}</div>
+          <div className="portfolio_media_desc">
+            {main_desc()}
+            {/* 메인 미디어에 있는 설명 추출 */}
+          </div>
         </div>
 
         <article className="portfolio_text_section">
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 이름</span>{' '}
             <span className="portfolio_text_content">
-              <h2 dangerouslySetInnerHTML={{ __html: item_name }}></h2>
+              <h2 dangerouslySetInnerHTML={{ __html: item_name }} />
             </span>
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">개발 기간</span>{' '}
-            <span
-              className="portfolio_text_content"
-              dangerouslySetInnerHTML={{ __html: dev_term }}
-            ></span>
+            <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_term }} />
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소개</span>{' '}
-            <span
-              className="portfolio_text_content"
-              dangerouslySetInnerHTML={{ __html: dev_intro }}
-            ></span>
+            <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_intro }} />
           </div>
 
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">주요 기능</span>{' '}
-            <span
-              className="portfolio_text_content"
-              dangerouslySetInnerHTML={{ __html: dev_feature }}
-            ></span>
+            <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_feature }} />
           </div>
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">작품 소감</span>{' '}
-            <span
-              className="portfolio_text_content"
-              dangerouslySetInnerHTML={{ __html: dev_review }}
-            ></span>
+            <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_review }} />
           </div>
         </article>
       </section>

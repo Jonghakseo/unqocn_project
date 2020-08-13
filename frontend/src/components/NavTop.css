@@ -59,15 +59,12 @@
   position: relative;
   left: -60px;
   transition: left 1s;
-  /* visibility: hidden; */
 }
 .profile_fab_item > img {
   margin: 11px 11px;
   width: 20px;
   height: 20px;
   cursor: pointer;
-  /* padding-bottom: 3px; */
-  /* border-bottom: solid 1px gray; */
 }
 
 @media screen and (max-width: 768px) {
@@ -78,12 +75,10 @@
     bottom: 15px;
     left: 15px;
     top: unset;
-    /* right: 15px; */
     height: 42px;
     background-color: #c8d6e5;
 
     border-radius: 20px;
-    /* width: auto; */
     z-index: 999;
   }
 }

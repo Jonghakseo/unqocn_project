@@ -1,11 +1,11 @@
 :root {
+  /* root에서 백그라운드, 포인트 컬러 따로 관리(자주 바뀜) */
   --var-bg-color: #ffffff;
   --var-first-bg-color: #00b7ff3d;
   --var-point-color: #289aff;
 }
 
 #main_contents {
-  /* background-color: #ecf0f1; */
   background-color: var(--var-first-bg-color);
   -webkit-transition: background 1.5s;
   -moz-transition: background-color 1.5s;
@@ -19,8 +19,6 @@
 
 .timeline_bg {
   background-color: var(--var-bg-color) !important;
-  /* background-color: #454f5d !important; */
-  /* background-color: black !important; */
 }
 
 /*스크롤바 디자인  */
@@ -34,7 +32,6 @@
   display: none;
 }
 ::-webkit-scrollbar-thumb {
-  /* background-color: rgba(32, 148, 250, 0.83); */
   background-color: var(--var-point-color);
   border-radius: 6px;
   border: 2px solid var(--var-bg-color);

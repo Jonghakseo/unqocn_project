@@ -5,12 +5,6 @@ import TopSection from './TopSection'
 import TimeLine from './TimeLine'
 import './MainContents.css'
 class MainContents extends Component {
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   return (
-  //     Math.ceil(this.state.position / 1) !== Math.ceil(nextState.position / 1)
-  //   )
-  // }
-
   constructor(props) {
     super(props)
     this.state = {
@@ -82,11 +76,15 @@ class MainContents extends Component {
     } else if (this.state.backgroundColor === 'timeline') {
       bgStyle = 'timeline_bg'
     }
+    //포지션값에 따른 backgrond 컬러 변경
     return (
       <section id="main_contents" className={bgStyle}>
-        <TopSection position={this.state.position} windowSize={this.state.windowSize}></TopSection>
-        <TimeLine position={this.state.position} windowSize={this.state.windowSize}></TimeLine>
+        <TopSection position={this.state.position} windowSize={this.state.windowSize} />
+        {/* 프로필이 들어가는 탑 섹션 */}
+        <TimeLine position={this.state.position} windowSize={this.state.windowSize} />
+        {/* 작품들을 타임라인 형식으로 보여주는 컴포넌트 */}
         <Footer />
+        {/* copyright footer */}
       </section>
     )
   }

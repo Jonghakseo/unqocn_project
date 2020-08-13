@@ -46,6 +46,7 @@
   height: 100%;
   transition: height 0.5s ease;
   border-radius: 4px;
+
   object-fit: scale-down;
 }
 

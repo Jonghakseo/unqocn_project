@@ -96,6 +96,35 @@
   width: 58vh;
 }
 
+#github_link_portfolio {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  top: 52%;
+  right: 5%;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+  z-index: 99;
+}
+#github_link_portfolio > a {
+  height: 2rem;
+  width: 2rem;
+  background: url('https://unqocn.hopto.org/res/icon/github.svg');
+}
+#github_link_portfolio > span {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.show_icon {
+  opacity: 1 !important;
+}
+
 .profile_text_area {
   width: fit-content;
   font-family: 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif';
@@ -119,8 +148,9 @@
     flex-direction: column;
     top: 80vh;
   }
-  .big_profile_wrapper > img {
+  .profile_big_image {
     height: 8rem;
+    width: 8rem;
     /* width: 300px; */
   }
   .border_div {

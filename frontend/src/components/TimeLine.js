@@ -1,29 +1,22 @@
 import React, { Component } from 'react'
 import './TimeLine.css'
-// import Java from './TimeLine/Java'
-// import Android from './TimeLine/Android'
-// import Php from './TimeLine/Php'
-// import Competition from './TimeLine/Competition'
 import Item from './TimeLine/Item'
-//여기까지 작품별 컴포넌트
+//작품별로 담을 컴포넌트
 import line from '../res/icon/horizon-line.svg'
 import java_icon from '../res/icon/java.svg'
 import android_icon from '../res/icon/android.svg'
 import php_icon from '../res/icon/php.svg'
-import aws from '../res/icon/aws.svg'
-import css from '../res/icon/css3-alt.svg'
-// import git from '../res/icon/git-alt.svg'
 import python from '../res/icon/python.svg'
 import react_icon from '../res/icon/react.svg'
 import ubuntu from '../res/icon/ubuntu.svg'
-// import django from '../res/icon/django.svg'
 import ue4 from '../res/icon/Unreal_Engine_Logo.svg'
 // import mysql from '../res/icon/mysql-2.svg'
-// import BigProfile from '../res/pic/profile_big_resize.png'
+// import aws from '../res/icon/aws.svg'
+// import css from '../res/icon/css3-alt.svg'
+// import git from '../res/icon/git-alt.svg'
+// import django from '../res/icon/django.svg'
 
 class TimeLine extends Component {
-  //함수형 컴포넌트는 render 될 때의 값들을 유지한다.
-
   constructor(props) {
     super(props)
     // console.log(props)
@@ -48,6 +41,7 @@ class TimeLine extends Component {
     this.timer = null
   }
 
+  //위치 참조를 위한 각 아이템 위치의 참조값
   timeLineHandleRef = React.createRef()
   javaTopRef = React.createRef()
   androidTopRef = React.createRef()
@@ -57,10 +51,7 @@ class TimeLine extends Component {
   toyTopRef = React.createRef()
   portfolioTopRef = React.createRef()
 
-  // componentDidMount() {
-  //   //didmount때 한 값이 맞지 않아서 클릭시마다 갱신시킴
-  // }
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(nextProps) {
     if (Math.ceil(this.props.position / 3) !== Math.ceil(nextProps.position / 3)) {
       let endTop = this.props.windowSize / 1.5
       // console.log('끝나는 지점', endTop)
@@ -97,6 +88,7 @@ class TimeLine extends Component {
       // this.setState({ active: 'android' })
     }
   }
+
   //현재 위치 파악해서 active바꿈
   checkPosition = (pos) => {
     if (!this.state.scrolling) {
@@ -143,6 +135,9 @@ class TimeLine extends Component {
     })
     this.scrollEventHandle()
     // id.current.scrollIntoView({ behavior: 'smooth' })
+    id === 'portfolio'
+      ? document.querySelector('#github_link_portfolio').setAttribute('class', 'show_icon')
+      : document.querySelector('#github_link_portfolio').setAttribute('class', '')
   }
 
   render() {
@@ -193,11 +188,7 @@ class TimeLine extends Component {
                 Android
                 <br />6 주<img className="timeline_line" src={line} alt="android"></img>
               </ol>{' '}
-              <ol
-                style={{ flex: '7' }}
-                className={active === 'php' ? 'active' : ''}
-                onClick={() => handleClick('php')}
-              >
+              <ol style={{ flex: '7' }} className={active === 'php' ? 'active' : ''} onClick={() => handleClick('php')}>
                 <img className="timeline_hover_img" src={php_icon} alt="php"></img>
                 PHP
                 <br />6 주<img className="timeline_line" src={line} alt="php"></img>
@@ -211,11 +202,7 @@ class TimeLine extends Component {
                 창업대회
                 <br />5 주<img className="timeline_line" src={line} alt="comp"></img>
               </ol>{' '}
-              <ol
-                style={{ flex: '4' }}
-                className={active === 'toy' ? 'active' : ''}
-                onClick={() => handleClick('toy')}
-              >
+              <ol style={{ flex: '4' }} className={active === 'toy' ? 'active' : ''} onClick={() => handleClick('toy')}>
                 <img className="timeline_hover_img" src={ubuntu} alt="side"></img>
                 Toy
                 <br /> Project<img className="timeline_line" src={line} alt="side"></img>
@@ -236,7 +223,7 @@ class TimeLine extends Component {
                 onClick={() => handleClick('portfolio')}
               >
                 <img className="timeline_hover_img" src={react_icon} alt="react_icon"></img>
-                React
+                Portfolio
                 <br /> HERE
                 <img className="timeline_line" src={line} alt="this"></img>
               </ol>

@@ -1,9 +1,6 @@
 #timeline_section_wrapper {
-  /* height: 120vh; */
-  /* background-color: #576574; */
   font-size: 32px;
   font-weight: 600;
-  /* color: aliceblue; */
   color: black;
   font-family: 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif';
 }
@@ -16,8 +13,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-top: 5vh;
-  /* height: 25vh; */
-  /* background-color: white; */
   opacity: 0;
   transition: opacity 1s linear;
 }
@@ -30,7 +25,6 @@ h2 {
 
 .timeline_date {
   width: 91vw;
-  /* color: #333333; */
   margin-bottom: 35px;
   font-size: 24px;
   display: flex;
@@ -51,10 +45,7 @@ h2 {
   align-self: center;
 
   height: 10vh;
-  /* width: 100vw; */
-  /* margin: 0px 30px; */
   padding: 1% 1.5%;
-  /* background-color: gray; */
   opacity: 0.92;
 }
 
@@ -72,7 +63,6 @@ h2 {
   flex-direction: column;
   transition: opacity 0.3s;
   cursor: pointer;
-  /* margin: 0, auto; */
 }
 .timeline > ol:hover {
   opacity: 1;
@@ -84,7 +74,6 @@ h2 {
   width: 100%;
   object-fit: none;
   transition: opacity 0.7s;
-  /* filter: invert(100%); */
 }
 
 /* 활성화 된 타임라인 아이템 */
@@ -96,8 +85,6 @@ h2 {
 .timeline_hover_img {
   height: 30px;
   width: 30px;
-  /* filter: invert(); */
-  /* opacity: 0; */
 }
 
 .contents_wrapper {
@@ -111,7 +98,6 @@ h2 {
   width: 90%;
   margin: 0;
   padding: 0;
-  /* border: solid 2px white; */
   z-index: 99999;
 }
 
@@ -121,12 +107,9 @@ h2 {
   h2 {
     font-size: 24px;
     margin: 10px, 10px;
-    /* margin-bottom: 15px; */
   }
   .timeline {
-    /* width: 95vw; */
     padding: 5px 10px;
-    /* margin: 0px 10px; */
   }
   .timeline_date {
     font-size: 14px;
