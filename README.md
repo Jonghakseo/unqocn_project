@@ -1,22 +1,31 @@
-개인 프로젝트.
-백엔드 - 장고(파이썬)
-프론트엔드 - 리액트
-로 제작합니다.
+# :zap: Jonghak's Portfolio 
 
-history
+### :calendar: Log 
 
-7.20
-첫 commit
+**7.22 ~ 7.24** :book: ​React로 Todolist(튜토리얼) 따라하며 학습 
 
-7.22
-도메인별 서비스 분리, https
 
-7.25 React 튜토리얼로 학습 
 
-7.26 포트폴리오 제작 시작
+![1](https://unqocn.hopto.org/res/readme/react_todo.png)
 
-7.29 포트폴리오 뼈대 완성
+> https://velopert.com/3480 참고
 
-8.9 전체적인 테마 컬러 변경
 
-8.11 포트폴리오 아이템 데이터 react --> django에서 받아오는 방식으로 변경
+
+**7.28**  :new: 포트폴리오 제작 시작
+
+~
+
+**8.13** :desktop_computer: 포트폴리오 완성
+
+
+
+![2](https://unqocn.hopto.org/res/readme/port.gif)
+
+
+
+
+
+Backend : Django python
+
+Frontend : React js

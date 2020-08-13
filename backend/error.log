@@ -4017,3 +4017,28 @@ NameError: name 'TypeError' is not defined
 [Thu Aug 13 10:05:42.660363 2020] [wsgi:error] [pid 2784] [remote 129.213.80.126:37066] Not Found: /
 [Thu Aug 13 10:35:38.891022 2020] [wsgi:error] [pid 2786] [remote 185.216.140.186:51052] Not Found: /cache/global/img/gs.gif
 [Thu Aug 13 12:30:24.062864 2020] [wsgi:error] [pid 2784] [remote 175.193.7.189:2711] Not Found: /favicon.ico
+Exception ignored in: <function Local.__del__ at 0x7ff99bd54700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7ff99bd54700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function BaseEventLoop.__del__ at 0x7ff99b109670>
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 654, in __del__
+NameError: name 'ResourceWarning' is not defined
+Exception ignored in: <function Local.__del__ at 0x7ff99bd54700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7ff99bd54700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+Exception ignored in: <function Local.__del__ at 0x7ff99bd54700>
+Traceback (most recent call last):
+  File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
+NameError: name 'TypeError' is not defined
+[Thu Aug 13 14:55:49.051844 2020] [wsgi:error] [pid 14794] [remote 190.210.129.25:2273] Not Found: /
