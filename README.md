@@ -2,6 +2,8 @@
 
 ### :calendar: Log 
 
+
+
 **7.22 ~ 7.24** :book: ​React로 Todolist(튜토리얼) 따라하며 학습 
 
 
@@ -12,20 +14,34 @@
 
 
 
+
+
 **7.28**  :new: 포트폴리오 제작 시작
 
-~
+
+
+![2](https://unqocn.hopto.org/res/readme/timeline_first.png)
+
+
+
+
 
 **8.13** :desktop_computer: 포트폴리오 완성
 
 
 
-![2](https://unqocn.hopto.org/res/readme/port.gif)
+![3](https://unqocn.hopto.org/res/readme/port.gif)
 
 
 
 
 
-Backend : Django python
 
-Frontend : React js
+
+Backend 
+
+>  Django python
+
+Frontend 
+
+>  React js

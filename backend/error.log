@@ -4042,3 +4042,12 @@ Traceback (most recent call last):
   File "/home/django/unqocn_venv/lib/python3.8/site-packages/asgiref/local.py", line 96, in __del__
 NameError: name 'TypeError' is not defined
 [Thu Aug 13 14:55:49.051844 2020] [wsgi:error] [pid 14794] [remote 190.210.129.25:2273] Not Found: /
+[Thu Aug 13 15:24:18.633521 2020] [wsgi:error] [pid 14794] [remote 192.35.168.202:55208] Not Found: /
+[Thu Aug 13 15:24:19.433409 2020] [wsgi:error] [pid 14794] [remote 192.35.168.202:37308] Not Found: /
+[Thu Aug 13 15:43:11.753762 2020] [wsgi:error] [pid 14796] [remote 80.82.70.187:34879] Not Found: /cache/global/img/gs.gif
+[Thu Aug 13 15:45:37.629981 2020] [wsgi:error] [pid 14794] [remote 94.242.26.158:63166] Not Found: /
+[Thu Aug 13 16:05:25.697165 2020] [wsgi:error] [pid 14794] [remote 216.218.168.121:50104] Not Found: /
+[Thu Aug 13 16:17:57.447559 2020] [wsgi:error] [pid 14794] [remote 193.118.53.138:48272] Not Found: /
+[Thu Aug 13 16:33:50.907240 2020] [wsgi:error] [pid 14794] [remote 209.40.196.149:51144] Not Found: /
+[Thu Aug 13 16:34:42.073839 2020] [wsgi:error] [pid 14796] [remote 139.162.79.87:53556] Not Found: /
+[Thu Aug 13 16:53:34.476458 2020] [wsgi:error] [pid 14794] [remote 35.203.54.48:55810] Not Found: /
