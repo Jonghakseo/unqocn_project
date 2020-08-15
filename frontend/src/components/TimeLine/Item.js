@@ -15,6 +15,7 @@ class Item extends Component {
           src: 'https://unqocn.hopto.org/res/pic/empty.png',
           type: 'img',
           desc: '로딩 전 기본이미지입니다.',
+          thumb_title: '',
         },
       ], //미디어를 담을 배열
       item_title: '작품 카테고리',
@@ -44,11 +45,13 @@ class Item extends Component {
               let item_src = element['src']
               let item_type = element['type']
               let item_desc = element['desc']
+              let item_thumb_title = element['title']
               new_media_arr.push({
                 active: item_active,
                 src: item_src,
                 type: item_type,
                 desc: item_desc,
+                thumb_title: item_thumb_title,
               })
             } catch (error) {
               console.log(error)
@@ -170,26 +173,32 @@ class Item extends Component {
               {this.state.media_arr.map((item, key) => {
                 if (item.type === 'img') {
                   return (
-                    <img
-                      key={key}
-                      src={item.src}
-                      draggable="false"
-                      alt={item.type}
-                      onClick={() => this.onClickThumbnail(key)}
-                      className={item.active === true ? 'active_thumbnail' : ''}
-                    ></img>
+                    <div key={key}>
+                      <img
+                        key={key}
+                        src={item.src}
+                        draggable="false"
+                        alt={item.type}
+                        onClick={() => this.onClickThumbnail(key)}
+                        className={item.active === true ? 'active_thumbnail' : ''}
+                      ></img>
+                      <span>{item.thumb_title}</span>
+                    </div>
                   )
                 } else if (item.type === 'video') {
                   return (
-                    <video
-                      key={key}
-                      draggable="false"
-                      onClick={() => this.onClickThumbnail(key)}
-                      className={item.active === true ? 'active_thumbnail' : ''}
-                    >
-                      {' '}
-                      <source src={item.src} type="video/mp4" />
-                    </video>
+                    <div key={key}>
+                      <video
+                        key={key}
+                        draggable="false"
+                        onClick={() => this.onClickThumbnail(key)}
+                        className={item.active === true ? 'active_thumbnail' : ''}
+                      >
+                        {' '}
+                        <source src={item.src} type="video/mp4" />
+                      </video>
+                      <span>{item.thumb_title}</span>
+                    </div>
                   )
                 } else {
                   return ''

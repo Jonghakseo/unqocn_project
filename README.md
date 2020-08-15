@@ -26,13 +26,11 @@
 
 
 
-**8.13** :desktop_computer: 포트폴리오 완성
+**8.13** :desktop_computer: 포트폴리오배포
 
 
 
 ![3](https://unqocn.hopto.org/res/readme/port.gif)
-
-
 
 
 

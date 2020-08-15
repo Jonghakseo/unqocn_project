@@ -37,7 +37,7 @@ class TopSection extends Component {
 
   toggle(pos, top) {
     // console.log(top)
-    pos = Math.ceil(pos) / 10
+    pos = Math.ceil(pos) / 30
     // let top_end = Math.ceil(top * 0.085) //첫 화면의 85% 넘어가면 없어지게
     // 가변값으로 설정해야함
     // console.log(top_end)

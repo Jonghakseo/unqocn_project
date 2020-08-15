@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import './NavTop.css'
 
 class Footer extends Component {
   render() {

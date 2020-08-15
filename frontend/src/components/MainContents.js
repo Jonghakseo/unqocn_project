@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // import { findDOMNode } from 'react-dom'
 import Footer from './Footer'
 import TopSection from './TopSection'
+import Interview from './Interview'
 import TimeLine from './TimeLine'
 import './MainContents.css'
 class MainContents extends Component {
@@ -20,9 +21,11 @@ class MainContents extends Component {
     window.addEventListener('scroll', this.onScroll)
     window.addEventListener('resize', this.updateWindowDimensions)
   }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions)
   }
+
   updateWindowDimensions() {
     // console.log('resize :', window.innerHeight)
     // 창 크기 조절시에 업데이트됨
@@ -81,6 +84,8 @@ class MainContents extends Component {
       <section id="main_contents" className={bgStyle}>
         <TopSection position={this.state.position} windowSize={this.state.windowSize} />
         {/* 프로필이 들어가는 탑 섹션 */}
+        <Interview position={this.state.position} windowSize={this.state.windowSize} />
+        {/* 인터뷰 섹션 */}
         <TimeLine position={this.state.position} windowSize={this.state.windowSize} />
         {/* 작품들을 타임라인 형식으로 보여주는 컴포넌트 */}
         <Footer />

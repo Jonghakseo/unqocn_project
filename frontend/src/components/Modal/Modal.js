@@ -50,8 +50,7 @@ function Modal({ className, onClose, maskClosable, closable, visible, children, 
               &#10007;
             </CloseButton>
           )}
-          <ModalImage src={src} alt="full_size_image" draggable="false"></ModalImage>
-
+          <ModalImage src={src} alt="full_size_image" draggable="false" />
           {children}
           <ViewOriginButton className="inflate-button" onClick={() => viewOrigin()}>
             &nbsp;원본 이미지 보기&nbsp;
@@ -79,6 +78,7 @@ const CloseButton = styled.button`
   font-weight: 900;
   font-size: 1.5rem;
   text-align: center;
+  z-index: 99;
   border: solid 1px rgba(0, 0, 0, 0);
   border-radius: 5px;
   color: #ffffff;
@@ -177,7 +177,6 @@ const ModalImage = styled.img`
   object-fit: contain;
   width: auto;
   max-width: 90vw;
-
   &:focus {
     outline: none;
   }
