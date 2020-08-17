@@ -41,7 +41,7 @@ class RotateText extends Component {
         // console.log(this.state.switchStyle);
         // 재귀 실행
         rotation()
-      }, 2800)
+      }, 1800)
 
     rotation()
     //첫 실행

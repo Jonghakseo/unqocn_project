@@ -49,16 +49,17 @@ class TimeLine extends Component {
   compTopRef = React.createRef()
   ue4TopRef = React.createRef()
   toyTopRef = React.createRef()
-  portfolioTopRef = React.createRef()
+  // portfolioTopRef = React.createRef()
 
-  componentDidUpdate(nextProps) {
-    if (Math.ceil(this.props.position / 3) !== Math.ceil(nextProps.position / 3)) {
-      let endTop = this.props.windowSize / 1.5
+  componentDidUpdate(prevProps) {
+    if (Math.ceil(this.props.position / 3) !== Math.ceil(prevProps.position / 3)) {
+      // let endTop = this.props.windowSize / 1.5
+      let endTop = this.timeLineHandleRef.current.offsetTop - this.props.windowSize / 1.3
       // console.log('끝나는 지점', endTop)
-      // console.log(nextProps.position)
-      this.setState({ position: nextProps.position })
-      this.checkPosition(nextProps.position)
-      if (nextProps.position > endTop) {
+      // console.log(prevProps.position)
+      this.setState({ position: this.props.position })
+      this.checkPositionByScroll(this.props.position)
+      if (this.props.position > endTop) {
         this.setState({
           toggle_timeline: true,
         })
@@ -90,7 +91,7 @@ class TimeLine extends Component {
   }
 
   //현재 위치 파악해서 active바꿈
-  checkPosition = (pos) => {
+  checkPositionByScroll = (pos) => {
     if (!this.state.scrolling) {
       let offsets = this.state.offsetList
       let key = Object.keys(offsets).find((key) => {
@@ -160,12 +161,15 @@ class TimeLine extends Component {
     return (
       <section id="timeline_section_wrapper">
         <div className={['timeline_wrapper', toggle_timeline && 'onToggle'].join(' ')}>
-          <h2>학습 타임라인 & 포트폴리오</h2>
+          <h2>Portfolio & Timeline</h2>
           {/* <br></br> */}
           <div className="timeline_date" ref={this.timeLineHandleRef}>
             {' '}
             <div className="timeline_date_start">`19. 10. 03. ~</div>
-            <div className="timeline_date_end">~ {date}</div>
+            <div className="timeline_date_end">
+              {/* ~ '20. 8. 17. */}
+              {date}
+            </div>
           </div>
           {/* 2019. 10. 03 ~ 2020. 07. 28 */}
           <div className="timeline_empty_wrapper">
@@ -223,7 +227,7 @@ class TimeLine extends Component {
                 onClick={() => handleClick('portfolio')}
               >
                 <img className="timeline_hover_img" src={react_icon} alt="react_icon"></img>
-                Portfolio
+                React
                 <br /> HERE
                 <img className="timeline_line" src={line} alt="this"></img>
               </ol>

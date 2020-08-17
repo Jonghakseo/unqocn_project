@@ -21,18 +21,21 @@ class TopSection extends Component {
   //함수형 컴포넌트는 render 될 때의 값들을 유지한다. 클래스형은 아님.
 
   state = {
-    position: this.props.position,
-    windowSize: this.props.windowSize,
+    // position: this.props.position,
+    // windowSize: this.props.windowSize,
     toggle_profile: false,
   }
 
-  componentDidUpdate(nextProps) {
+  componentDidUpdate(prevProps) {
+    // console.log(prevProps)
     if (
-      Math.ceil(this.props.position / 30) !== Math.ceil(nextProps.position / 30)
+      Math.ceil(this.props.position / 10) !== Math.ceil(prevProps.position / 10)
       ///30 단위로 해놓은 이유는 떨림 현상을 방지하기 위해서(원인 파악 아직 못함)
     ) {
-      this.toggle(nextProps.position, nextProps.windowSize)
+      // console.log('실행')
+      this.toggle(this.props.position, this.props.windowSize)
     }
+    // this.toggle(nextProps.position, nextProps.windowSize)
   }
 
   toggle(pos, top) {
@@ -116,7 +119,7 @@ class TopSection extends Component {
             <br />
             &nbsp;&nbsp;&nbsp; JongHak Seo
             <br /> <br />
-            | &#x1f4f1; Phone
+            | &#x1f4f1; Contact
             <br />
             &nbsp;&nbsp;&nbsp; 010-4129-7219
           </span>
