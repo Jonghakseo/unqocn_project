@@ -165,6 +165,23 @@ class Item extends Component {
           {/* 제목 들어갈 영역 */}
         </div>
 
+        <article className="portfolio_text_section top_article">
+          <div className="portfolio_text_wrapper">
+            <span className="portfolio_text_title">작품 이름</span>{' '}
+            <span className="portfolio_text_content">
+              <h2 dangerouslySetInnerHTML={{ __html: item_name }} />
+            </span>
+          </div>
+          <div className="portfolio_text_wrapper">
+            <span className="portfolio_text_title">개발 기간</span>{' '}
+            <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_term }} />
+          </div>
+          <div className="portfolio_text_wrapper">
+            <span className="portfolio_text_title">작품 소개</span>{' '}
+            <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_intro }} />
+          </div>
+        </article>
+
         <div className="portfolio_media_section">
           <div className="portfolio_media_wrapper">
             {main_media()}
@@ -212,22 +229,7 @@ class Item extends Component {
           </div>
         </div>
 
-        <article className="portfolio_text_section">
-          <div className="portfolio_text_wrapper">
-            <span className="portfolio_text_title">작품 이름</span>{' '}
-            <span className="portfolio_text_content">
-              <h2 dangerouslySetInnerHTML={{ __html: item_name }} />
-            </span>
-          </div>
-          <div className="portfolio_text_wrapper">
-            <span className="portfolio_text_title">개발 기간</span>{' '}
-            <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_term }} />
-          </div>
-          <div className="portfolio_text_wrapper">
-            <span className="portfolio_text_title">작품 소개</span>{' '}
-            <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_intro }} />
-          </div>
-
+        <article className="portfolio_text_section bottom_article">
           <div className="portfolio_text_wrapper">
             <span className="portfolio_text_title">주요 기능</span>{' '}
             <span className="portfolio_text_content" dangerouslySetInnerHTML={{ __html: dev_feature }} />

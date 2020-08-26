@@ -167,8 +167,7 @@ class TimeLine extends Component {
             {' '}
             <div className="timeline_date_start">`19. 10. 03. ~</div>
             <div className="timeline_date_end">
-              {/* ~ '20. 8. 17. */}
-              {date}
+              {/* ~ '20. 8. 17. */}~ {date}
             </div>
           </div>
           {/* 2019. 10. 03 ~ 2020. 07. 28 */}
@@ -209,7 +208,7 @@ class TimeLine extends Component {
               <ol style={{ flex: '4' }} className={active === 'toy' ? 'active' : ''} onClick={() => handleClick('toy')}>
                 <img className="timeline_hover_img" src={ubuntu} alt="side"></img>
                 Toy
-                <br /> Project<img className="timeline_line" src={line} alt="side"></img>
+                <br /> Projects<img className="timeline_line" src={line} alt="side"></img>
               </ol>
               <ol
                 style={{ flex: '11' }}

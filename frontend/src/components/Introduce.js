@@ -56,9 +56,9 @@ class Introduce extends Component {
           <br />
           새로운 것을 배우는 데에 흥미가 많고 최근에는 웹 개발에 재미를 느끼고 있습니다.
           <br />
-          개발자는 새로운 시도를 통해 성장하고, 성취를 통해 동력을 얻는다고 믿습니다.
+          개발자는 새로운 시도를 통해 성장하며 성취를 통해 동력을 얻는다고 믿습니다.
           <br />
-          적극적으로 의견을 낼 수 있고 구성원간 토의를 통해 발전하는 진취적 업무 환경을 선호합니다.
+          적극적인 의견 개진이 가능하고 구성원간 토의를 통해 발전하는 진취적 업무 환경을 선호합니다.
           <br />
           독서 토론 동아리에서 다져진 커뮤니케이션 능력으로 <b>함께 일하면 즐거운 개발자</b>가 되고자 합니다.
         </span>{' '}
@@ -72,16 +72,19 @@ class Introduce extends Component {
         <br /> <br />
         <h3>Experience & Skill</h3>
         <span>
-          개발을 처음 시작한지 이제 10개월이 되었습니다.
-          <br />
-          짧은 기간이 아니었지만, 다양한 프로젝트를 구현할 때 사용한 모든 기술에 대해 만족스러운 경험과 기술적 깊이를
-          다지기에 충분한 기간은 아니었다고 생각합니다.
+          저의 강점은 <b>learning curve가 짧은 것</b>입니다.
           <br /> <br />
-          그러나 다양한 개인 프로젝트와 팀 프로젝트를 진행하면서 얻은 가장 중요한 자산은{' '}
-          <b>'내가 구현하지 못 할 기술은 없다'</b>는 자신감이라고 생각합니다.
+          개발을 처음 접한지 약 11개월이 되었습니다.
+          <br />
+          다양한 프로젝트를 구현할 때 사용한 모든 기술에 대해 만족스러운 경험과 기술적 깊이를 다지기에 충분한 기간은
+          아니었다고 생각합니다.
+          <br />
+          그러나 다양한 프로젝트를 진행하면서 얻은 가장 중요한 자산은 <b>'무엇이든 공부하면 할 수 있다'</b>는
+          자신감이라고 생각합니다.
           <br />
           <br />
-          Language <br />
+          ↘ Language <br />
+          &nbsp;&nbsp;&nbsp;
           <img draggable="false" src={java} alt="java"></img>
           <img draggable="false" src={android} alt="android"></img>
           <img draggable="false" src={php} alt="php"></img>
@@ -89,7 +92,8 @@ class Introduce extends Component {
           <img draggable="false" src={js} alt="javascript"></img>
           <img draggable="false" src={ue4} alt="UE4"></img>
           <br />
-          ETC <br />
+          ↘ ETC <br />
+          &nbsp;&nbsp;&nbsp;
           <img draggable="false" src={react_icon} alt="react"></img>
           <img draggable="false" src={ubuntu} alt="ubuntu"></img>
           <img draggable="false" src={mysql} alt="mysql"></img>
@@ -107,14 +111,22 @@ class Introduce extends Component {
         <br /> <br />
         <h3>Recent</h3>
         <span>
+          2020.07. ~ 08.
+          <br />
+          &nbsp;&nbsp;프론트엔드에 재미를 느끼고 틈틈이 이력서 페이지를 React + Django로 제작하였습니다.
+          <br />
           2020.06. ~
           <br />
-          학원 스타트업 프로젝트 내 웹 프론트 포지션에서 협업툴과 조직내 의사소통에 대해 경험하고 있습니다.
+          &nbsp;&nbsp;학원 스타트업 프로젝트 내 웹 프론트 포지션에서 jQuery, Ajax 를 사용하여 MVC 패턴으로 웹 페이지를
+          신규 제작 및 유지,보수 중입니다.
           <br />
+          &nbsp;&nbsp;더불어 Slack, github, Trello등 협업툴을 사용하며 조직 내 의사소통에 대해 경험하고 있습니다.
           <br />
-          프로젝트 도중 웹 프론트엔드에 대한 재미를 느끼고 업무 외 시간에 틈틈이 현재 페이지를 React + Django로
-          제작하였습니다.
+          {/* <br /> */}
         </span>
+        <br /> <br />
+        <h3>Expected salary</h3>
+        <span>&nbsp;&nbsp;36,000,000 원</span>
         <br /> <br />
         <h3>Portfolio </h3>
         <span>↓</span>
